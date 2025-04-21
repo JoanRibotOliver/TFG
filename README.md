@@ -1,3 +1,5 @@
+# TFG
+
 Magnetohydrodinamical waves with boundary conditions using Dedalus
 
 This repo is about my final graduate project at Universitat de les Illes Balears (UIB). It contains some python notebooks including the ones to test and learn the Dedalus library.
