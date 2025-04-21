@@ -1,4 +1,4 @@
-# TFG
+## TFG
 
 Magnetohydrodinamical waves with boundary conditions using Dedalus
 
