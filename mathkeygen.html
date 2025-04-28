@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Mathematica and SystemModeler Keygen</title>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+  padding: 4px;
+  }
+  </style>
+  <script>
+    function f1(n, byte, c) { // inverse of f2: f1(f2(x, y, c), c, y, c) == x
+      for (var bitIndex = 0; bitIndex <= 7; bitIndex++) {
+        var bit = (byte >> bitIndex) & 1;
+        if (bit + ((n - bit) & ~1) == n) {
+          n = (n - bit) >> 1;
+        } else {
+          n = ((c - bit) ^ n) >> 1;
+        }
+      }
+      return n;
+    }
+    
+    /*function f2(n, byte, c) {
+      for (var bitIndex = 7; bitIndex >= 0; bitIndex--) {
+        var bit = (byte >> bitIndex) & 1;
+        var temp = (n << 1) + bit;
+        if (n & 0x8000) {
+          temp ^= c;
+        }
+        n = temp;
+      }
+      return n;
+    }*/
+    
+    function genPassword(str,hash) {//0x42DD; // Mathematica 11.0.1: Change to 0x25DB  
+      for (var byteIndex = str.length - 1; byteIndex >= 0; byteIndex--) {
+        hash = f1(hash, str.charCodeAt(byteIndex), 0x105C3);
+      }
+      
+      var n1 = 0;
+      while (f1(f1(hash, n1 & 0xFF, 0x105C3), n1 >> 8, 0x105C3) != 0xA5B6) {
+        if (++n1 >= 0xFFFF) {
+          alert("Failed to find a key!");
+          return "";
+        }
+      }
+      
+      n1 = Math.floor(((n1 + 0x72FA) & 0xFFFF) * 99999.0 / 0xFFFF);
+      var n1str = ("0000" + n1.toString(10)).slice(-5); // this will be used at the end
+      
+      var temp = parseInt(n1str.slice(0,-3) + n1str.slice(-2) + n1str.slice(-3, -2), 10); 
+      temp = Math.ceil((temp / 99999.0) * 0xFFFF);
+      temp = f1(f1(0, temp & 0xFF, 0x1064B), temp >> 8, 0x1064B);
+      
+      for (byteIndex = str.length - 1; byteIndex >= 0; byteIndex--) {
+        temp = f1(temp, str.charCodeAt(byteIndex), 0x1064B);
+      }
+      
+      var n2 = 0;
+      while (f1(f1(temp, n2 & 0xFF, 0x1064B), n2 >> 8, 0x1064B) != 0xA5B6) {
+        if (++n2 >= 0xFFFF) {
+          alert("Failed to find a key!");
+          return "";
+        }
+      }
+      
+      n2 = Math.floor((n2 & 0xFFFF) * 99999.0 / 0xFFFF);
+      var n2str = ("0000" + n2.toString(10)).slice(-5);
+      
+      var password = n2str.charAt(3) + n1str.charAt(3) + n1str.charAt(1) 
+                   + n1str.charAt(0) +       "-"       + n2str.charAt(4)
+                   + n1str.charAt(2) + n2str.charAt(0) +       "-"      
+                   + n2str.charAt(2) + n1str.charAt(4) + n2str.charAt(1);
+      return password;
+    }
+    
+    function genFromMathId() {
+      var mathId = document.getElementById("str").value;
+      var debug = document.getElementById("debug").value;
+	  var type=document.getElementById("type").value;
+      var activationKey = document.getElementById("actkey").value;
+	  var expdate = document.getElementById("expdate").value;
+	  var limstr=document.getElementById("limstr").value;
+
+	  var hashval=document.getElementById("hashval").value;
+	  var keyvalstr=mathId;
+	  if(expdate!=""){
+	  keyvalstr=keyvalstr+"@"+expdate;
+	  }
+	  if(limstr!=""){
+	  keyvalstr=keyvalstr+":"+limstr;
+	  }
+	  if(type!=""){
+	  keyvalstr=keyvalstr+"$"+type;
+	  }
+	  keyvalstr=keyvalstr+"&"+activationKey;
+      document.getElementById("debugout").value=keyvalstr;
+	  if(debug!=""){
+	  keyvalstr=debug;
+	  }
+      var password = genPassword(keyvalstr,parseInt(hashval));
+	//String example for floating license
+	//"We Are Everywhere!6202-07203-27542@20180502:20*CA&L1234-4321"
+	//Real standalone key example
+	//Mathematica Trial 11.2
+	//6202-07203-27542  3973-7213-822J7R  4559-305-821:2,2,4,4:3:20180130
+	//6202-07203-27542  3984-9756-8J5HHW  8823-709-932:2,2,4,4:3:20180204
+	//Student 11
+	//6202-24738-25165  3893-9258-K6XJLE  2241-033-602:2,2,8,8:5
+	//SystemModeler Trial 5.0.0
+	//6202-07203-27542  4014-6943-3K6XXP  7327-981-239:1:3:20180228
+	  password=password+":"+limstr;
+	  password=password+":"+type;
+	  if(expdate!=""){
+	  password=password+":"+expdate;
+	  }
+      document.getElementById("output").value=password;
+	  //6202-07203-27542@5:2,2,8,8&3893-9258-K6XJLE
+	  //6202-07203-27542:2,2,8,8$5&3893-9258-K6XJLE
+    }
+  </script>
+<style></style></head>
+
+<body>
+  <h2>Mathematica and SystemModeler Keygen</h2>
+  <p>This generator works with Mathematica 10.0 and later, SystemModeler 4.0 and later.<br /> 
+     To download Mathematica, sign up for a free trial here: <a href="https://www.wolfram.com/mathematica/trial/">Download a Free Trial of Mathematica</a>.<br />
+	 To download SystemModeler, sign up for a free trial here: <a href="https://www.wolfram.com/system-modeler/trial/">Download a Free Trial of SystemModeler</a>.<br />
+	 You can use, for example, any number of temporary e-mail adreses at <a href="https://www.mailinator.com/">mailinator</a> or any other temporary e-mail host.</p>
+  <p>On the Mathematica activation screen, click the "Other ways to activate" button and then "Activate Manually".<br /> 
+     Enter your MathID and chose Activation Key in the form, and click "Generate".<br />
+	 All other fields are otional.</p>
+  <p><font color="red">*Required field</font></p>
+	
+  <h3>Hash<font color="red">*</font></h3>
+
+  <p>
+    Copy a Hex value from the corresponding table.<br />
+    Example for Mathematica: <font style='font-family:"Courier New", Courier, monospace; font-size:100%'>0xE756</font><br />
+    Example for SystemModeler: <font style='font-family:"Courier New", Courier, monospace; font-size:100%'>0x5770</font><br />
+
+    <table style='font-family:"Courier New", Courier, monospace; font-size:100%'>
+      <caption><b>Mathematica</b></caption>
+
+      <tr>
+        <th rowspan="2">Mathematica 10.0 - 11.0</th>                           <th>Hex</th><td>0x25DB</td>
+      </tr>                                                                                               
+      <tr>                                                                                                
+                                                                               <th>Dec</th><td>9691</td>  
+      </tr>
+
+      <tr>
+        <th rowspan="2">Mathematica 10.0 - 11.1</th>                           <th>Hex</th><td>0x42DD</td>
+      </tr>                                                                                               
+      <tr>                                                                                                
+                                                                               <th>Dec</th><td>17117</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">Mathematica 10.0 - 11.2</th>                           <th>Hex</th><td>0x6A91</td>
+      </tr>                                                                                               
+      <tr>                                                                                                
+                                                                               <th>Dec</th><td>27281</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">Mathematica 10.0 - 11.3</th>                           <th>Hex</th><td>0x29F8</td>
+      </tr>                                                                                               
+      <tr>                                                                                                
+                                                                               <th>Dec</th><td>10744</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">Mathematica 10.0 - 12.0</th>                           <th>Hex</th><td>0xA68B</td>
+      </tr>                                                                                               
+      <tr>                                                                                                
+                                                                               <th>Dec</th><td>42635</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">Mathematica 10.0 - 12.1</th>                           <th>Hex</th><td>0xE4A8</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>58536</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">Mathematica 10.0 - 12.0</th>                           <th>Hex</th><td>0xA439</td>
+      </tr>                                                                                               
+      <tr>                                                                                                
+                                                                               <th>Dec</th><td>42041</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">Mathematica 10.2 - 12.2</th>                           <th>Hex</th><td>0x2FDB</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>12251</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">Mathematica 10.2 - 12.2+</th>                          <th>Hex</th><td>0xD227</td><td>0xDB75</td><td>0xEE71</td><td>0x29C2</td><td>0x44F1</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>53799</td> <td>56181</td> <td>61041</td> <td>10690</td> <td>17649</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">Mathematica 12.0 - 12.2+</th>                          <th>Hex</th><td>0x8E3C</td><td>0x60F0</td><td>0xABEB</td><td>0x8250</td><td>0x8C68</td><td>0xE756</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>36412</td> <td>24816</td> <td>44011</td> <td>33360</td> <td>35944</td> <td>59222</td>
+      </tr>
+
+    </table>
+
+    <table style='font-family:"Courier New", Courier, monospace; font-size:100%'>
+      <caption><b>SystemModeler</b></caption>
+
+      <tr>
+        <th rowspan="2">SystemModeler 4.0</th>                                 <th>Hex</th><td>0x15BF</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>5567</td>  
+      </tr>
+
+      <tr>
+        <th rowspan="2">SystemModeler 4.0 - 4.1</th>                           <th>Hex</th><td>0x6897</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>26775</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">SystemModeler 4.0 - 4.2</th>                           <th>Hex</th><td>0x2F33</td><td>0x72C4</td>
+      </tr>                                                                                                              
+      <tr>                                                                                                               
+                                                                               <th>Dec</th><td>12083</td> <td>29380</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">SystemModeler 4.0 - 5.0</th>                           <th>Hex</th><td>0x8330</td>
+      </tr>                                                                                               
+      <tr>                                                                                                
+                                                                               <th>Dec</th><td>33584</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">SystemModeler 4.0 - 5.1?</th>                          <th>Hex</th><td>0x81DD</td>
+      </tr>                                                                                               
+      <tr>                                                                                                
+                                                                               <th>Dec</th><td>33245</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">SystemModeler 4.0 - 12.0</th>                          <th>Hex</th><td>0x47C5</td>
+      </tr>                                                                                               
+      <tr>                                                                                                
+                                                                               <th>Dec</th><td>18373</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">SystemModeler 4.0 - 12.1</th>                          <th>Hex</th><td>0xB4D3</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>46291</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">SystemModeler 4.0 - 12.2</th>                          <th>Hex</th><td>0xAB0B</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>43787</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">SystemModeler 4.0 - 12.2+</th>                         <th>Hex</th><td>0x6188</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>24968</td> 
+      </tr>
+
+      <tr>
+        <th rowspan="2">SystemModeler 5.0 - 12.2+</th>                         <th>Hex</th><td>0xBF47</td><td>0x1330</td><td>0xF536</td><td>0xA5CE</td><td>0x755E</td><td>0x1361</td><td>0xEEFE</td><td>0x7C91</td><td>0x5770</td>
+      </tr>
+      <tr>
+                                                                               <th>Dec</th><td>48967</td> <td>4912</td>  <td>62774</td> <td>42446</td> <td>30046</td> <td>4961</td>  <td>61182</td> <td>31889</td> <td>22384</td>
+      </tr>
+
+    </table>
+
+  </p>
+
+  <input type="text" id="hashval" value="0xE756">
+  <h3>MathID<font color="red">*</font></h3>
+  <p>Copy from Mathematica or SystemModeler</p>
+  <input type="text" id="str">
+  <h3>Activation Key<font color="red">*</font></h3>
+  <p>Format: <font style='font-family:"Courier New", Courier, monospace; font-size:100%'>xxxx-xxxx-XXXXXX</font><br />
+  Where: <font style='font-family:"Courier New", Courier, monospace; font-size:100%'>x=0..9, X=0..9 and A..Z</font><br />
+  Example: <font style='font-family:"Courier New", Courier, monospace; font-size:100%'>3893-9258-K6XJLE</font></p>
+  <input type="text" id="actkey" value="3893-9258-K6XJLE">
+  <h3>$LicenseExpirationDate</h3>
+  <p>Optional, leave empty if not needed.<br />
+     Format: <font style='font-family:"Courier New", Courier, monospace; font-size:100%'>YYYYMMDD</font><br />
+     Example: <font style='font-family:"Courier New", Courier, monospace; font-size:100%'>20200619</font></p>
+  <input type="text" id="expdate">
+  <h3>$MaxLicenseProcesses</h3>
+  <p>Optional, leave empty if not needed.</p>
+  <input type="text" id="limstr">
+  <h3>$LicenseType</h3>
+  <p>Optional, leave empty if not needed.</p>
+  <table style='font-family:"Courier New", Courier, monospace; font-size:100%'>
+    <tr>
+	<td>Professional</td>
+	<td> 0</td>
+	<td> 1</td>
+	<td> 8</td>
+	<td> 9</td>
+	</tr>
+	<tr>
+	<td>Trial</td>
+	<td> 2</td>
+	<td> 3</td>
+	<td> 6</td>
+	<td> 7</td>
+	</tr>
+	<tr>
+	<td>Student</td>
+	<td> 4</td>
+	<td> 5</td>
+	</tr>
+	<tr>
+	<td>CDF Player</td>
+	<td>10</td>
+	<td>11</td>
+	</tr>
+	<tr>
+	<td>CDF Player Trial</td>
+	<td>12</td>
+	<td>13</td>
+	</tr>
+  </table>
+  <br />
+  <input type="text" id="type" value="1">
+  <h3>Debug Only</h3>
+  <p>Leave this blank if you don't know what you are doing!</p>
+  <input type="text" id="debug">
+  <input type="text" readonly="readonly" id="debugout">
+  <br>
+  <button onclick="genFromMathId()">Generate</button>
+  <br>
+  <h3>Password</h3>
+  <input type="text" readonly="readonly" id="output">
+  <br>
+</body></html>
