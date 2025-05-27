@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  27 MAY 2025 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  27 MAY 2025 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -904,20 +904,13 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
 fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-Package caption Warning: \label without proper reference on input line 121.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:sistema' on page 1 undefined on input line 108.
-
-<Representacions/prot_real.png, id=10, 567.3195pt x 341.1144pt>
+<Representacions/prot_real.png, id=9, 567.3195pt x 341.1144pt>
 File: Representacions/prot_real.png Graphic file (type png)
 <use Representacions/prot_real.png>
 Package pdftex.def Info: Representacions/prot_real.png  used on input line 115.
 
 (pdftex.def)             Requested size: 217.42265pt x 130.72826pt.
-<Representacions/protuberancia_solar_2d.png, id=12, 571.6557pt x 368.8179pt>
+<Representacions/protuberancia_solar_2d.png, id=11, 571.6557pt x 368.8179pt>
 File: Representacions/protuberancia_solar_2d.png Graphic file (type png)
 <use Representacions/protuberancia_solar_2d.png>
 Package pdftex.def Info: Representacions/protuberancia_solar_2d.png  used on in
@@ -1340,10 +1333,6 @@ used on input line 566.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'Cos.run.xml'.
 \openout1 = `Cos.run.xml'.
 
@@ -1374,11 +1363,12 @@ t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/Cellar/texlive/20250308_1
 texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
 usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm1200.pfb>
-Output written on Cos.pdf (21 pages, 1572416 bytes).
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/Cellar/texlive/20250308_1/sh
+are/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Cos.pdf (21 pages, 1575385 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
- 347 compressed objects within 4 object streams
+ 426 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
  116 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
