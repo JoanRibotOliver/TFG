@@ -1,0 +1,146 @@
+\documentclass[onside]{book}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage[catalan]{babel}
+\usepackage{lipsum}  
+\usepackage[Lenny]{fncychap}
+\usepackage{multirow}
+\usepackage{graphicx,wrapfig}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{inputenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{footnote}
+\usepackage{tabularx}
+\ChNameVar{\fontsize{20}{60}\selectfont\fontseries{bx}\fontfamily{cmr}}
+\ChNumVar{\fontsize{50}{100}\selectfont\fontfamily{cmr}}
+\pagestyle{fancy}
+\geometry{a4paper,left=25mm,right=25mm,headheight=2.5cm, bottom=2.5cm}
+\addtolength{\textheight}{-60pt}
+\usepackage{imakeidx}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{makecell}
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+\usepackage{titlesec}
+%\pagenumbering{arabic}
+%\fancyfoot[R]{\thepage}
+
+\fancyhead{}
+\renewcommand{\contentsname}{\Large{\sffamily\textbf{Índice}}}
+\begin{document}
+\renewcommand{\headrulewidth}{0pt} %No Horizontal Line at top
+%\newcommand*\NewPage{\clearpage\thispagestyle{empty}\null} 
+
+\begin{figure}[hbt!]
+\includegraphics[width=6.5cm]{logo.pdf}
+\end{figure}
+\fontfamily{qhv}\selectfont
+\vspace{13mm}
+\begin{flushleft}
+\hspace{10mm}\LARGE{\textbf{TREBALL DE FI DE GRAU}}\\
+\end{flushleft}
+\vspace{19mm}
+\begin{flushright}
+\LARGE{\textbf{ESCRIURE EL TÍTOL DEL TREBALL\\
+\hspace{1cm}
+EN MAJÚSCULES I NEGRETA}}\\
+\end{flushright}
+\vspace{30mm}
+\begin{flushleft}
+\hspace{10mm}\LARGE{\textbf{Nom Cognom Cognom}}\\
+\vspace{11mm}
+\hspace{10mm}\large{\textbf{Grau de {\_\_\_\_\_\_}}}\\
+\vspace{7mm}
+\hspace{10mm}\large{\textbf{Facultat de \_\_\_\_\_\_}}\\
+\vspace{20mm}
+\hspace{10mm}\normalsize{\textbf{Any Acadèmic 20\_\_-\_\_}}
+\end{flushleft}
+\thispagestyle{empty}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+%========================================================
+\begin{figure}[hbt]
+\thispagestyle{empty}
+\end{figure}
+\begin{flushleft}
+\hspace{1cm}
+\LARGE{\textbf{ESCRIURE EL TÍTOL DEL TREBALL EN\\
+\hspace{1cm}
+MAJÚSCULES I NEGRETA}}\\
+\vspace{29mm}
+\hspace{10mm}\LARGE{\textbf{Nom Cognom Cognom}}\\
+\vspace{7mm}
+\hspace{1cm}\LARGE{\textbf{Traball de Fi de Grau}}\\
+\vspace{7mm}
+\hspace{1cm}\Large{\textbf{Facultat de \_\_\_\_\_\_}}\\
+\vspace{7mm}
+\hspace{1cm}\Large{\textbf{Universitat de les Illes Balears}}\\
+\vspace{7mm}
+\hspace{1cm}\normalsize{\textbf{Any Acadèmic 20\_\_-\_\_}}\\
+\vspace{17mm}
+\hspace{1cm}\small{Paraules claus del treball:}\\
+\vspace{3mm}
+\hspace{1cm}\small{paraula 1, paraula 2, paraula 3, ...}\\
+\vspace{25mm}
+\hspace{1cm}\large{\textit{Nom Tutor/Tutora del Treball: \_\_\_\_\_\_}}\\
+\vspace{1cm}
+\hspace{1cm}\large{\textit{Nom Tutor/Tutora (si procedeix): \_\_\_\_\_\_}}\\
+\end{flushleft}
+\fancypagestyle{footer}{\fancyfootoffset[L]{-0.9cm}\fancyfootoffset[R]{-0.9cm}\fancyhf{}\lfoot{
+  \makebox[\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax]{%
+  \parbox[b]{3.8in}{\fontfamily{qhv}\selectfont Autoritz la Universitat a incloure aquest treball en el repositori institucional per consultar-lo en accés obert i difondre'l en línia, amb finalitats exclusivament acadèmiques i d'investigació.}\hspace{1.9cm}
+  \includegraphics[scale=0.2]{tik_cross_blank_cat_si.png}
+  
+}}}
+
+\thispagestyle{footer}
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+%====================================
+{\fontfamily{cmr}\selectfont
+     \noindent\Large{\sffamily\textbf{Abstract}}\\
+
+     
+    \normalsize{
+    \lipsum[1-1]}\\
+    
+    \noindent\Large{\sffamily\textbf{Abstract}}\\
+
+    
+    \normalsize{
+    \lipsum[1-1]} \\
+    
+    \noindent\Large{\sffamily\textbf{Abstract}}\\
+
+    
+    \normalsize{
+    \lipsum[1-1]}\\
+
+\thispagestyle{empty}
+\let\cleardoublepage\clearpage
+\tableofcontents
+\addtocontents{toc}{\vspace{-2cm}}
+\thispagestyle{empty}
+\let\cleardoublepage\clearpage
+{\fontfamily{cmr}\selectfont 
+%\thispagestyle{empty}
+\chapter{Títol del document}
+\section{Títol de la secció}
+
+\end{document}
+ 
