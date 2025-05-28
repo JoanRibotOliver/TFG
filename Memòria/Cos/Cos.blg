@@ -1,17 +1,14 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'Cos.blg'
-[167] biber:340> INFO - === Tue May 27, 2025, 12:26:20
-[209] Biber.pm:420> INFO - Reading 'Cos.bcf'
-[431] Biber.pm:994> INFO - Found 6 citekeys in bib section 0
-[472] Biber.pm:4463> INFO - Processing section 0
-[490] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[492] bibtex.pm:1713> INFO - LaTeX decoding ...
-[509] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[645] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[645] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
-[645] Biber.pm:4283> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'ca-AD'
-[677] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[677] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
-[677] Biber.pm:4283> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'ca-AD'
-[702] bbl.pm:676> INFO - Writing 'Cos.bbl' with encoding 'UTF-8'
-[716] bbl.pm:779> INFO - Output to Cos.bbl
+[125] biber:340> INFO - === Wed May 28, 2025, 13:32:13
+[159] Biber.pm:420> INFO - Reading 'Cos.bcf'
+[323] Biber.pm:994> INFO - Found 7 citekeys in bib section 0
+[354] Biber.pm:4463> INFO - Processing section 0
+[373] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[376] bibtex.pm:1713> INFO - LaTeX decoding ...
+[395] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[518] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[518] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
+[518] Biber.pm:4283> INFO - Sorting list 'ynt/global//global/global/global' of type 'entry' with template 'ynt' and locale 'ca-AD'
+[539] bbl.pm:676> INFO - Writing 'Cos.bbl' with encoding 'UTF-8'
+[548] bbl.pm:779> INFO - Output to Cos.bbl

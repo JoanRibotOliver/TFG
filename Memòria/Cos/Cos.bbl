@@ -18,74 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{apa/apasortcite//global/global/global}
-    \entry{Dedalus}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=0de0675a1f11eb42485ef4ad72fde020}{%
-           family={{Burns}},
-           familyi={B\bibinitperiod},
-           given={Keaton\bibnamedelima J.},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3ae19b1a0f533c2089ee6354739b4c6}{%
-           family={{Vasil}},
-           familyi={V\bibinitperiod},
-           given={Geoffrey\bibnamedelima M.},
-           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8f42f7b2c75b7e71a8975561f2f74e02}{%
-           family={{Oishi}},
-           familyi={O\bibinitperiod},
-           given={Jeffrey\bibnamedelima S.},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=91c9cb20932ca80ec7fb7755341b3e42}{%
-           family={{Lecoanet}},
-           familyi={L\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f9d5248d128d1242dac1a8b882afbfb6}{%
-           family={{Brown}},
-           familyi={B\bibinitperiod},
-           given={Benjamin\bibnamedelima P.},
-           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{f9ea04435196149f61c7a13c01b8f608}
-      \strng{fullhash}{e8c4d875bd95c2ed94986ef99e8ae36c}
-      \strng{fullhashraw}{e8c4d875bd95c2ed94986ef99e8ae36c}
-      \strng{bibnamehash}{e8c4d875bd95c2ed94986ef99e8ae36c}
-      \strng{authorbibnamehash}{e8c4d875bd95c2ed94986ef99e8ae36c}
-      \strng{authornamehash}{f9ea04435196149f61c7a13c01b8f608}
-      \strng{authorfullhash}{e8c4d875bd95c2ed94986ef99e8ae36c}
-      \strng{authorfullhashraw}{e8c4d875bd95c2ed94986ef99e8ae36c}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eid}{023068}
-      \field{eprintclass}{astro-ph.IM}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{Physical Review Research}
-      \field{month}{4}
-      \field{number}{2}
-      \field{title}{{Dedalus: A flexible framework for numerical simulations with spectral methods}}
-      \field{volume}{2}
-      \field{year}{2020}
-      \field{pages}{023068}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevResearch.2.023068
-      \endverb
-      \verb{eprint}
-      \verb 1905.10388
-      \endverb
-      \keyw{Astrophysics - Instrumentation and Methods for Astrophysics,Physics - Computational Physics,Physics - Fluid Dynamics}
-    \endentry
+  \datalist[entry]{ynt/global//global/global/global}
     \entry{oscillation_modes_II}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=88865589bf8d2910b2d6332144e8d36b}{%
@@ -109,11 +42,10 @@
       \strng{authornamehash}{a5d050190bdef339e493ccefdba78002}
       \strng{authorfullhash}{a5d050190bdef339e493ccefdba78002}
       \strng{authorfullhashraw}{a5d050190bdef339e493ccefdba78002}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{\aap}
@@ -156,16 +88,15 @@
       \strng{namehash}{d60e3031bbe8d1fdc805fd0e3459321e}
       \strng{fullhash}{1275e4e00f7f0987bfa8e44f48b74251}
       \strng{fullhashraw}{1275e4e00f7f0987bfa8e44f48b74251}
-      \strng{bibnamehash}{1275e4e00f7f0987bfa8e44f48b74251}
-      \strng{authorbibnamehash}{1275e4e00f7f0987bfa8e44f48b74251}
+      \strng{bibnamehash}{d60e3031bbe8d1fdc805fd0e3459321e}
+      \strng{authorbibnamehash}{d60e3031bbe8d1fdc805fd0e3459321e}
       \strng{authornamehash}{d60e3031bbe8d1fdc805fd0e3459321e}
       \strng{authorfullhash}{1275e4e00f7f0987bfa8e44f48b74251}
       \strng{authorfullhashraw}{1275e4e00f7f0987bfa8e44f48b74251}
-      \field{sortinit}{O}
-      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{\apj}
@@ -179,6 +110,40 @@
       \verb 10.1086/172711
       \endverb
       \keyw{Solar Corona,Solar Oscillations,Solar Physics,Solar Prominences,Gravity Waves,Magnetoacoustic Waves,Magnetohydrodynamic Waves,Solar Magnetic Field,Solar Physics,SUN: CORONA,SUN: OSCILLATIONS,SUN: PROMINENCES}
+    \endentry
+    \entry{Priest_2014_capitol_1}{inbook}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5fba0b91bcecfd4322e7e826a37ba818}{%
+           family={Priest},
+           familyi={P\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{5fba0b91bcecfd4322e7e826a37ba818}
+      \strng{fullhash}{5fba0b91bcecfd4322e7e826a37ba818}
+      \strng{fullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
+      \strng{bibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
+      \strng{authorbibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
+      \strng{authornamehash}{5fba0b91bcecfd4322e7e826a37ba818}
+      \strng{authorfullhash}{5fba0b91bcecfd4322e7e826a37ba818}
+      \strng{authorfullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Magnetohydrodynamics of the Sun}
+      \field{title}{A Description of the Sun}
+      \field{year}{2014}
+      \field{pages}{57\bibrangedash 63}
+      \range{pages}{7}
     \endentry
     \entry{Priest_2014_capitol_2}{inbook}{}{}
       \name{author}{1}{}{%
@@ -200,13 +165,12 @@
       \strng{authornamehash}{5fba0b91bcecfd4322e7e826a37ba818}
       \strng{authorfullhash}{5fba0b91bcecfd4322e7e826a37ba818}
       \strng{authorfullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \field{extraname}{1}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradate}{1}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Magnetohydrodynamics of the Sun}
@@ -235,13 +199,12 @@
       \strng{authornamehash}{5fba0b91bcecfd4322e7e826a37ba818}
       \strng{authorfullhash}{5fba0b91bcecfd4322e7e826a37ba818}
       \strng{authorfullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \field{extraname}{2}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradate}{2}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradate}{3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Magnetohydrodynamics of the Sun}
@@ -250,41 +213,6 @@
       \field{pages}{144\bibrangedash 147}
       \range{pages}{4}
     \endentry
-    \entry{github}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=1a2bf9e0d5297b749bc19595bf95bac7}{%
-           family={Ribot},
-           familyi={R\bibinitperiod},
-           given={Joan},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{1a2bf9e0d5297b749bc19595bf95bac7}
-      \strng{fullhash}{1a2bf9e0d5297b749bc19595bf95bac7}
-      \strng{fullhashraw}{1a2bf9e0d5297b749bc19595bf95bac7}
-      \strng{bibnamehash}{1a2bf9e0d5297b749bc19595bf95bac7}
-      \strng{authorbibnamehash}{1a2bf9e0d5297b749bc19595bf95bac7}
-      \strng{authornamehash}{1a2bf9e0d5297b749bc19595bf95bac7}
-      \strng{authorfullhash}{1a2bf9e0d5297b749bc19595bf95bac7}
-      \strng{authorfullhashraw}{1a2bf9e0d5297b749bc19595bf95bac7}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Ones MHD amb condicions de contorn usant Dedalus}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://github.com/JoanRibotOliver/TFG
-      \endverb
-      \verb{url}
-      \verb https://github.com/JoanRibotOliver/TFG
-      \endverb
-    \endentry
-  \enddatalist
-  \datalist[entry]{apa/global//global/global/global}
     \entry{Dedalus}{article}{}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=0de0675a1f11eb42485ef4ad72fde020}{%
@@ -321,16 +249,15 @@
       \strng{namehash}{f9ea04435196149f61c7a13c01b8f608}
       \strng{fullhash}{e8c4d875bd95c2ed94986ef99e8ae36c}
       \strng{fullhashraw}{e8c4d875bd95c2ed94986ef99e8ae36c}
-      \strng{bibnamehash}{e8c4d875bd95c2ed94986ef99e8ae36c}
-      \strng{authorbibnamehash}{e8c4d875bd95c2ed94986ef99e8ae36c}
+      \strng{bibnamehash}{f9ea04435196149f61c7a13c01b8f608}
+      \strng{authorbibnamehash}{f9ea04435196149f61c7a13c01b8f608}
       \strng{authornamehash}{f9ea04435196149f61c7a13c01b8f608}
       \strng{authorfullhash}{e8c4d875bd95c2ed94986ef99e8ae36c}
       \strng{authorfullhashraw}{e8c4d875bd95c2ed94986ef99e8ae36c}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eid}{023068}
@@ -352,170 +279,6 @@
       \endverb
       \keyw{Astrophysics - Instrumentation and Methods for Astrophysics,Physics - Computational Physics,Physics - Fluid Dynamics}
     \endentry
-    \entry{oscillation_modes_II}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=88865589bf8d2910b2d6332144e8d36b}{%
-           family={{Joarder}},
-           familyi={J\bibinitperiod},
-           given={P.\bibnamedelimi S.},
-           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=05c73afbe189afccc03c70704fefdd7f}{%
-           family={{Roberts}},
-           familyi={R\bibinitperiod},
-           given={B.},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a5d050190bdef339e493ccefdba78002}
-      \strng{fullhash}{a5d050190bdef339e493ccefdba78002}
-      \strng{fullhashraw}{a5d050190bdef339e493ccefdba78002}
-      \strng{bibnamehash}{a5d050190bdef339e493ccefdba78002}
-      \strng{authorbibnamehash}{a5d050190bdef339e493ccefdba78002}
-      \strng{authornamehash}{a5d050190bdef339e493ccefdba78002}
-      \strng{authorfullhash}{a5d050190bdef339e493ccefdba78002}
-      \strng{authorfullhashraw}{a5d050190bdef339e493ccefdba78002}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\aap}
-      \field{month}{8}
-      \field{number}{2}
-      \field{title}{{The modes of oscillation of a prominence. II - The slab with transverse magnetic field}}
-      \field{volume}{261}
-      \field{year}{1992}
-      \field{pages}{625\bibrangedash 632}
-      \range{pages}{8}
-      \keyw{Magnetic Field Configurations,Magnetoacoustic Waves,Solar Magnetic Field,Solar Oscillations,Solar Prominences,Computational Astrophysics,Gravitational Effects,Hydrodynamic Equations,Plasma Slabs,Plasma Waves,Solar Physics}
-    \endentry
-    \entry{oscillations_quiescent_solar_prominence}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=4abd7e7adc3fe439ecefd7bf1c15f6c9}{%
-           family={{Oliver}},
-           familyi={O\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3f121fa9a7780023030826fb617d2751}{%
-           family={{Ballester}},
-           familyi={B\bibinitperiod},
-           given={J.\bibnamedelimi L.},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=608a5b89f43393dc7bd84fcb15919d2f}{%
-           family={{Hood}},
-           familyi={H\bibinitperiod},
-           given={A.\bibnamedelimi W.},
-           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=791d012969b13f475c999ebcefff0ae7}{%
-           family={{Priest}},
-           familyi={P\bibinitperiod},
-           given={E.\bibnamedelimi R.},
-           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d60e3031bbe8d1fdc805fd0e3459321e}
-      \strng{fullhash}{1275e4e00f7f0987bfa8e44f48b74251}
-      \strng{fullhashraw}{1275e4e00f7f0987bfa8e44f48b74251}
-      \strng{bibnamehash}{1275e4e00f7f0987bfa8e44f48b74251}
-      \strng{authorbibnamehash}{1275e4e00f7f0987bfa8e44f48b74251}
-      \strng{authornamehash}{d60e3031bbe8d1fdc805fd0e3459321e}
-      \strng{authorfullhash}{1275e4e00f7f0987bfa8e44f48b74251}
-      \strng{authorfullhashraw}{1275e4e00f7f0987bfa8e44f48b74251}
-      \field{sortinit}{O}
-      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\apj}
-      \field{month}{6}
-      \field{title}{{Oscillations of a Quiescent Solar Prominence Embedded in a Hot Corona}}
-      \field{volume}{409}
-      \field{year}{1993}
-      \field{pages}{809}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1086/172711
-      \endverb
-      \keyw{Solar Corona,Solar Oscillations,Solar Physics,Solar Prominences,Gravity Waves,Magnetoacoustic Waves,Magnetohydrodynamic Waves,Solar Magnetic Field,Solar Physics,SUN: CORONA,SUN: OSCILLATIONS,SUN: PROMINENCES}
-    \endentry
-    \entry{Priest_2014_capitol_2}{inbook}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5fba0b91bcecfd4322e7e826a37ba818}{%
-           family={Priest},
-           familyi={P\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{fullhash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{fullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{bibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorbibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authornamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorfullhash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorfullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \field{extraname}{1}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Magnetohydrodynamics of the Sun}
-      \field{title}{The Basic Equations of Magnetohydrodynamics (MHD)}
-      \field{year}{2014}
-      \field{pages}{74\bibrangedash 88}
-      \range{pages}{15}
-    \endentry
-    \entry{Priest_2014_capitol_4}{inbook}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5fba0b91bcecfd4322e7e826a37ba818}{%
-           family={Priest},
-           familyi={P\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{fullhash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{fullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{bibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorbibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authornamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorfullhash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorfullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \field{extraname}{2}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Magnetohydrodynamics of the Sun}
-      \field{title}{Waves}
-      \field{year}{2014}
-      \field{pages}{144\bibrangedash 147}
-      \range{pages}{4}
-    \endentry
     \entry{github}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=1a2bf9e0d5297b749bc19595bf95bac7}{%
@@ -533,11 +296,10 @@
       \strng{authornamehash}{1a2bf9e0d5297b749bc19595bf95bac7}
       \strng{authorfullhash}{1a2bf9e0d5297b749bc19595bf95bac7}
       \strng{authorfullhashraw}{1a2bf9e0d5297b749bc19595bf95bac7}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Ones MHD amb condicions de contorn usant Dedalus}

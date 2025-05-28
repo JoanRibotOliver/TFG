@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  27 MAY 2025 12:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  28 MAY 2025 13:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -552,12 +552,7 @@ m.def
 File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'apa.dbx' found.
-
-(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex-apa/a
-pa.dbx
-File: apa.dbx 2023/03/20 v9.17 APA biblatex style data model
-)
+Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count360
@@ -596,48 +591,38 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedshortauthor=\count393
 \c@shorteditor=\count394
 \c@savedshorteditor=\count395
-\c@narrator=\count396
-\c@savednarrator=\count397
-\c@execproducer=\count398
-\c@savedexecproducer=\count399
-\c@execdirector=\count400
-\c@savedexecdirector=\count401
-\c@with=\count402
-\c@savedwith=\count403
-\c@labelname=\count404
-\c@savedlabelname=\count405
-\c@institution=\count406
-\c@savedinstitution=\count407
-\c@lista=\count408
-\c@savedlista=\count409
-\c@listb=\count410
-\c@savedlistb=\count411
-\c@listc=\count412
-\c@savedlistc=\count413
-\c@listd=\count414
-\c@savedlistd=\count415
-\c@liste=\count416
-\c@savedliste=\count417
-\c@listf=\count418
-\c@savedlistf=\count419
-\c@location=\count420
-\c@savedlocation=\count421
-\c@organization=\count422
-\c@savedorganization=\count423
-\c@origlocation=\count424
-\c@savedoriglocation=\count425
-\c@origpublisher=\count426
-\c@savedorigpublisher=\count427
-\c@publisher=\count428
-\c@savedpublisher=\count429
-\c@language=\count430
-\c@savedlanguage=\count431
-\c@origlanguage=\count432
-\c@savedoriglanguage=\count433
-\c@citation=\count434
-\c@savedcitation=\count435
-\c@pageref=\count436
-\c@savedpageref=\count437
+\c@labelname=\count396
+\c@savedlabelname=\count397
+\c@institution=\count398
+\c@savedinstitution=\count399
+\c@lista=\count400
+\c@savedlista=\count401
+\c@listb=\count402
+\c@savedlistb=\count403
+\c@listc=\count404
+\c@savedlistc=\count405
+\c@listd=\count406
+\c@savedlistd=\count407
+\c@liste=\count408
+\c@savedliste=\count409
+\c@listf=\count410
+\c@savedlistf=\count411
+\c@location=\count412
+\c@savedlocation=\count413
+\c@organization=\count414
+\c@savedorganization=\count415
+\c@origlocation=\count416
+\c@savedoriglocation=\count417
+\c@origpublisher=\count418
+\c@savedorigpublisher=\count419
+\c@publisher=\count420
+\c@savedpublisher=\count421
+\c@language=\count422
+\c@savedlanguage=\count423
+\c@origlanguage=\count424
+\c@savedoriglanguage=\count425
+\c@pageref=\count426
+\c@savedpageref=\count427
 \shorthandwidth=\skip64
 \shortjournalwidth=\skip65
 \shortserieswidth=\skip66
@@ -665,67 +650,46 @@ Package biblatex Info: ... file 'biblatex.def' found.
 (/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/bibla
 tex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count438
-\c@textcitetotal=\count439
-\c@textcitemaxnames=\count440
-\c@biburlbigbreakpenalty=\count441
-\c@biburlbreakpenalty=\count442
-\c@biburlnumpenalty=\count443
-\c@biburlucpenalty=\count444
-\c@biburllcpenalty=\count445
+\c@textcitecount=\count428
+\c@textcitetotal=\count429
+\c@textcitemaxnames=\count430
+\c@biburlbigbreakpenalty=\count431
+\c@biburlbreakpenalty=\count432
+\c@biburlnumpenalty=\count433
+\c@biburlucpenalty=\count434
+\c@biburllcpenalty=\count435
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count446
+\c@smartand=\count436
 )
-Package biblatex Info: Trying to load bibliography style 'apa'...
-Package biblatex Info: ... file 'apa.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
 
-(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex-apa/a
-pa.bbx
-File: apa.bbx 2023/03/20 v9.17 APA biblatex references style
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/bbx/a
+uthoryear.bbx
+File: authoryear.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/bbx/s
 tandard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count447
-\c@bbx:relatedtotal=\count448
-)
-Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defin
-ed, overwriting.
-Package biblatex Info: Delimiter 'nameyeardelim' in context 'biblist' already d
-efined, overwriting.
-Package biblatex Info: Delimiter 'nonameyeardelim' in context 'bib' already def
-ined, overwriting.
-Package biblatex Info: Delimiter 'nonameyeardelim' in context 'biblist' already
- defined, overwriting.
-)
-Package biblatex Info: Trying to load citation style 'apa'...
-Package biblatex Info: ... file 'apa.cbx' found.
+\c@bbx:relatedcount=\count437
+\c@bbx:relatedtotal=\count438
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
 
-(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex-apa/a
-pa.cbx
-File: apa.cbx 2023/03/20 v9.17 APA biblatex citation style
-Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
- overwriting.
-Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined
-, overwriting.
-Package biblatex Info: Redefining '\fullcite'.
-Package biblatex Info: Redefining '\citeauthor'.
-Package biblatex Info: Redefining '\citeyear'.
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/cbx/a
+uthoryear.cbx
+File: authoryear.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcites'.
 Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\footcitetexts'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
 )
@@ -746,7 +710,7 @@ Package: expl3 2025-01-18 L3 programming layer (loader)
 (/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3backend/l3ba
 ckend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count449
+\l__color_backend_stack_int=\count439
 \l__pdf_internal_box=\box57
 ))
 Package biblatex Info: ... and expl3
@@ -768,46 +732,46 @@ Package csquotes Info: Adjusting default style.
 
 
 Package csquotes Warning: No style for language 'catalan'.
-(csquotes)                Using fallback style on input line 76.
+(csquotes)                Using fallback style on input line 78.
 
 Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 (./Cos.aux)
 \openout1 = `Cos.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Info: Redefining \l on input line 76.
-LaTeX Info: Redefining \L on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Info: Redefining \l on input line 78.
+LaTeX Info: Redefining \L on input line 78.
 
 (/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/context/base/mkii/su
 pp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count450
+\scratchcounter=\count440
 \scratchdimen=\dimen178
 \scratchbox=\box58
-\nofMPsegments=\count451
-\nofMParguments=\count452
+\nofMPsegments=\count441
+\nofMParguments=\count442
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count453
+\MPscratchCnt=\count443
 \MPscratchDim=\dimen179
-\MPnumerator=\count454
-\makeMPintoPDFobject=\count455
+\MPnumerator=\count444
+\makeMPintoPDFobject=\count445
 \everyMPtoPDFconversion=\toks31
 )
 (/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/epstopdf-pkg/e
@@ -859,13 +823,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 76.
-Package biblatex Info: Trying to load language 'catalan' -> 'catalan-apa'...
-Package biblatex Info: ... file 'catalan-apa.lbx' found.
-
-(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex-apa/c
-atalan-apa.lbx
-File: catalan-apa.lbx 2023/03/20 v9.17 APA biblatex localisation
+Package hyperref Info: Link coloring OFF on input line 78.
 Package biblatex Info: Trying to load language 'catalan'...
 Package biblatex Info: ... file 'catalan.lbx' found.
 
@@ -873,13 +831,6 @@ Package biblatex Info: ... file 'catalan.lbx' found.
 atalan.lbx
 File: catalan.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
-Package biblatex Info: Trying to load language 'catalan'...
-Package biblatex Info: ... file 'catalan.lbx' found.
-
-(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/lbx/c
-atalan.lbx
-File: catalan.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
-))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -888,8 +839,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Cos.bbl' found.
  (./Cos.bbl)
-Package biblatex Info: Reference section=0 on input line 76.
-Package biblatex Info: Reference segment=0 on input line 76.
+Package biblatex Info: Reference section=0 on input line 78.
+Package biblatex Info: Reference segment=0 on input line 78.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
 
 
@@ -904,24 +855,25 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
 fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Representacions/prot_real.png, id=9, 567.3195pt x 341.1144pt>
-File: Representacions/prot_real.png Graphic file (type png)
-<use Representacions/prot_real.png>
-Package pdftex.def Info: Representacions/prot_real.png  used on input line 115.
-
-(pdftex.def)             Requested size: 217.42265pt x 130.72826pt.
-<Representacions/protuberancia_solar_2d.png, id=11, 571.6557pt x 368.8179pt>
-File: Representacions/protuberancia_solar_2d.png Graphic file (type png)
-<use Representacions/protuberancia_solar_2d.png>
-Package pdftex.def Info: Representacions/protuberancia_solar_2d.png  used on in
-put line 120.
-(pdftex.def)             Requested size: 217.42265pt x 140.27606pt.
-
 
 [1
 
 {/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/map/pdftex/updmap/
-pdftex.map}]
+pdftex.map}{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvi
+ps/cm-super/cm-super-ts1.enc}]
+<Representacions/prot_real.png, id=35, 567.3195pt x 341.1144pt>
+File: Representacions/prot_real.png Graphic file (type png)
+<use Representacions/prot_real.png>
+Package pdftex.def Info: Representacions/prot_real.png  used on input line 122.
+
+(pdftex.def)             Requested size: 217.42265pt x 130.72826pt.
+<Representacions/protuberancia_solar_2d.png, id=37, 571.6557pt x 368.8179pt>
+File: Representacions/protuberancia_solar_2d.png Graphic file (type png)
+<use Representacions/protuberancia_solar_2d.png>
+Package pdftex.def Info: Representacions/protuberancia_solar_2d.png  used on in
+put line 128.
+(pdftex.def)             Requested size: 217.42265pt x 140.27606pt.
+
 
 [2 <./Representacions/prot_real.png> <./Representacions/protuberancia_solar_2d.
 png>]
@@ -931,131 +883,149 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.198 
-      
+l.199 \end{equation}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.198 
-      
+l.199 \end{equation}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.198 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.198 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.198 
-      ]
+l.199 \end{equation}
+                    ]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.201 \begin{equation}
+l.202 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.201 \begin{equation}
+l.202 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.201 \begin{equation}
+l.202 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.201 \begin{equation}
+l.202 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.208 \begin{equation}
+l.211 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.208 \begin{equation}
+l.211 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.208 \begin{equation}
+l.211 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.208 \begin{equation}
+l.211 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \begin{equation}
+l.219 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \begin{equation}
+l.219 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \begin{equation}
+l.219 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 \begin{equation}
+l.219 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.216 \begin{equation}
+l.223 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.216 \begin{equation}
+l.223 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.216 \begin{equation}
+l.223 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.216 \begin{equation}
+l.223 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.227 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.227 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.227 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.227 \begin{equation}
                       
 
-[4{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/cm-sup
-er/cm-super-ts1.enc}]
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.242     \item \label
+                      {punt:VI} Plasma fluid únic, tot i que existeixen mod...
+]
 
 [5]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
@@ -1086,87 +1056,99 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.304 \begin{equation}
+l.288 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.304 \begin{equation}
+l.288 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.304 \begin{equation}
+l.288 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.304 \begin{equation}
+l.288 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.308 \begin{equation}
+l.307 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.308 \begin{equation}
+l.307 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.308 \begin{equation}
+l.307 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.308 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.313 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.313 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.313 \begin{equation}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.313 \begin{equation}
+l.307 \begin{equation}
                       
 
-[6
-pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.322 \end{gather}
-                  ]
+[6]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.332 \begin{equation}
+l.321 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.321 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.321 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.321 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.325 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.325 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.325 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.325 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
@@ -1190,25 +1172,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.353 \begin{equation}
+l.332 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.353 \begin{equation}
+l.351 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.353 \begin{equation}
+l.351 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.353 \begin{equation}
+l.351 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.351 \begin{equation}
                       
 
 [7]
@@ -1216,51 +1204,93 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.367 \begin{equation}
+l.373 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.367 \begin{equation}
+l.373 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.367 \begin{equation}
+l.373 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.367 \begin{equation}
+l.373 \begin{equation}
                       
 
 [8]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.387 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.387 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.387 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.387 \begin{equation}
+                      
 
-[9
+[9]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
 ) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.449 
-      ]
-<Figures Alfvén modes/eigenvalue_error_vA.png, id=181, 758.835pt x 469.5141pt
+<to be read again> 
+                   \relax 
+l.440 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.440 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.440 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.440 \begin{equation}
+                      
+<Figures Alfvén modes/eigenvalue_error_vA.png, id=199, 758.835pt x 469.5141pt
 >
 File: Figures Alfvén modes/eigenvalue_error_vA.png Graphic file (type png)
 <use Figures Alfvén modes/eigenvalue_error_vA.png>
 Package pdftex.def Info: Figures Alfvén modes/eigenvalue_error_vA.png  used o
-n input line 464.
+n input line 484.
 (pdftex.def)             Requested size: 430.31812pt x 266.25745pt.
 
 
 [10]
-<Figures Alfvén modes/modes_Alfvén.png, id=191, 713.5458pt x 483.9681pt>
+<Figures Alfvén modes/modes_Alfvén.png, id=213, 713.5458pt x 483.9681pt>
 File: Figures Alfvén modes/modes_Alfvén.png Graphic file (type png)
 <use Figures Alfvén modes/modes_Alfvén.png>
 Package pdftex.def Info: Figures Alfvén modes/modes_Alfvén.png  used on inpu
-t line 475.
+t line 495.
 (pdftex.def)             Requested size: 430.31812pt x 291.86742pt.
 
 
@@ -1271,48 +1301,48 @@ t line 475.
 [13
 
 ]
-<Figures F&S modes/dd_modes_normals.png, id=210, 752.8125pt x 490.9542pt>
+<Figures F&S modes/dd_modes_normals.png, id=232, 752.8125pt x 490.9542pt>
 File: Figures F&S modes/dd_modes_normals.png Graphic file (type png)
 <use Figures F&S modes/dd_modes_normals.png>
 Package pdftex.def Info: Figures F&S modes/dd_modes_normals.png  used on input 
-line 506.
+line 526.
 (pdftex.def)             Requested size: 430.31812pt x 280.64087pt.
-<Figures F&S modes/dd_modes_rapid_i_lent.png, id=213, 739.8039pt x 439.6425pt>
+<Figures F&S modes/dd_modes_rapid_i_lent.png, id=235, 739.8039pt x 439.6425pt>
 File: Figures F&S modes/dd_modes_rapid_i_lent.png Graphic file (type png)
 <use Figures F&S modes/dd_modes_rapid_i_lent.png>
 Package pdftex.def Info: Figures F&S modes/dd_modes_rapid_i_lent.png  used on i
-nput line 517.
+nput line 537.
 (pdftex.def)             Requested size: 430.31812pt x 255.73074pt.
 
 
 [14
 
  <./Figures F&S modes/dd_modes_normals.png>]
-<Figures F&S modes/dd_avoided_crossing.png, id=224, 739.8039pt x 459.6372pt>
+<Figures F&S modes/dd_avoided_crossing.png, id=245, 739.8039pt x 459.6372pt>
 File: Figures F&S modes/dd_avoided_crossing.png Graphic file (type png)
 <use Figures F&S modes/dd_avoided_crossing.png>
 Package pdftex.def Info: Figures F&S modes/dd_avoided_crossing.png  used on inp
-ut line 538.
+ut line 558.
 (pdftex.def)             Requested size: 430.31812pt x 267.36124pt.
 
 
 [15 <./Figures F&S modes/dd_modes_rapid_i_lent.png>]
-<Figures F&S modes/eigenvalue_error.png, id=231, 831.105pt x 469.5141pt>
+<Figures F&S modes/eigenvalue_error.png, id=252, 831.105pt x 469.5141pt>
 File: Figures F&S modes/eigenvalue_error.png Graphic file (type png)
 <use Figures F&S modes/eigenvalue_error.png>
 Package pdftex.def Info: Figures F&S modes/eigenvalue_error.png  used on input 
-line 557.
+line 577.
 (pdftex.def)             Requested size: 430.31812pt x 243.0956pt.
 
 
 [16 <./Figures F&S modes/dd_avoided_crossing.png>]
-<Figures F&S modes/Autofuncions_reals_individuals.png, id=240, 831.105pt x 506.
+<Figures F&S modes/Autofuncions_reals_individuals.png, id=261, 831.105pt x 506.
 6127pt>
 File: Figures F&S modes/Autofuncions_reals_individuals.png Graphic file (type p
 ng)
 <use Figures F&S modes/Autofuncions_reals_individuals.png>
 Package pdftex.def Info: Figures F&S modes/Autofuncions_reals_individuals.png  
-used on input line 566.
+used on input line 586.
 (pdftex.def)             Requested size: 430.31812pt x 262.30376pt.
 
 
@@ -1338,37 +1368,40 @@ Package logreq Info: Writing requests to 'Cos.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23908 strings out of 473190
- 433400 string characters out of 5705898
- 1354562 words of memory out of 5000000
- 46812 multiletter control sequences out of 15000+600000
- 568146 words of font info for 69 fonts, out of 8000000 for 9000
+ 23409 strings out of 473190
+ 422370 string characters out of 5705898
+ 1260244 words of memory out of 5000000
+ 46317 multiletter control sequences out of 15000+600000
+ 568916 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,12n,93p,692b,2809s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,12n,93p,692b,1802s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbsy10.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/Cellar/texlive/20250308_1/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/Cellar/tex
-live/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/Cellar/texlive/202
-50308_1/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/l
-ocal/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/Cellar/texlive/20250308_1
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/Cellar/
-texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
-usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti12.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/Cellar/texlive/20250308_1/sh
-are/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Cos.pdf (21 pages, 1575385 bytes).
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/Cellar/te
+xlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi12.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb></usr/local/Cellar/texlive/20250308_1/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/Cellar/texlive/202
+50308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local
+/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cmextra
+/cmmib8.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/Cellar/texlive/202503
+08_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/Cella
+r/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/local/Cellar/texlive/20250308_1/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/Cellar/texlive/
+20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/loc
+al/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfrm1
+200.pfb>
+Output written on Cos.pdf (21 pages, 1604184 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 349 compressed objects within 4 object streams
- 116 named destinations out of 1000 (max. 500000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 118 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
