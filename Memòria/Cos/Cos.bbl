@@ -111,7 +111,7 @@
       \endverb
       \keyw{Solar Corona,Solar Oscillations,Solar Physics,Solar Prominences,Gravity Waves,Magnetoacoustic Waves,Magnetohydrodynamic Waves,Solar Magnetic Field,Solar Physics,SUN: CORONA,SUN: OSCILLATIONS,SUN: PROMINENCES}
     \endentry
-    \entry{Priest_2014_capitol_1}{inbook}{}{}
+    \entry{Priest_2014}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5fba0b91bcecfd4322e7e826a37ba818}{%
            family={Priest},
@@ -131,87 +131,14 @@
       \strng{authornamehash}{5fba0b91bcecfd4322e7e826a37ba818}
       \strng{authorfullhash}{5fba0b91bcecfd4322e7e826a37ba818}
       \strng{authorfullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Magnetohydrodynamics of the Sun}
-      \field{title}{A Description of the Sun}
+      \field{title}{Magnetohydrodynamics of the Sun}
       \field{year}{2014}
-      \field{pages}{57\bibrangedash 63}
-      \range{pages}{7}
-    \endentry
-    \entry{Priest_2014_capitol_2}{inbook}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5fba0b91bcecfd4322e7e826a37ba818}{%
-           family={Priest},
-           familyi={P\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{fullhash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{fullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{bibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorbibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authornamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorfullhash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorfullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Magnetohydrodynamics of the Sun}
-      \field{title}{The Basic Equations of Magnetohydrodynamics (MHD)}
-      \field{year}{2014}
-      \field{pages}{74\bibrangedash 88}
-      \range{pages}{15}
-    \endentry
-    \entry{Priest_2014_capitol_4}{inbook}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5fba0b91bcecfd4322e7e826a37ba818}{%
-           family={Priest},
-           familyi={P\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{fullhash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{fullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{bibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorbibnamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authornamehash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorfullhash}{5fba0b91bcecfd4322e7e826a37ba818}
-      \strng{authorfullhashraw}{5fba0b91bcecfd4322e7e826a37ba818}
-      \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{extradate}{3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Magnetohydrodynamics of the Sun}
-      \field{title}{Waves}
-      \field{year}{2014}
-      \field{pages}{144\bibrangedash 147}
-      \range{pages}{4}
     \endentry
     \entry{Dedalus}{article}{}{}
       \name{author}{5}{}{%

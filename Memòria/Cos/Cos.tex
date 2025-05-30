@@ -4,6 +4,7 @@
 %%% Packages %%%
 %---------------------------------------------------------------------------------------------------------------------------------------------------
 \usepackage[utf8]{inputenc}
+%\usepackage[applemac]{inputenc}
 \usepackage[catalan]{babel}
 \usepackage{csquotes}
 
@@ -71,7 +72,7 @@
 % Divergència
 \newcommand{\divBp}{\bm{\nabla} \cdot \bm{B}_1}
 
-
+%\newcommand{cmd}{def}
 
 
 
@@ -81,6 +82,8 @@
 % Main Content
 %---------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
 \section{Introducció} \label{sec:intro}
 
 %\sloppy - %\begin{flushleft}
@@ -89,7 +92,7 @@
 
 Les estrelles conformen pràcticament la totalitat de la massa bariònica de l'univers i es troben en un estat de la matèria anomenat plasma.
 Aquest consisteix en un gas ionitzat on els àtoms es poden moure lliurement, així com els electrons.
-Amb aquestes condicions es dedueix que el plasma és un bon conductor elèctric i altament sensible a camps magnètics, per tant, les equacions que descriuen el seu comportament són les magnetohidrodinàmiques (MHD).
+Amb aquestes condicions es dedueix que el plasma és un bon conductor elèctric i altament sensible a camps magnètics, per tant, en presència d'un camp magnètic les equacions que descriuen el seu comportament són les de la magnetohidrodinàmica (MHD).
 
 El Sol és una estrella de la seqüència principal de tipus espectral G2V. El seu camp magnètic interacciona fortament amb el plasma, de manera que es generen taques solars, flamarades, protuberàncies, filaments, etc.
 L'objecte d'aquest estudi són les protuberàncies solars que han arribat a la corona, la part més externta i calenta de l'atmosfera solar.
@@ -100,21 +103,24 @@ En canvi, una protuberància presenta una densitat major ($10^{15}-10^{17} m^{-3
 
 El fi d'aquest treball és l'estudi de la propagació d'ones pertorbatives sobre l'estat quiescent d'una protuberància dins la corona solar mitjançant l'ús de Dedalus \parencite{Dedalus}, una llibreria de Python enfocada a resoldre equacions diferencials parcials (PDE per les seves sigles en anglès) com les MHD. 
 El camp de les ones en estats quiescents de protuberàncies solars ha estat estudiat intensivament per la comunitat científica.
-Un dels llibres més important de física solar va ser escrit en els anys 80 per Eric Priest. Els fonaments d'aquest estudi es troben en els capítols 1 \textcite{Priest_2014_capitol_1}, 2 \textcite{Priest_2014_capitol_2} i 4 \textcite{Priest_2014_capitol_4} d'aquest,
+Un dels llibres més important de física solar va ser escrit en els anys 80 per \textcite{Priest_2014}. Els fonaments d'aquest estudi es troben en els Caps.~1,~2,~4~i~11 d'aquest,
 juntament amb els articles \textcite{oscillation_modes_II} i \textcite{oscillations_quiescent_solar_prominence} que simplifiquen el sistema d'una protuberància en la corona solar.
 
-Les protuberàncies es formen a partir de la reconnexió del camp magnètic en les zones d'inversió de polaritat o a partir de la interacció de dos sistemes de flux de camp magnètic.
-Per aquest motiu, moltes protuberàncies presenten una polaritat invertida.
-Aquests processos fan ascendir la gran massa que conforma la prominència de la cromosfera o de la fotosfera, capes atmosfèriques inferiors a la corona.
+%Les protuberàncies es formen a partir de la reconnexió del camp magnètic en les zones d'inversió de polaritat o a partir de la interacció de dos sistemes de flux de camp magnètic.
+%Per aquest motiu, moltes protuberàncies presenten una polaritat invertida.
+%Aquests processos fan ascendir la gran massa que conforma la prominència de la cromosfera o de la fotosfera, capes atmosfèriques inferiors a la corona.
 
-Les prominències generades en zones actives són menors en tamany i més denses que les quiescients, que són generades enfora de les zones d'alta activitat solar.
-Aquelles que es formen en el límit d'una zona activa s'anomenen protuberàncies intermitges.
+% OJO AMB PEGAR-TE UN TIR AL PEU
 
-El camp magnètic és pràcticament horitzontal en les protuberàncies quiescents \textcite{Priest_2014_capitol_1}, com es pot apreciar en la Fig. (\ref{fig:prot_real}). Aquesta es basa en Fig. (11.1) del llibre \textcite{Priest_2014_capitol_1}.
+%Les prominències generades en zones actives són menors en tamany i més denses que les quiescients, que són generades enfora de les zones d'alta activitat solar.
+%Aquelles que es formen en el límit d'una zona activa s'anomenen protuberàncies intermitges.
+
+El camp magnètic és pràcticament horitzontal en les protuberàncies quiescents, com es pot apreciar en la Fig.~\ref{fig:prot_real}. Aquesta es basa en Fig.~11.1 del llibre de \textcite{Priest_2014}.
 La manera d'esquematitzar la protuberància solar consisteix en ignorar els esforços de cisallament que pateix i suposar-la com una llosa o làmina plana.
+
 A més, s'imposa la condició de camp magnètic estrictament constant en mòdul i direcció. La manera d'aconseguir aquest sistema és situar la superfície com a doble condició de contorn, als extrems.
 Com que es tracta de la superfície, les velocitats als extrems són nul·les. En conseqüència, apareixen modes normals fortament dependents de la regió central, la protuberància.
-Finalment el sistema resulta com en la Fig. (\ref{fig:sistema}). Aquesta representació es basa en la de l'article \textcite{oscillation_modes_II}.
+Finalment el sistema resulta com en la Fig.~\ref{fig:sistema}. Aquesta representació es basa en la Fig.~1 de l'article \textcite{oscillation_modes_II}.
 
 \begin{figure}[H]
     \centering
@@ -130,7 +136,7 @@ Finalment el sistema resulta com en la Fig. (\ref{fig:sistema}). Aquesta represe
         \label{fig:sistema}
     \end{subfigure}
     \caption{(a) Representació esquemàtica d'una protuberància solar en la corona.
-    (b) Diagrama del sistema en equilibri tèrmic, com a làmina plana paral·lela a la superfície amb dimensions de $2x_p$ de gruix en direcció $\hat{x}$, H d'alçada en direcció $\hat{z}$ i infinita en direcció $\hat{y}$.
+    (b) Diagrama del sistema en equilibri tèrmic, com a làmina plana paral·lela a la superfície amb dimensions de $2x_p$ de gruix en direcció $\hat{x}$, d'alçada infinita en direcció $\hat{z}$ i infinita en direcció $\hat{y}$.
     El camp magnètic $\bm{B}$ és horitzonal en direcció $\hat{x}$.}
     \label{fig:protuberancia}
 \end{figure}
@@ -140,23 +146,25 @@ A més, s'ha de definir el sistema en equilibri termodinàmic (TD) i estàtic, p
 S'ignoren els efectes gravitatoris i viscosos del plasma per simplificar encara més la situació.
 
 El procediment seguit per obtenir els autovalors i les autofuncions dels modes normals, així com la relació de dispersió, és el següent.
-Per començar es dedueixen les equacions MHD (\hyperref[sec:equacionsMHD]{Sec. 2}) i es linealitzen suposant que les quantitats pertorbades es comporten com a ones
-planes, ja que es tracta d'un medi uniforme en equilibri estàtic (\hyperref[subsec:linealització]{Subsec. 3.1}).
-D'aquesta manera s'obté una relació de dispersió. Finalment s'adimensionalitzen les equacions per ser implementades en Dedalus (\hyperref[sec:mètode]{Sec. 4}).
+Per començar es dedueixen les equacions MHD (\hyperref[sec:equacionsMHD]{Sec.~2}) i es linealitzen suposant que les quantitats pertorbades es comporten com a ones
+planes, ja que es tracta d'un medi uniforme en equilibri estàtic (\hyperref[subsec:linealització]{Subsec.~3.1}).
+D'aquesta manera s'obté una relació de dispersió. Finalment s'adimensionalitzen les equacions per ser implementades en Dedalus (\hyperref[sec:mètode]{Sec.~4}).
+
+
 
 
 
 \section{Equacions MHD} \label{sec:equacionsMHD}
 Les ones magnetohidrodinàmiques (MHD) són les que descriuen els esdeveniments en el plasma ionitzat de la corona solar.
 Llavors s'han de tenir en compte principalment dos blocs d'equacions: les magnètiques i les de plasma.
-En aquesta secció es donen les directrius principals de la deducció de les equacions MHD. La deducció completa es troba en el capítol 2 del llibre d'Eric Priest esmentat en la introducció \textcite{Priest_2014_capitol_2}.
+En aquesta secció es donen les directrius principals de la deducció de les equacions MHD. La deducció completa es troba en el Cap.~2 del llibre de \textcite{Priest_2014}, esmentat en la introducció.
 
-El bloc de les equacions magnètiques es conforma principalment per les equacions de Maxwell:
+El bloc de les equacions magnètiques es conforma principalment per les equacions de~Maxwell:
 \begin{gather}
-    \bm{\nabla} \bm{\times} \bm{B} = \frac{1}{c^2} \frac{\partial \bm{E}}{\partial t} + \mu \bm{j} \tag{2.1} \label{eq.2.1} \\
-    \bm{\nabla} \bm{\cdot} \bm{B} = 0 \tag{2.2} \label{eq.2.2} \\
-    \bm{\nabla} \bm{\times} \bm{E} = - \frac{\partial \bm{B}}{\partial t} \tag{2.3} \label{eq.2.3} \\
-    \bm{\nabla} \bm{\cdot} \bm{E} = \frac{\rho^*}{\varepsilon_0} \tag{2.4} \label{eq.2.4}
+    \bm{\nabla} \bm{\times} \bm{B} = \frac{1}{c^2} \frac{\partial \bm{E}}{\partial t} + \mu \bm{j}, \tag{2.1} \label{eq.2.1} \\
+    \bm{\nabla} \bm{\cdot} \bm{B} = 0, \tag{2.2} \label{eq.2.2} \\
+    \bm{\nabla} \bm{\times} \bm{E} = - \frac{\partial \bm{B}}{\partial t}, \tag{2.3} \label{eq.2.3} \\
+    \bm{\nabla} \bm{\cdot} \bm{E} = \frac{\rho^*}{\varepsilon_0}. \tag{2.4} \label{eq.2.4}
 \end{gather}
 
 on $\bm{E}$ i $\bm{B}$ són els camps elèctric i magnètic respectivament, $\rho^*$ és la densitat de càrrega en volum, $\bm{j}$ és la densitat de corrent, $c$ la velocitat de la llum i $\varepsilon$ i $\mu$ les permeabilitats elèctrica i magnètica del medi, respectivament.
@@ -169,47 +177,49 @@ També es fa servir l'altra relació constitutiva ($\bm{D} = \varepsilon \bm{E}$
 Per seguir amb les equacions magnètiques es té en compte que la pertorbació d'una protuberància quiescient suposa un problema no relativista.
 Llavors la llei d'Ohm dicta que el corrent és proporcional al camp elèctric total:
 \begin{equation}
-    \bm{j} =  \sigma (\bm{E} + \bm{v} \bm{\times} \bm{B}) \tag{2.5} \label{eq.2.5}
+    \bm{j} =  \sigma (\bm{E} + \bm{v} \bm{\times} \bm{B}), \tag{2.5} \label{eq.2.5}
 \end{equation}
 i si s'aïlla el camp elèctric estàtic:
 \begin{equation}
-    \bm{E} = - \bm{v} \bm{\times} \bm{B} + \bm{j}/\sigma \tag{2.6} \label{eq.2.6}
+    \bm{E} = - \bm{v} \bm{\times} \bm{B} + \bm{j}/\sigma. \tag{2.6} \label{eq.2.6}
 \end{equation}
 
-Finalment s'obté l'equació d'inducció al substituir el camp elèctric estàtic de l'Eq. (\ref{eq.2.6}) dins l'Eq. (\ref{eq.2.3}):
+Finalment s'obté l'equació d'inducció al substituir el camp elèctric estàtic %de l'Eq.~(\ref{eq.2.6})
+dins l'Eq.~(\ref{eq.2.3}):
 \begin{equation}
-    \frac{\partial \bm{B}}{\partial t} = \bm{\nabla} \bm{\times} (\bm{v} \bm{\times} \bm{B}) \tag{2.7} \label{eq.2.7}
+    \frac{\partial \bm{B}}{\partial t} = \bm{\nabla} \bm{\times} (\bm{v} \bm{\times} \bm{B}). \tag{2.7} \label{eq.2.7}
 \end{equation}
-És important tenir en compte que es considera una resistivitat del medi $\sigma$ infinita, llavors el terme $\bm{j}/\sigma$ desapareix de l'Eq. (\ref{eq.2.6}).
+
+És important tenir en compte que es considera una resistivitat del medi, $\sigma$, infinita, llavors el terme $\bm{j}/\sigma$ desapareix de l'Eq.~(\ref{eq.2.6}).
 En aquest cas és possible fer l'assumpció ja que les escales de longitud del problema són grans. Tot i així, en algunes regions d'alta concentració de corrent o a escales menors no sempre es pot prendre aquesta llibertat.
 
-Les variables més importants en un plasma són el camp magnètic $\bm{B}$ i la velocitat del propi plasma $\bm{v}$, per tant, és convenient escriure totes les expressions en funció d'aquestes.
-En canvi, les variables de corrent $\bm{j}$ i de camp elèctric $\bm{E}$ són secundàries, de manera que poden ser substituides per les principals.
+Les variables més importants en un plasma són el camp magnètic, $\bm{B}$, i la velocitat del propi plasma, $\bm{v}$, per tant, és convenient escriure totes les expressions en funció d'aquestes.
+En canvi, les variables de corrent, $\bm{j}$, i de camp elèctric, $\bm{E}$, són secundàries, de manera que poden ser substituides per les principals.
 Amb aquesta consideració es simplifiquen les equacions ja que apareixen manco variables, fet que s'agraeix a l'hora d'implementar i resoldre les equacions amb l'ajuda de Dedalus, com es veurà més envant.
 
 
 
 El segon bloc d'equacions a tractar és el de les equacions del plasma. Les tres equacions principals són les que segueixen, començant per la de continuïtat de massa:
 \begin{equation}
-    \frac{d\rho}{dt} + \rho \bm{\nabla} \cdot \bm{v} = 0 \quad (\text{a}) \quad , \quad \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \bm{v}) = 0 \quad (\text{b}) \tag{2.8} \label{eq.2.8}
+    \frac{d\rho}{dt} + \rho \bm{\nabla} \cdot \bm{v} = 0 \quad (\text{a}) \quad , \quad \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \bm{v}) = 0 \quad (\text{b}), \tag{2.8} \label{eq.2.8}
 \end{equation}
 on s'ha definit la derivada material o convectiva com
 \begin{equation}
-    \frac{d}{dt} = \frac{\partial}{\partial t} + \bm{v} \cdot \bm{\nabla} \tag{2.9} \label{eq.2.9}
+    \frac{d}{dt} = \frac{\partial}{\partial t} + \bm{v} \cdot \bm{\nabla}. \tag{2.9} \label{eq.2.9}
 \end{equation}
 
 La segona equació rellevant realment és el subconjunt de les equacions del moviment del plasma sota neutralitat elèctrica:
 \begin{equation}
-    \rho \frac{d \bm{v}}{dt} = - \bm{\nabla} p + \bm{j} \bm{\times} \bm{B} + \bm{F} \tag{2.10} \label{eq.2.10}
+    \rho \frac{d \bm{v}}{dt} = - \bm{\nabla} p + \bm{j} \bm{\times} \bm{B} + \bm{F}, \tag{2.10} \label{eq.2.10}
 \end{equation}
 on no es tenen en compte els efectes incercials i les forces ($\bm{F}$) poden ser viscoses ($\bm{F}_{v}$) o gravitatòries ($\bm{F}_g$).
 D'aquesta manera, al resoldre aquestes equacions s'obtenen ones magneto-viscoses o magneto-gravitacionals respectivament.
 No obstant això, en el cas d'aquest estudi es suposen forces externes nul·les ($\bm{F} = \bm{0}$) per les qüestions que s'han aclarit en la introducció (\hyperref[sec:intro]{Sec. 1}). %(\hyperref[sec:intro]{\nameref{sec:intro}}). %
-Per consegüent les ones resultants són magneto-acústiques (també anomenades magnetohidrodinàmiques, MHD), que corresponen a l'Eq. (\ref{eq.2.10}) si només es té en compte la força de Lorentz ($\bm{j} \bm{\times} \bm{B}$) i el gradient de pressió ($- \bm{\nabla} p$).
+Per consegüent les ones resultants són magneto-acústiques (també anomenades magnetohidrodinàmiques, MHD), que corresponen a l'Eq.~(\ref{eq.2.10}) si només es té en compte la força de Lorentz ($\bm{j} \bm{\times} \bm{B}$) i el gradient de pressió ($- \bm{\nabla} p$).
 
 Finalment la tercera equació de plasma rellevant és la de gas ideal, que pot ser escrita de diverses maneres:
 \begin{equation}
-    p = \frac{\tilde{R}}{\tilde{\mu}} \rho T = \frac{k_B}{m} \rho T = n k_B T \tag{2.11} \label{eq.2.11}
+    p = \frac{\tilde{R}}{\tilde{\mu}} \rho T = \frac{k_B}{m} \rho T = n k_B T, \tag{2.11} \label{eq.2.11}
 \end{equation}
 on $k_B$ és la constant de Boltzmann, $m_p$ és la massa del protó, $\tilde{R} = k_B/m_p$ la constant dels gasos ideals, $\tilde{\mu} = m/m_p$ el pes atòmic
 mitjà, $\rho = \tilde{\mu} m_p n = m n$ la densitat, $m$ la massa de partícula mitja i $n$ el nombre total de partícules.
@@ -217,22 +227,22 @@ mitjà, $\rho = \tilde{\mu} m_p n = m n$ la densitat, $m$ la massa de partícula
 
 Una hipòtesi important amb profundes implicacions que es fa en aquest estudi és la d'adiabaticitat. La conservació d'energia del sistema modifica l'equació de calor
 \begin{equation}
-    \rho T \frac{ds}{dr} = - \mathcal{L} \tag{2.12} \label{eq.2.12}
+    \rho T \frac{ds}{dr} = - \mathcal{L}, \tag{2.12} \label{eq.2.12}
 \end{equation}
 ò alternativament
 \begin{equation}
-    \frac{\rho^\gamma}{\gamma - 1} \frac{d}{dt} \left( \frac{p}{\rho^\gamma} \right) = - \mathcal{L} \tag{2.13} \label{eq.2.13}
+    \frac{\rho^\gamma}{\gamma - 1} \frac{d}{dt} \left( \frac{p}{\rho^\gamma} \right) = - \mathcal{L}, \tag{2.13} \label{eq.2.13}
 \end{equation}
 de manera que
 \begin{equation}
-    \frac{d}{dt} \left( \frac{p}{\rho^\gamma} \right) = 0 \tag{2.14} \label{eq.2.14}
+    \frac{d}{dt} \left( \frac{p}{\rho^\gamma} \right) = 0, \tag{2.14} \label{eq.2.14}
 \end{equation}
 on $s$ és l'entropia, $\gamma = c_p/c_v = 5/3$ la proporció de calors específics i $\mathcal{L}=0$ és la funció pèrdua d'energia, nul·la en el cas adiabàtic.
 Així doncs, de l'equació de calor s'obté una condició que més envant es farà servir al resoldre les equacions.
 
 
 Per acabar aquesta secció es reescriuen totes les assumpcions fetes en la deducció de les equacions.
-Aquestes són extretes del segon capítol del llibre mencionat \textcite{Priest_2014_capitol_2}.
+Aquestes són extretes del Cap.~2 del llibre de \textcite{Priest_2014}.
 \begin{enumerate}[label=\Roman*.]
     \item \label{punt:I} Plasma continu i en equilibri estàtic.
     \item \label{punt:II} Plasma en equilibri termodinàmic (TD).
@@ -245,168 +255,172 @@ Aquestes són extretes del segon capítol del llibre mencionat \textcite{Priest_
 
 
 
+
+
 \section{Ones MHD} \label{sec:onesMHD}
 En la secció anterior s'han presentat totes les equacions rellevants amb la descripció de cada paràmetre que apareix en elles.
-Les equacions que s'han de linealitzar per a la discussió de les ones són les Eqs. (\ref{eq.2.2}), (\ref{eq.2.7}), (\ref{eq.2.8}), (\ref{eq.2.10}) i (\ref{eq.2.14}) de l'apartat anterior.
-Aquest procés és semblant al duit a terme en els article \textcite{oscillation_modes_II} i \textcite{oscillations_quiescent_solar_prominence},
-deixant de banda la deducció més general del llibre \textcite{Priest_2014_capitol_4}
+Les equacions que s'han de linealitzar de l'apartat anterior per a la discussió de les ones són les següents:
+camp magnètic convergent, Eq.~(\ref{eq.2.2}); inducció, Eq.~(\ref{eq.2.7}); continuïtat de massa, Eq.~(\ref{eq.2.8}); equacions del moviment, Eq.~(\ref{eq.2.10}); i calor, Eq.~(\ref{eq.2.14}).
+Aquest procés és semblant al duit a terme en els articles de \textcite{oscillation_modes_II} i de \textcite{oscillations_quiescent_solar_prominence},
+deixant de banda la deducció més general del llibre de \textcite{Priest_2014}
+
 
 \subsection{Linealització} \label{subsec:linealització}
-Per linealitzar les equacions s'ha de descomposar cada terme en una part estacionària ò quiescent i en una part pertorbativa, suposadament molt menor.
-D'aquesta manera les variables són de l'estil
+Per linealitzar les equacions s'ha de descomposar cada terme en una part estacionària o quiescent i en una part pertorbativa, suposadament molt menor.
+D'aquesta manera les variables són del següent estil:
 \begin{equation}
-    f(\bm{r},t) = f_0 + f_1(\bm{r},t) \quad , \quad f_0 \gg f_1(\bm{r},t) \tag{3.1} \label{3.1}
+    f(\bm{r},t) = f_0 + f_1(\bm{r},t) \quad , \quad |f_0| \gg |f_1(\bm{r},t)|. \tag{3.1} \label{3.1}
 \end{equation}
-i les que es fan servir i es substitueixen en les equacions mencionades són la densitat, la pressió, la velocitat i el camp magnètic:
+
+Les que es fan servir i es substitueixen en les equacions mencionades són la densitat, la pressió, la velocitat i el camp magnètic:
 \begin{gather}
-    \rho = \rho_0 + \rho_1 \tag{3.2} \label{3.2} \\
-    p = p_0 + p_1 \tag{3.3} \label{3.3} \\
-    \bm{v} = \bm{v}_1 \tag{3.4} \label{3.4} \\
-    \bm{B} = \bm{B}_0 + \bm{B}_1 \tag{3.5} \label{3.5}
+    \rho = \rho_0 + \rho_1, \tag{3.2} \label{3.2} \\
+    p = p_0 + p_1, \tag{3.3} \label{3.3} \\
+    \bm{v} = \bm{v}_1, \tag{3.4} \label{3.4} \\
+    \bm{B} = \bm{B}_0 + \bm{B}_1. \tag{3.5} \label{3.5}
 \end{gather}
-La condició d'equilibri estàtic (\hyperref[punt:I]{I}) imposada anteriorment implica que la velocitat quiescent ha de ser nul·la ($\bm{v}_0 = 0$).
-A l'hora de linealitzar només es tenen en compte els termes d'ordre zero (les variables quiescents i els seus productes) i els termes de primer ordre, les pertorbacions lineals.
+
+La condició d'equilibri estàtic (\hyperref[punt:I]{I}) imposa una velocitat quiescent nul·la ($\bm{v}_0 = \bm{0}$).
+A l'hora de linealitzar només es tenen en compte els termes d'ordre zero (variables quiescents i els seus productes) i els termes de primer ordre, les pertorbacions lineals.
 Llavors s'ignoren els ordres superiors donats pels productes de les parts pertorbatives de dues variables o el quadrat d'una mateixa.
 
-Les equacions citades en l'inici d'aquest apartat ja linealitzades són les següents:
+Les cinc equacions citades en l'inici es linealitzen de la manera indicada, llavors els resultats són els següents:
 \begin{gather}
     \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 + \rho_0 (\bm{\nabla} \cdot \bm{v}_1) = 0, \tag{3.6} \label{eq.3.6} \\
-    \rho_0 \frac{\partial \bm{v}_1}{\partial t} = - \bm{\nabla} p_1 + (\bm{\nabla} \bm{\times} \bm{B}_1) \bm{\times} \bm{B}_0 / \mu \tag{3.7} \label{eq.3.7} \\
+    \rho_0 \frac{\partial \bm{v}_1}{\partial t} = - \bm{\nabla} p_1 + (\bm{\nabla} \bm{\times} \bm{B}_1) \bm{\times} \bm{B}_0 / \mu, \tag{3.7} \label{eq.3.7} \\
     \frac{\partial p_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) p_0 - c_s^2 \left( \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 \right) = 0, \tag{3.8} \label{eq.3.8} \\
     \frac{\partial \bm{B}_1}{\partial t} = \bm{\nabla} \bm{\times} (\bm{v}_1 \bm{\times} \bm{B}_0), \tag{3.9} \label{eq.3.9} \\
-    \divBp = 0, \tag{3.10} \label{3.10} \\
-    c_s^2 = \frac{\gamma p_0}{\rho_0} = \frac{\gamma k_B T_0}{m} \tag{3.11} \label{eq.3.11}
+    \divBp = 0, \tag{3.10} \label{eq.3.10} \\
+    c_s^2 = \frac{\gamma p_0}{\rho_0} = \frac{\gamma k_B T_0}{m}. \tag{3.11} \label{eq.3.11}
 \end{gather}
-Per linealitzar l'equació de calor (Eq. (\ref{eq.2.14})) i arribar a l'Eq. (\ref{eq.3.8}) s'ha hagut de fer una aproximació en sèrie de Taylor de l'estil
+
+Per linealitzar l'equació de calor, (Eq.~(\ref{eq.2.14})), i arribar a l'Eq.~(\ref{eq.3.8}) s'ha hagut de fer una aproximació en sèrie de Taylor de l'estil
 \begin{equation}
-    \frac{1}{\rho^{\gamma}} = \frac{1}{\rho_0^{\gamma}} \left( 1 + \frac{\rho_1}{\rho_0} \right)^{-\gamma} \approx \frac{1}{\rho_0^{\gamma}} \left( 1 - \gamma \frac{\rho_1}{\rho_0} \right) \tag{3.12} \label{eq.3.12}
+    \frac{1}{\rho^{\gamma}} = \frac{1}{\rho_0^{\gamma}} \left( 1 + \frac{\rho_1}{\rho_0} \right)^{-\gamma} \approx \frac{1}{\rho_0^{\gamma}} \left( 1 - \gamma \frac{\rho_1}{\rho_0} \right), \tag{3.12} \label{eq.3.12}
 \end{equation}
-apart de fer servir la definició de la velocitat del so, Eq. (\ref{eq.3.11}).
+apart de fer servir la definició de la velocitat del so de l'Eq.~(\ref{eq.3.11}).
 
 Per resoldre les equacions linealitzades es proposen ones planes ja que el medi és uniforme i es troba en equilibri quiescent.
-Les ones planes impliquen una dependència de les variables d'espai i temps com a exponencials complexes:
+Les ones planes impliquen una dependència de les variables d'espai i temps com a exponencials complexes
 \begin{equation}
-    \bm{f}_1(\bm{r},t) = \bm{f} e^{i(\bm{k} \cdot \bm{r} - \omega t)} \tag{3.13} \label{3.13}
+    \bm{f}_1(\bm{r},t) = \bm{f} e^{i(\bm{k} \cdot \bm{r} - \omega t)}. \tag{3.13} \label{3.13}
 \end{equation}
 
 La propagació de les pròpies ones té lloc la direcció $\hat{z}$.
-Per la simetria del sistema (Fig. (\ref{fig:sistema})), tant les variables pertorbades escalars de densitat i pressió, com les vectorials de velocitat i
-camp magnètic, només depenen de la posició (x) en que s'avaluen. Llavors
+Per la simetria del sistema (Fig.~\ref{fig:sistema}), tant les variables pertorbades escalars de densitat, $\rho$, i pressió, $p$, com les vectorials de velocitat, $\bm{v}$, i
+camp magnètic, $\bm{B}$, només depenen de la posició, $x$, en que s'avaluen. Llavors
 \begin{gather}
-    \rho_1(\bm{r}, t) \equiv \rho(x) e^{i(\omega t - k_z z)} \tag{3.14} \label{3.14} \\
-    p_1(\bm{r}, t) \equiv p(x) e^{i(\omega t - k_z z)} \tag{3.15} \label{3.15} \\
-    \bm{v}_1(\bm{r}, t) \equiv \big(v_{x}(x), v_{y}(x), v_{z}(x)\big) e^{i(\omega t - k_z z)} \tag{3.16} \label{3.16} \\
-    \bm{B}_1(\bm{r}, t) \equiv \big(B_{x}(x), B_{y}(x), B_{z}(x)\big) e^{i(\omega t - k_z z)} \tag{3.17} \label{3.17}
+    \rho_1(\bm{r}, t) \equiv \rho(x) e^{i(\omega t - k_z z)}, \tag{3.14} \label{3.14} \\
+    p_1(\bm{r}, t) \equiv p(x) e^{i(\omega t - k_z z)}, \tag{3.15} \label{3.15} \\
+    \bm{v}_1(\bm{r}, t) \equiv \big(v_{x}(x), v_{y}(x), v_{z}(x)\big) e^{i(\omega t - k_z z)}, \tag{3.16} \label{3.16} \\
+    \bm{B}_1(\bm{r}, t) \equiv \big(B_{x}(x), B_{y}(x), B_{z}(x)\big) e^{i(\omega t - k_z z)}, \tag{3.17} \label{3.17}
 \end{gather}
 es separen les equacions vectorials linealitzades. Es fa evident que hi ha vuit funcions desconegudes: $\rho$, $\bm{v}$, $p$, $\bm{B}$, $\omega$ i $k_z$.
 Aquestes són les que s'empren per calcular els autovalors i les autofuncions dels modes normals, apart de la relació de dispersió.
-Per tant, una vegada que les equacions estan linealitzades i les solucions es troben en forma d'ones planes, es pot procedir a la substitució de les solucions
+Tan aviat com les equacions estan linealitzades i les solucions es troben en forma d'ones planes, es pot procedir a la substitució de les solucions
 dins les equacions per resoldrer-les correctament.
 
-Hi ha dues passes prèvies abans de dur a terme el procediment descrit. La primera és fixar la condició de velocitat nul·la als extrems:
+Hi ha dues passes prèvies per dur a terme el procediment descrit correctament. La primera consisteix en fixar la condició de velocitat nul·la als extrems del sistema
 \begin{equation}
-    \bm{v} (x = \pm L) = \bm{0} \tag{3.18} \label{3.18}
+    \bm{v} (x = \pm L) = \bm{0}, \tag{3.18} \label{3.18}
 \end{equation}
-i la segona és definir les derivades com a operadors de les ones planes per facilitar el tractament de les equacions:
+i la segona és definir les derivades com a operadors d'ones planes per facilitar el tractament de les equacions
 \begin{gather}
-    \frac{\partial}{\partial t} \implies i \omega \tag{3.19} \label{eq.3.19} \\
-    \bm{\nabla} \implies \hat{x} \frac{\partial}{\partial x} - i k_z \hat{z} \tag{3.20} \label{eq.3.20}
+    \frac{\partial}{\partial t} \implies i \omega, \tag{3.19} \label{eq.3.19} \\
+    \bm{\nabla} \implies \hat{x} \frac{\partial}{\partial x} - i k_z \hat{z}. \tag{3.20} \label{eq.3.20}
 \end{gather}
 
-Una vegada definides les variables com a ones planes i els operadors que actuen sobre aquestes, es substitueixen aquests elements dins les equacions linealitzades
-i s'arriba a unes noves equacions més senzilles.
-L'objectiu final de les equacions és descriure el sistema en segons les autofuncions ($\bm{v}$), els autovalors ($\omega$) i les constants que el caracteritzen.
+Es substitueixen els operadors dins les equacions linealitzades i s'arriba a unes noves equacions més senzilles.
+L'objectiu final de les equacions és descriure el sistema en segons les autofuncions, $\bm{v}$, els autovalors, $\omega$, i les constants que el caracteritzen.
 
-A partir de l'Eq. (\ref{eq.3.6}) s'obté la següent expressió:
+La velocitat del so de l'Eq.~(\ref{eq.3.11}) es dedueix a partir de la substitució de l'Eq.~(\ref{eq.3.6}) dins l'Eq.~(\ref{eq.3.8})
 \begin{equation}
-    i \omega \rho + \rho_0 \left( \frac{\partial v_{x}}{\partial x} - i k_z v_{z} \right) = 0 \tag{6} \label{eq.6}
-\end{equation}
-i si es defineix ${\tilde{v}_{x}}(x) \equiv i {v}_{x}(x)$ i es multiplica per $-i$ s'obté una equació sense la identitat imaginària epxlícitament:
-\begin{equation}
-    \omega \rho - \rho_0 \left( \frac{\partial \tilde{v_{x}}}{\partial x} + k_z v_{z} \right) = 0 \tag{12} \label{eq.12}
+    c_s^2 = \frac{\gamma p_0}{\rho_0} =  \frac{p_1}{\rho_1}. \tag{3.21} \label{eq.3.21}
 \end{equation}
 
-
-
-Feim el mateix a la 4.10 i es compara amb la 4.8, de manera que s'obté el següent:
+A partir de l'Eq.~(\ref{eq.3.6}) s'obté la següent expressió:
 \begin{equation}
-    \frac{p_1}{\rho_1} = \frac{\gamma p_0}{\rho_0} = c_s^2 \tag{13} \label{eq.13}
+    i \omega \rho + \rho_0 \left( \frac{\partial v_{x}}{\partial x} - i k_z v_{z} \right) = 0, \tag{3.22} \label{eq.3.22}
+\end{equation}
+i si es defineix ${\tilde{v}_{x}}(x) \equiv i {v}_{x}(x)$ i es multiplica per $-i$ s'obté una equació sense la identitat imaginària explícitament
+\begin{equation}
+    \omega \rho - \rho_0 \left( \frac{\partial \tilde{v}_{x}}{\partial x} + k_z v_{z} \right) = 0. \tag{3.23} \label{eq.3.23}
+\end{equation}
+Aquesta es fa servir més envant, ja que es pretén eliminar la variable de densitat.
+
+De la condició de camp magnètic amb divergència nul·la, Eq.~(\ref{eq.3.10}), s'aconsegueix la següent relació
+\begin{equation}
+    \frac{\partial B_{x}}{\partial x} = k_z \tilde{B}_{z}. \tag{3.24} \label{eq.3.24}
 \end{equation}
 
-De la 4.11 s'obtenen 3 equacions ja que és vectorial, definint de nou les variables tilde ${\tilde{B}_{y}}(x) \equiv i {B}_{y}(x)$ i ${\tilde{B}_{z}}(x) \equiv i {B}_{z}(x)$:
+De l'equació d'inducció linealitzada, Eq.~(\ref{eq.3.9}), s'obtenen tres relacions ja que aquesta és vectorial.
+De nou es defineixen les variables tilde ${\tilde{B}_{y}}(x) \equiv i {B}_{y}(x)$, ${\tilde{B}_{z}}(x) \equiv i {B}_{z}(x)$ per absoribir el terme imaginari
 \begin{gather}
-    \omega B_{x} = B_0 k_z v_{z} \label{eq.14} \tag{14} \\
-    \omega \tilde{B_{y}} = B_0 \frac{\partial v_{y}}{\partial x} \tag{15} \label{eq.15} \\
-    \omega \tilde{B_{z}} = B_0 \frac{\partial v_{z}}{\partial x} \tag{16} \label{eq.16}
+    \omega B_{x} = B_0 k_z v_{z}, \tag{3.25} \label{eq.3.25} \\
+    \omega \tilde{B_{y}} = B_0 \frac{\partial v_{y}}{\partial x}, \tag{3.26} \label{eq.3.26} \\
+    \omega \tilde{B_{z}} = B_0 \frac{\partial v_{z}}{\partial x}. \tag{3.27} \label{eq.3.27}
 \end{gather}
 
-De la 4.9 també se n'obtenen 3:
+Aleshores existeixen tres equacions pel camp magnètic estretament connectades amb els autovalors i les autofuncions.
+
+De les equacions del moviment del plasma, Eq.~(\ref{eq.3.7}), també resulten tres noves relacions:
 \begin{gather}
-    \omega \rho_0 \tilde{v_{x}} = - c_s^2 \frac{\partial \rho}{\partial x} \tag{17} \label{eq.17} \\
-    \omega \rho_0 v_{y} = - \frac{B_0}{\mu} \frac{\partial \tilde{B_{y}}}{\partial x} \tag{18} \label{eq.18} \\
-    \omega \rho_0 v_{z} = c_s^2 k_z \rho + \frac{B_0}{\mu} \left( k_z B_{x} - \frac{\partial \tilde{B_{z}}}{\partial x} \right) \tag{19} \label{eq.19}
+    \omega \rho_0 \tilde{v}_{x} = - c_s^2 \frac{\partial \rho}{\partial x}, \tag{3.28} \label{eq.3.28} \\
+    \omega \rho_0 v_{y} = - \frac{B_0}{\mu} \frac{\partial \tilde{B_{y}}}{\partial x}, \tag{3.29} \label{eq.3.29} \\
+    \omega \rho_0 v_{z} = c_s^2 k_z \rho + \frac{B_0}{\mu} \left( k_z B_{x} - \frac{\partial \tilde{B_{z}}}{\partial x} \right). \tag{3.30} \label{eq.3.30}
 \end{gather}
 
-Finalment de la 4.12 s'obté que
-\begin{equation}
-    \frac{\partial B_{x}}{\partial x} = k_z \tilde{B}_{z} \tag{20} \label{eq.20}
-\end{equation}
+Aquestes suposen més condicions que s'han d'acomplir juntament amb les tres anteriors.
 
-Tot i que s'han fet servir exponents complexos (ones planes) per treballar les equacions s'ha de tenir en compte que les variables són reals i no imaginàries. D'aquesta manera s'ha de prendre la part real d'aquestes: $\Re(f_1) = f_{10}(x) cos(wt - k_z z)$. Aquelles funcions representades amb tilde estan desfasades $\pi /2$ respecte a les altres:
+S'han fet servir exponents complexos (ones planes) per treballar les equacions,
+però s'ha de tenir en compte que les variables són reals i no imaginàries.
+D'aquesta manera s'ha de prendre la part real de les ones planes: $\Re(f_1) = f (x) \cos(wt - k_z z)$.
+Aquelles funcions representades amb tilde presenten un desfasament de $\pi /2$ respecte a les altres
 \begin{align*}
-    f_{10} = - i \tilde{f_{10}} \implies f_1 = - i \tilde{f_1} e^{i(\omega t - k_z z)} = \tilde{f_1} e^{i(\omega t - k_z z - \pi /2)} \\
-    \implies \Re(f_1) = \tilde{f_1} cos(\omega t - k_z z - \pi / 2) \quad \text{on} \quad \tilde{f_1} \epsilon \Re
+    f = - i \tilde{f} \implies f_1 = - i \tilde{f_1} e^{i(\omega t - k_z z)} = \tilde{f_1} e^{i(\omega t - k_z z - \pi /2)}, \\
+    \implies \Re(f_1) = \tilde{f_1} \cos(\omega t - k_z z - \pi / 2) \quad \text{on} \quad \tilde{f_1} \epsilon \Re
 \end{align*}
 
-De totes aquestes equacions s'observen dos grups de variables desacoblades. En el primer bloc, en les Eqs. (\ref{eq.15}) i (\ref{eq.18}) només apareixen les variables $v_{y}$ i $\tilde{B_{z}}$. En canvi, en el segon bloc d'Eqs. (\ref{eq.14}), (\ref{eq.16}), (\ref{eq.17}), (\ref{eq.19}) i (\ref{eq.20}) les variables que apareixen són les restants: $\rho$, $B_{x}$, $\tilde{B_{z}}$, $\tilde{v_{x}}$ i $v_{z}$.
-Aquests dos blocs corresponen a les solucions dels modes d'Alfvén i als modes ràpids i lents, respectivament. Com ja s'ha comentat prèviament les variables principals són les de velocitat ($\bm{v}$) i camp magnètic ($\bm{B}$).
+De totes aquestes equacions s'observen dos grups de variables desacoblades.
+En el primer bloc, en les Eqs.~(\ref{eq.3.26}) i (\ref{eq.3.29}) només apareixen les variables $v_{y}$ i $\tilde{B_{z}}$.
+En canvi, en el segon bloc d'Eqs.~(\ref{eq.3.23}), (\ref{eq.3.25}), (\ref{eq.3.27}), (\ref{eq.3.28}) i (\ref{eq.3.30})
+les variables que apareixen són les restants: $\rho$, $B_{x}$, $\tilde{B_{z}}$, $\tilde{v}_{x}$ i $v_{z}$.
+Aquests dos blocs corresponen a les solucions dels modes d'Alfvén i als modes ràpids i lents, respectivament.
 
 
 
 \subsection{Solucions: modes normals} \label{subsec:modes_normals}
-Ficar aquí les cc. i explicar el sistema -- intro
+Com s'ha comentat prèviament les variables principals són les de velocitat $\bm{v}$ i camp magnètic $\bm{B}$,
+llavors s'expressen les equacions segons aquestes.
 
-
-Per obtenir els modes normals és necessari resoldre les equacions d'autovalors proposades prèviament. A més, les autofuncions són les velocitats per tant s'ha d'arribar a una equació on només apareguin autovalors i autofuncions.
+Per obtenir els modes normals és necessari resoldre les equacions d'autovalors proposades prèviament.
+Els dos blocs d'equacions es poden simplificar paral·lelament i resulten en els problemes d'Alfvén i de modes ràpids i lents respectivament.
 \subsubsection{Modes d'Alfvén}
-En aquest cas s'ha de substituir el camp magnètic de les Eqs. (\ref{eq.15}) i (\ref{eq.18}), el que resulta en la següent:
+En aquest cas s'ha d'eliminar el camp magnètic de les Eqs.~(\ref{eq.3.26})~i~(\ref{eq.3.29}), el que resulta en una única equació d'autovalors:
 \begin{equation}
-    \omega^2  v_{y} + v_A^2 \frac{d^2v_{y}}{dx^2} = 0 \tag{18'} \label{eq.18p}
+    \omega^2  v_{y} + v_A^2 \frac{d^2v_{y}}{dx^2} = 0, \tag{3.31} \label{eq.3.31}
 \end{equation}
-on $v_A^2 \equiv \frac{B_0^2}{\mu \rho_0}$ és la definició de la velocitat d'Alfvén al quadrat, en honor al físic suec Hannes Alfvén.
+on $v_A^2 \equiv \frac{B_0^2}{\mu \rho_0}$ és la definició de la velocitat d'Alfvén al quadrat.
+
 \subsubsection{Modes ràpids i lents}
-Pel segon bloc d'equacions és més complicat ja que hi ha més variables i més equacions. Tot i així, la idea és la mateixa: obtenir equacions en les que només apareixin les autofuncions ($\bm{v})$ i els autovalors ($\omega$).
-En aquest cas hi ha dues equacions ja que hi ha dues velocitats en les variables. De nou, és una qüestió d'àlgebra el combinar les Eqs. (\ref{eq.14}), (\ref{eq.16}), (\ref{eq.17}), (\ref{eq.19}) i (\ref{eq.20}) per obtenir els següents resultats:
+El segon bloc d'equacions és més complexe degut al gran nombre de variables i equacions.
+Tot i així, la idea és la mateixa: eliminar les variables de densitat i camp magnètic per obtenir relacions d'autofuncions $\bm{v}$ i d'autovalors $\omega$.
+En aquest cas hi ha dues equacions ja que hi ha dues velocitats en les variables. De nou, és una qüestió d'àlgebra el combinar les Eqs.~(\ref{eq.3.23}), (\ref{eq.3.25}), (\ref{eq.3.27}), (\ref{eq.3.28}) i (\ref{eq.3.30}) per obtenir els següents resultats:
 \begin{gather}
-    \omega^2 \tilde{v_{x}} + c^2 \frac{d^2 \tilde{v_{x}}}{dx^2} + c^2 k_z \frac{d v_{z}}{dx} = 0 \tag{17'} \label{eq.17p} \\
-    v_A^2 \frac{d^2 v_{z}}{dx^2} + k_z c^2 \frac{d \tilde{v_{x}}}{dx} + \left(-c^2 k_z^2 - v_A^2 k_z^2 + \omega^2 \right) v_{z} = 0 \tag{19'} \label{eq.19p}
+    \omega^2 \tilde{v}_{x} + c_s^2 \frac{d^2 \tilde{v}_{x}}{dx^2} + c_s^2 k_z \frac{d v_{z}}{dx} = 0, \tag{3.32} \label{eq.3.32} \\
+    v_A^2 \frac{d^2 v_{z}}{dx^2} + k_z c_s^2 \frac{d \tilde{v}_{x}}{dx} + \left(-c_s^2 k_z^2 - v_A^2 k_z^2 + \omega^2 \right) v_{z} = 0. \tag{3.33} \label{eq.3.33}
 \end{gather}
-
-Realment les cc ja les he posat adalt... bastaria referenciar-les i ja està, aplica a les 3D de l'espai.
-Condicions de contorn:
-\begin{equation}
-    v_{y}(x = -L) = v_{y}(x = L) = 0 \tag{cc1} \label{eq.cc1}
-\end{equation}
-
-Condicions de contorn:
-
-\begin{gather}
-    \tilde{v_{x}}(x = -L) = \tilde{v_{x}}(x = L) = 0 \tag {cc.2} \label{cc.2} \\
-    v_{z}(x = -L) = v_{z}(x = L) = 0 \tag {cc.3} \label{cc.3}
-\end{gather}
-
+DIR AQUÍ QUE AMB KZ = 0 SE RECUPERA 2 PICS ALFVÉN: PER VX I PER VZ
+%---------------------------------------------------------------------------------------------------------------------------------------------------
 % A partir d'observacions podem inferir es valors dels paràmetres del sistema - idealment - sismologia de protuberànbcia
-
-Se pot llevar el següent apartat.
+%---------------------------------------------------------------------------------------------------------------------------------------------------
 
 \subsubsection{Relació de dispersió}
-Per estudiar l'evolució dels autovalors de cada mode és interessant realitzar una relació de dispersió. Per fer-ho ... derivada!
+Per estudiar l'evolució dels autovalors de cada mode és sol calcular la relació de dispersió.
+Aquesta consisteix en la relació de cada autovalor $\omega$ amb la seva autofunció $\bm{v}$ mitjançant el nombre d'ona $k_z$.
+D'aquesta manera les autofuncions es corresponen a la velocitat de fase de cada mode normal.
 
-velocitat de fase o de grup??? VELOCITAT DE FASE!!! Ja que és la velocitat d'una ona d'un número d'ona concret.
-%---------------------------------------------------------------------------------------------------------------------------------------------------
-% Velocitat de fase o de grup? DEMANAR MONCHO!
-%---------------------------------------------------------------------------------------------------------------------------------------------------
-Però la velocitat de grup diu a la velocitat a la que es transmet l'energia. Dispersiva o no\dots
+REPETIR O DIR PER 1R PIC QUE ALFVEN NO DD PQ NO TE KZ 
 
 Les ones d'Alfvén són del tipus 4.1.a, no?
 
@@ -414,47 +428,64 @@ Repàs secció 4.8 - resum ones
 
 
 \section{Mètode} \label{sec:mètode}
-En aquest apartat es detalla la implementació de les equacions en Dedalus i com resol els modes. També com es tracten els resultats.
+En aquest apartat es detalla la implementació de les equacions en Dedalus i la resolució dels modes normals.
+A més, es descriu també el tractament dels resultats.
 
-%---------------------------------------------------------------------------------------------------------------------------------------------------
-% COOOOORDAAAAA
-%---------------------------------------------------------------------------------------------------------------------------------------------------
-
-Abans d'implementar els sistemes d'equacions obtinguts en la secció anterior (Eq. (\ref{eq.18p}) per una banda i Eqs. (\ref{eq.17p}) i (\ref{eq.19p}) per l'altra) és indispensable adimensionalitzar les variables i, en conseqüència, les equacions.
+Abans d'implementar els sistemes d'equacions obtinguts en la secció anterior %(Eq.~[\ref{eq.3.31}] per una banda i Eqs.~[\ref{eq.3.32}] i [\ref{eq.3.33}] per l'altra)
+és indispensable adimensionalitzar les variables i, en conseqüència, les equacions.
 D'aquesta manera es deixa de banda qualsevol sistema d'unitats i es proporcionen uns valors de referència adeqüats als valors típics de les variables del sistema:
 \begin{align*}
     \bigl\{  l_{ref} \quad , \quad t_{ref} \quad , \quad v_{ref} \quad , \quad \rho_{ref} \quad , \quad B_{ref} \bigr\} 
 \end{align*}
-Les variables modificades respecte els valors de referència són les següents:
+Llavors les noves variables adimensionalitzades respecte els valors de referència
 \begin{equation}
   \begin{gathered}
-    x = \bar{x} \cdot l_{ref}  \implies \frac{d}{dx} = \frac{1}{l_{ref}} \frac{d}{d \bar{x}} \quad , \quad \bar{\omega} = \omega \cdot t_{ref} \implies \omega = \frac{\bar{\omega}}{t_{ref}} \\
-    \rho = \bar{\rho} \cdot \rho_{ref} \quad , \quad v = \bar{v} \cdot v_{ref} \quad , \quad k_z = \frac{\bar{k_z}}{l_{ref}} \quad , \quad B = \bar{B} \cdot B_{ref}
+    x = \bar{x} \cdot l_{ref}  \implies \frac{d}{dx} = \frac{1}{l_{ref}} \frac{d}{d \bar{x}} \quad , \quad \bar{\omega} = \omega \cdot t_{ref} \implies \omega = \frac{\bar{\omega}}{t_{ref}}, \\
+    \rho = \bar{\rho} \cdot \rho_{ref} \quad , \quad v = \bar{v} \cdot v_{ref} \quad , \quad k_z = \frac{\bar{k_z}}{l_{ref}} \quad , \quad B = \bar{B} \cdot B_{ref}.
 \end{gathered}
 \tag{4.1} \label{eq.4.1}
 \end{equation}
 
+Finalment es substitueixen les variables normalitzades, Eq.~(\ref{eq.4.1}), dins l'Eq.~(\ref{eq.3.31}) en el cas d'Alfvén,
+i dins les Eqs.~(\ref{eq.3.32})~i~(\ref{eq.3.33}) en el cas dels modes ràpids i lents per obtenir les equacions normalitzades que s'implementen al codi de pyhton.
+El resultat d'aquestes substitucions pràcticament no altera les equacions; únicament s'afegeix una barra sobre les variables.
+Per qüestions visuals s'omet la barra i les equacions que s'introdueixen al codi són les Eqs.~\ref{eq.3.31}, \ref{eq.3.32} i \ref{eq.3.33}.
 
-Finalment es substitueixen les variables normalitzades (\ref{eq.4.1}) dins l'Eq. (\ref{eq.18p}) en el cas d'Alfvén, i en les Eqs. (\ref{eq.17p}) i (\ref{eq.19p}) en el cas dels modes ràpids i lents per obtenir les equacions normalitzades que s'implementen al codi de pyhton.
-El resultat d'aquestes substitucions deixa les equacions pràcticament igual però amb una barra sobre les variables. Per qüestions visuals s'omet la barra i les equacions que s'introdueixen al codi són les següents:
-\begin{equation}
-    \omega^2  v_{y} + v_A^2 \frac{d^2v_{y}}{dx^2} = 0 \tag{4.2} \label{eq.4.2} % \tag{$\bar{18'}$} \label{eq.18pb}
-\end{equation}
-per a la velocitat $v_{y}$, el denominat problema d'Alfvén, i 
-\begin{gather}
-    \omega^2 \tilde{v_{x}} + c^2 \frac{d^2 \tilde{v_{x}}}{dx^2} + c^2 k_z \frac{d v_{z}}{dx} = 0 \tag{4.3} \label{eq.4.3} \\ %\tag{$\bar{17'}$} \label{eq.17pb} \\
-    v_A^2 \frac{d^2 v_{z}}{dx^2} + k_z c^2 \frac{d \tilde{v_{x}}}{dx} + \left(-c^2 k_z^2 - v_A^2 k_z^2 + \omega^2 \right) v_{z} = 0 \tag{4.4} \label{eq.4.4} %\tag{$\bar{19'}$} \label{eq.19pb}
-\end{gather}
-per a les velocitats acoblades $\tilde{v}_{x}$ i $v_{z}$.
-
-Es fa evident la subdivisió del problema degut al desacoblament de les equacions i, per tant, de les solcuions ò modes normals.
+Es fa evident la subdivisió del problema degut al desacoblament de les equacions i, per tant, dels modes normals.
 Aquests es descomposen en els modes d'Alfvén i en els modes ràpids i lents.
-Per solventar els subproblemes s'han creat dos notebooks de python (.ipynb) per separat en els que s'implementen les equacions corresponents. Veure \parencite{github}.
+
+OJO NO TE REPETEIXIS TANT ALOMILLOR, ENXUFA-HO A COLQUE ALTRE PARÀGRAF MIG BUIT MÉS AMUNT...
+
+El problema d'Alfvén de l'Eq.~(\ref{eq.3.31}) presenta una forma molt semblant a la d'una corda amb estructura i amb els extrems fixats.
+L'estructura d'aquesta corda correspon a la velocitat d'Alfvén, $v_A^2$, que es veu alterada per la diferència de densitat,
+pressió i temperatura en les zones del sistema, veure Fig.~\ref{fig:sistema}.
+
+Per aquest motiu i com a primer contacte amb la llibreria Dedalus \parencite{Dedalus} s'ha resolt el problema dels modes normals d'una corda amb densitat no constant, amb les condicions de contorn d'extrems fixes.
+Per qüestions d'espai no s'afegeixen els resultats d'aquest exercici ja que són idèntics als del problema d'Alfvén~(\hyperref[subsec:resultats_modes_Alfvén]{Sec. 5.1})
+
+Una vegada resolt el primer cas es procedeix al càlcul dels modes ràpids i lents, juntament amb la relació de dispersió.
+En el cas d'acoblament nul entre els modes longitudinals i verticals ($k_z = 0$) es recupera l'estructura del problema d'Alfvén per les dues autofuncions $\tilde{v}_{x}$~i~$v_{z}$.
+
+Per solventar els subproblemes s'han creat diferents notebooks de Python (.ipynb) per separat en els que s'implementen les equacions corresponents.
+Aquests es poden trobar en el repositori, veure \parencite{github}.
+
+Un dels punts d'aquest treball és comparar els autovalors obtinguts per Dedalus amb aquells calculats analíticament a partir de combinacions sinusoïdals. % trigonomètriques
+Per això es realitza en cada cas el càlcul de l'error relatiu $\eta$:
+\begin{equation}
+    \eta = \frac{\omega_D - \omega}{\omega}
+\end{equation}
+on $\omega_D$ és l'autovalor obtingut per Dedalus i $\omega$ analíticament.
+Les solucions analítiques es troben en major detall en l'article de \textcite{oscillation_modes_II}.
+
+Per realitzar els càlculs amb Dedalus es divideix l'espai del problema en 256 punts mitjançant els polinomis de Legendre.
+El procediment de Dedalus és transformar la informació de l'espai real a l'espai de Fourier, realitza els càlculs i retorna a l'espai real.
+
 
 \section{Resultats}
-En aquesta secció es presenten els càlculs més importants i representatius del problema realitzats en els codis (Apèndix~\ref{ap.A}). L'anàlisi segueix la mateixa estructura que en la secció anterior, per mantenir l'ordre.
+En aquesta secció es presenten els càlculs més importants i representatius del problema realitzats en els codis (Apèndix~\ref{ap.A}).
+En l'anàlisi segueix el mateix ordre que la secció anterior: primer el problema d'Alfvén i després el dels modes ràpids i lents.
 Els valors numèrics emprats per resoldre el problema són els següents:
-\begin{table}[ht!]
+\begin{table}[H]
     \centering
     \begin{tabular}{|c|c|c|c|c|}
         \hline
@@ -466,75 +497,63 @@ Els valors numèrics emprats per resoldre el problema són els següents:
     \caption{Valors numèrics utilitzats per a la resolució del problema. Les velocitats són adimensionals.}
     \label{tab:valors}
 \end{table}
+Aquestes xifres són simulades a causa de certes limitacions computacionals.
+Per contrastar aquests resultats amb valors realistes es poden consultar els articles citats.
 
-Dir explícitament que no són valors realistes ni res, que són invent.
+\subsection{Modes d'Alfvén} \label{subsec:resultats_modes_Alfvén}
+Com ja s'ha comentat aquest cas s'assembla a una corda amb estructura longitudinal ja que representa un problema unidimensional,
+tot i que la velocitat i la dependència d'aquesta siguin perpendiculars.
+A més, no existeix cap tipus de relació de dispersió per aquesta situació degut a la independència dels autovalors respecte el nombre d'ones.
 
-
-\subsection{Modes d'Alfvén} \label{subsec:RA}
-
-Autovalors --- H, I, E \& MATHEMATICA.
-
-Explicar que es recupera el model de la corda ja que no depèn de kz i només és vy en la direcció x.
-
-Explicar error relatiu de Dedalus i del valor analític (eta grega). Explicar també d'on prové el valor analític! Joarder i/o Moncho.
-
-Error relatiu - petit.
+L'error relatiu dels autovalors resultants del problema d'Alfvén és considerablement petit. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{Figures Alfvén modes/eigenvalue_error_vA.png}
     \caption{Error relatiu dels autovalors analítics i els calculats amb Dedalus en el cas d'Alfvén.}
     \label{fig:error_vA}
 \end{figure}
-Intent referenciar una figura \ref{fig:error_vA}.
+L'error creix a mesura que el nombre del mode augmenta, tot i que no ho fa linealment. Pels primers 50 autovalors el comportament de l'error és caòtic.
+A partir d'aquest s'estabilitza i creix relativament poc, fins que a partir del 200 creix exponencialment.
 
-Quina diferència hi ha entre !ht i htbp i H? H és el que vull! Posa la imatge Here i si no pot passa a la següent pàgina i el text també! No s'adelanta el text a la figura.
-
-Autofuncions dels modes d'Alfvén.
+Les autofuncions dels modes d'Alfvén són idèntiques a les d'una corda amb estructura longitudinal.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{Figures Alfvén modes/modes_Alfvén.png}
-    \caption{Autofuncions dels modes d'Alfvén.}
+    \caption{Autofuncions dels modes d'Alfvén. La 'f' representa el fonamental i 'nh' l'enèssim harmònic.
+La 'H' indica el mode híbrid, la 'E' els externs i la 'I' els interns.}
     \label{fig:modes_vA}
 \end{figure}
-Intent referenciar una figura \ref{fig:modes_vA}.
-
-Explicar també N = 512.
+Les etiquetes dels modes corresponen a l'explicació anterior.
+Les autofuncions estan fortament condicionades per la diferència en la velocitat d'Alfvén en l'interior de la protuberància, apart dels extrems òbviament.
+Aquesta és molt major en l'interior de la prominència que en la corona, de manera que la variació de la velocitat en aquesta zona és major.
 
 Comentar que amb Mathematica podem saber quin és híbrid, quin intern i quin extern. Però ho has de tenir ben clar tu, rei.
-%---------------------------------------------------------------------------------------------------------------------------------------------------
-% DEMANAR MONXO
-%---------------------------------------------------------------------------------------------------------------------------------------------------
+PUES HO TENC CLAR JA! ÉS EL MATEIX PERO EN EL CAS DE KZ = 0
 
 
-\clearpage
-Mencionar que les parts imaginàries són casi nul·les al normalitzar
-\clearpage
+Les parts imaginàries de les autofuncions són nul·les i no es presenten gràficament per qüestions d'espai.
+En el càlcul numèric no són estrictament zero degut a la limitació computacional de 16 decimals de Python, tot i que són de l'ordre de $10^{-13}$ respecte a la part real.
 
 
-
-\subsection{Modes ràpids i lents}
-Autovalors --- H, I, E \& MATHEMATICA
-
-
-Primer de tot es representa la relació de dispersió del problema, és a dir, com evolucionen els autovalors $\omega$ segons el paràmetre de $k_z$. 
-
-També puc afegir i explicar un canvi de comportament en específic per un mode normal n=5 per exemple!!! CORREU\dots
-
-No sé què convé més, posar modes ràpids i lents ò posar modes normals. També es poden posar els dos alomillor!
+\subsection{Modes ràpids i lents} \label{subsec:resultats_modes_r_i_l}
+En aquest cas és convenient començar per la representació de la relació de dispersió del problema, és a dir, com evolucionen els autovalors, $\omega$, segons el paràmetre de $k_z$. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{Figures F&S modes/dd_modes_normals.png}
     \caption{Modes ràpids i lents.}
     \label{fig:dd}
 \end{figure}
-Dir que per saber si és fonamental, 1h, 2h etc s'han de mirar modes d'ordre superior que no es representen per no embuiar més es gràfic... però que està fet!!!
+De nou, les etiquetes corresponen a l'explicació anterior.
+No obstant, en aquest cas s'afegeix una tercera per indicar si el mode és ràpid o lent, tot i que s'aprecia directament amb el comportament parabòlic o constant, respectivament.
+Els modes superiors no es mostren en la Fig.~\ref{fig:modes_vA} tot i que s'han calculat per conéixer el seu comportament.
 
 
-Per determinar el comportament de mode es segueix la mateixa notació que en la Figs. (2) i (3) de l'article \textcite{oscillation_modes_II}, afegint la possibilitat de que els modes siguin híbrids.
-Aquest fet es va ignorar en l'article citat. Tanmateix, més envant es va definir aquesta etiqueta en un altre l'article \textcite{oscillations_quiescent_solar_prominence}.
+Per determinar el comportament de cada mode es segueix la mateixa notació que en la Figs.~2~i~3 de l'article de \textcite{oscillation_modes_II}.
+No obstant, s'ignora que els modes siguin 'kink' (parells) o 'sausage' (senars) i s'afegeix la possibilitat de que els modes siguin híbrids, no només interns o externs.
+Aquest darrer fet es va ignorar en l'article citat, però més envant es va definir el concepte en l'article de \textcite{oscillations_quiescent_solar_prominence}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\textwidth]{Figures F&S modes/dd_modes_rapid_i_lent.png}
+    \includegraphics[width=0.95\textwidth]{Figures F&S modes/dd_mode_5.png}
     \caption{Modes ràpids i lents.}
     \label{fig:dd_r_i_l}
 \end{figure}
@@ -552,7 +571,7 @@ Explicar el mateix però en lloc de blau en colorets!
 % També és interessant estudiar les autofuncions aprop d'aquest punt!
 %---------------------------------------------------------------------------------------------------------------------------------------------------
 
-Per apreciar amb més detall el procés d'anticreuament evitat s'augmenta la Fig. (\ref{fig:dd_r_i_l}) en el punt concret on té lloc.
+Per apreciar amb més detall el procés d'anticreuament evitat s'augmenta la Fig.~\ref{fig:dd_r_i_l} en el punt concret on té lloc.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{Figures F&S modes/dd_avoided_crossing.png}
@@ -580,14 +599,14 @@ Una vegada es tenen clars els diagrames de dispersió es poden representar les a
 \end{figure}
 S'aprecia que la forma de l'error és la mateixa: molt petit pels primers 100 autovalors, al 150 s'estabilitza i aprop dels 225 es dispara, per qüestions de càlcul computacional.
 
-Finalment es presenten les autofuncions per aquest cas. Es considera una constant d'acoblament petita ($k_z = 0.01$) per poder apreciar la diferència amb els modes d'Alfvén de l'apartat anterior (\ref{subsec:RA}). De nou, la notació de la llegenda és la seguida en l'article \textcite{oscillation_modes_II}.
+Finalment es presenten les autofuncions per aquest cas. Es considera una constant d'acoblament petita ($k_z = 0.01$) per poder apreciar la diferència amb els modes d'Alfvén de l'apartat anterior (\ref{subsec:modes_Alfvén}). De nou, la notació de la llegenda és la seguida en l'article \textcite{oscillation_modes_II}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{Figures F&S modes/Autofuncions_reals_individuals.png}
     \caption{Forma de les autofuncions associades als primers 4 modes. El tipus de mode està indicat en la pròpia figura.}
     \label{fig:autofuncions_reals_individuals}
 \end{figure}
-En els tres primers modes predomina el terme de $\tilde{v}_{x}$ i forma la mateixa estructura que els primers tres modes d'Alfvén, comparant amb la Fig. (\ref{fig:modes_vA}). En el quart mode es giren les tornes i el mode predominant és el de ${v}_{z}$.
+En els tres primers modes predomina el terme de $\tilde{v}_{x}$ i forma la mateixa estructura que els primers tres modes d'Alfvén, comparant amb la Fig.~\ref{fig:modes_vA}. En el quart mode es giren les tornes i el mode predominant és el de ${v}_{z}$.
 Això indica que les tres primeres solucions corresponen a modes lents mentre que la quarta a un ràpid, tot això pel cas de $k_z = 1$.
 
 Afegir que com s'ha demostrat abans si kz fos més gran hauria canviat es comportament!
@@ -603,7 +622,7 @@ Autofuncions representades
 
 \subsubsection{Autofuncions segons kz}
 
-Finalment es comparen les autofuncions aprop de anticreuament evitat representat en la Fig. (\ref{fig:dd_avoided_crossing}). En aquest cas s'espera apreciar el canvi de dominància d'un mode enfront a l'altre.
+Finalment es comparen les autofuncions aprop de anticreuament evitat representat en la Fig.~\ref{fig:dd_avoided_crossing}. En aquest cas s'espera apreciar el canvi de dominància d'un mode enfront a l'altre.
 
 Fer la figura bé i afegir-la!
 
@@ -638,7 +657,7 @@ Reflexió final de que hi ha moltes més coses, que es llibre me queda molt gros
 %---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Citant el llibre de referència \textcite{Priest_2014_capitol_2} i \textcite{Priest_2014_capitol_4}, els papers \textcite{oscillation_modes_II} i \textcite{oscillations_quiescent_solar_prominence}, i el meu repositori \parencite{github}.
+Citant el llibre de referència de \textcite{Priest_2014}, els papers de \textcite{oscillation_modes_II} i de \textcite{oscillations_quiescent_solar_prominence}, i el meu repositori \parencite{github} perque no doni error.
 A més, Dedalus demana que els citis aquest article: \parencite{Dedalus}.
 
 
