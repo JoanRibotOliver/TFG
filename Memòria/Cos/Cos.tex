@@ -447,37 +447,32 @@ Llavors les noves variables adimensionalitzades respecte els valors de referènc
 \end{equation}
 
 Finalment es substitueixen les variables normalitzades, Eq.~(\ref{eq.4.1}), dins l'Eq.~(\ref{eq.3.31}) en el cas d'Alfvén,
-i dins les Eqs.~(\ref{eq.3.32})~i~(\ref{eq.3.33}) en el cas dels modes ràpids i lents per obtenir les equacions normalitzades que s'implementen al codi de pyhton.
+i dins les Eqs.~(\ref{eq.3.32})~i~(\ref{eq.3.33}) en el cas dels modes ràpids i lents per obtenir les equacions normalitzades que s'implementen al codi de Pyhton.
 El resultat d'aquestes substitucions pràcticament no altera les equacions; únicament s'afegeix una barra sobre les variables.
 Per qüestions visuals s'omet la barra i les equacions que s'introdueixen al codi són les Eqs.~\ref{eq.3.31}, \ref{eq.3.32} i \ref{eq.3.33}.
 
 Es fa evident la subdivisió del problema degut al desacoblament de les equacions i, per tant, dels modes normals.
 Aquests es descomposen en els modes d'Alfvén i en els modes ràpids i lents.
 
-OJO NO TE REPETEIXIS TANT ALOMILLOR, ENXUFA-HO A COLQUE ALTRE PARÀGRAF MIG BUIT MÉS AMUNT...
+OJO NO TE REPETEIXIS TANT ALOMILLOR, ENXUFA-HO A COLQUE ALTRE PARàGRAF MIG BUIT MéS AMUNT...
 
+\subsection{Modes d'Alfvén} \label{subsec:mètode_Alfvén}
 El problema d'Alfvén de l'Eq.~(\ref{eq.3.31}) presenta una forma molt semblant a la d'una corda amb estructura i amb els extrems fixats.
-L'estructura d'aquesta corda correspon a la velocitat d'Alfvén, $v_A^2$, que es veu alterada per la diferència de densitat,
+La disposició d'aquesta corda correspon a la velocitat d'Alfvén, $v_A^2$, que es veu alterada per la diferència de densitat,
 pressió i temperatura en les zones del sistema, veure Fig.~\ref{fig:sistema}.
 
 Per aquest motiu i com a primer contacte amb la llibreria Dedalus \parencite{Dedalus} s'ha resolt el problema dels modes normals d'una corda amb densitat no constant, amb les condicions de contorn d'extrems fixes.
 Per qüestions d'espai no s'afegeixen els resultats d'aquest exercici ja que són idèntics als del problema d'Alfvén~(\hyperref[subsec:resultats_modes_Alfvén]{Sec. 5.1})
 
+\subsection{Modes ràpids i lents} \label{subsec:mètode_r_i_l}
 Una vegada resolt el primer cas es procedeix al càlcul dels modes ràpids i lents, juntament amb la relació de dispersió.
 En el cas d'acoblament nul entre els modes longitudinals i verticals ($k_z = 0$) es recupera l'estructura del problema d'Alfvén per les dues autofuncions $\tilde{v}_{x}$~i~$v_{z}$.
 
 Per solventar els subproblemes s'han creat diferents notebooks de Python (.ipynb) per separat en els que s'implementen les equacions corresponents.
 Aquests es poden trobar en el repositori, veure \parencite{github}.
 
-Un dels punts d'aquest treball és comparar els autovalors obtinguts per Dedalus amb aquells calculats analíticament a partir de combinacions sinusoïdals. % trigonomètriques
-Per això es realitza en cada cas el càlcul de l'error relatiu $\eta$:
-\begin{equation}
-    \eta = \frac{\omega_D - \omega}{\omega}
-\end{equation}
-on $\omega_D$ és l'autovalor obtingut per Dedalus i $\omega$ analíticament.
-Les solucions analítiques es troben en major detall en l'article de \textcite{oscillation_modes_II}.
-
 Per realitzar els càlculs amb Dedalus es divideix l'espai del problema en 256 punts mitjançant els polinomis de Legendre.
+S'ha escollit aquest nombre per qüestions de temps de càlcul i de memòria.
 El procediment de Dedalus és transformar la informació de l'espai real a l'espai de Fourier, realitza els càlculs i retorna a l'espai real.
 
 
@@ -498,10 +493,18 @@ Els valors numèrics emprats per resoldre el problema són els següents:
     \label{tab:valors}
 \end{table}
 Aquestes xifres són simulades a causa de certes limitacions computacionals.
-Per contrastar aquests resultats amb valors realistes es poden consultar els articles citats.
+Per contrastar aquests resultats amb valors realistes es poden consultar els articles de \textcite{oscillation_modes_II} i de \textcite{oscillations_quiescent_solar_prominence}.
+
+Un dels punts d'aquest treball és comparar els autovalors obtinguts per Dedalus amb aquells calculats analíticament a partir de combinacions sinusoïdals. % trigonomètriques
+Per això es realitza en cada cas el càlcul de l'error relatiu $\eta$:
+\begin{equation}
+    \eta = \frac{\omega_D - \omega}{\omega}
+\end{equation}
+on $\omega_D$ és l'autovalor obtingut per Dedalus i $\omega$ analíticament.
+Les solucions analítiques es troben en major detall en l'article de \textcite{oscillation_modes_II} i s'han calculat a partir d'una rutina numèrica.
 
 \subsection{Modes d'Alfvén} \label{subsec:resultats_modes_Alfvén}
-Com ja s'ha comentat aquest cas s'assembla a una corda amb estructura longitudinal ja que representa un problema unidimensional,
+Com ja s'ha comentat aquest cas s'assembla a una corda amb estructura longitudinal atès que representa un problema unidimensional,
 tot i que la velocitat i la dependència d'aquesta siguin perpendiculars.
 A més, no existeix cap tipus de relació de dispersió per aquesta situació degut a la independència dels autovalors respecte el nombre d'ones.
 
@@ -512,7 +515,7 @@ L'error relatiu dels autovalors resultants del problema d'Alfvén és considerab
     \caption{Error relatiu dels autovalors analítics i els calculats amb Dedalus en el cas d'Alfvén.}
     \label{fig:error_vA}
 \end{figure}
-L'error creix a mesura que el nombre del mode augmenta, tot i que no ho fa linealment. Pels primers 50 autovalors el comportament de l'error és caòtic.
+Aquest error creix a mesura que el nombre del mode augmenta, tot i que no ho fa linealment. Pels primers 50 autovalors el comportament de l'error és caòtic.
 A partir d'aquest s'estabilitza i creix relativament poc, fins que a partir del 200 creix exponencialment.
 
 Les autofuncions dels modes d'Alfvén són idèntiques a les d'una corda amb estructura longitudinal.
@@ -520,47 +523,63 @@ Les autofuncions dels modes d'Alfvén són idèntiques a les d'una corda amb est
     \centering
     \includegraphics[width=0.95\textwidth]{Figures Alfvén modes/modes_Alfvén.png}
     \caption{Autofuncions dels modes d'Alfvén. La 'f' representa el fonamental i 'nh' l'enèssim harmònic.
-La 'H' indica el mode híbrid, la 'E' els externs i la 'I' els interns.}
+    La 'H' indica el mode híbrid, la 'E' els externs i la 'I' els interns.}
     \label{fig:modes_vA}
 \end{figure}
-Les etiquetes dels modes corresponen a l'explicació anterior.
+Les etiquetes dels modes corresponen a l'explicació anterior. % No facis tant aquest comentari, ja se sap que corresponen a Joarder...
 Les autofuncions estan fortament condicionades per la diferència en la velocitat d'Alfvén en l'interior de la protuberància, apart dels extrems òbviament.
-Aquesta és molt major en l'interior de la prominència que en la corona, de manera que la variació de la velocitat en aquesta zona és major.
+Aquesta és molt major en l'interior de la prominència que en la corona, de manera que el canvi en velocitat dels modes en aquesta zona és major.
 
 Comentar que amb Mathematica podem saber quin és híbrid, quin intern i quin extern. Però ho has de tenir ben clar tu, rei.
 PUES HO TENC CLAR JA! ÉS EL MATEIX PERO EN EL CAS DE KZ = 0
 
 
 Les parts imaginàries de les autofuncions són nul·les i no es presenten gràficament per qüestions d'espai.
-En el càlcul numèric no són estrictament zero degut a la limitació computacional de 16 decimals de Python, tot i que són de l'ordre de $10^{-13}$ respecte a la part real.
+En el càlcul numèric no són estrictament zero degut a la limitació computacional de 16 decimals de Python,
+tot i que són de l'ordre de $10^{-13}$ respecte a la part real.
 
 
 \subsection{Modes ràpids i lents} \label{subsec:resultats_modes_r_i_l}
-En aquest cas és convenient començar per la representació de la relació de dispersió del problema, és a dir, com evolucionen els autovalors, $\omega$, segons el paràmetre de $k_z$. 
+En aquest cas és convenient començar per la representació de la relació de dispersió del problema, és a dir,
+com evolucionen els autovalors, $\omega$, segons el paràmetre de $k_z$. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{Figures F&S modes/dd_modes_normals.png}
-    \caption{Modes ràpids i lents.}
+    \caption{Diagrama de dispersió.}
     \label{fig:dd}
 \end{figure}
-De nou, les etiquetes corresponen a l'explicació anterior.
-No obstant, en aquest cas s'afegeix una tercera per indicar si el mode és ràpid o lent, tot i que s'aprecia directament amb el comportament parabòlic o constant, respectivament.
-Els modes superiors no es mostren en la Fig.~\ref{fig:modes_vA} tot i que s'han calculat per conéixer el seu comportament.
+De nou, les etiquetes corresponen a l'explicació anterior. % Again, don't repeat so much m8
+No obstant, en aquest cas s'afegeix una tercera per indicar si el mode és ràpid o lent.
+S'aprecia directament amb el comportament parabòlic o constant de les autofuncions, respectivament.
+Els modes d'ordre superior no es mostren en la Fig.~\ref{fig:modes_vA} encara que s'han treballat per conéixer la seva naturalesa, expressada en les etiquetes.
 
-
-Per determinar el comportament de cada mode es segueix la mateixa notació que en la Figs.~2~i~3 de l'article de \textcite{oscillation_modes_II}.
-No obstant, s'ignora que els modes siguin 'kink' (parells) o 'sausage' (senars) i s'afegeix la possibilitat de que els modes siguin híbrids, no només interns o externs.
-Aquest darrer fet es va ignorar en l'article citat, però més envant es va definir el concepte en l'article de \textcite{oscillations_quiescent_solar_prominence}.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{Figures F&S modes/dd_mode_5.png}
-    \caption{Modes ràpids i lents.}
-    \label{fig:dd_r_i_l}
-\end{figure}
+Cada color correspon a una autofunció de la 
 En blau es dibuixen els autovalors corresponents als modes lents, que són pràcticament constants, és a dir, independents de $k_z$. En canvi els modes ràpids, en vermell, formen aproximadament una paràbola creixent centrada en l'origen, com era d'esperar segons les equacions.
 Els modes normals poden ser ràpids o lents en l'origen ($k_z = 0$). Tot i així, la seva evolució ve determinada per si al llarg de $k_z$ es creuen amb un altre mode. En aquests punts concrets es produeix el que es coneix com un "anticreuament evitat" \textcite{oscillations_quiescent_solar_prominence} en el que s'observa un canvi de comportament del mode normal. El que s'aprecia és que quan un mode ràpid arriba a un mode lent aquests intercanvien els comportaments: el lent passa a ser ràpid i viceversa.
 
+
+
+
+%---------------------------------------------------------------------------------------------------------------------------------------------------
+% Això que ve ara pot anar al principi de la secció de resultats, trob
+%---------------------------------------------------------------------------------------------------------------------------------------------------
+Per determinar el comportament de cada mode es segueix la mateixa notació que en la Figs.~2~i~3 de l'article de \textcite{oscillation_modes_II}.
+No obstant, s'ignora que els modes siguin 'kink' (parells) o 'sausage' (senars) i s'afegeix la possibilitat de que els modes siguin híbrids, no només interns o externs.
+Aquest darrer fet es va ignorar en l'article citat, però més envant es va definir el concepte en l'article de \textcite{oscillations_quiescent_solar_prominence}.
+
+
+I abans de posar sa figura des mode 5 explica què passa: els modes normals canvien de comportament si se topen amb un mode ràpid (o lent)
+i passen a ser ràpid i l'altre lent. 
+Per apreciar aquest fet en detall s'observa el mode n = 5:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Figures F&S modes/dd_mode_5.png}
+    \caption{Evolució d'un mode normal individual (n = 5).}
+    \label{fig:dd_mode_5}
+\end{figure}
 Explicar el mateix però en lloc de blau en colorets!
+
+Vz va en direcció del camp i no li afecta molt l'acoblament de kz --- afegir al tfg
 
 %---------------------------------------------------------------------------------------------------------------------------------------------------
 % Si acoblen no són modes físics? Pregunta JA feta a moncho, esper respota
@@ -571,49 +590,52 @@ Explicar el mateix però en lloc de blau en colorets!
 % També és interessant estudiar les autofuncions aprop d'aquest punt!
 %---------------------------------------------------------------------------------------------------------------------------------------------------
 
-Per apreciar amb més detall el procés d'anticreuament evitat s'augmenta la Fig.~\ref{fig:dd_r_i_l} en el punt concret on té lloc.
+Per apreciar amb més detall el procés d'anticreuament evitat s'augmenta la Fig.~\ref{fig:dd} en el punt concret on té lloc.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.95\textwidth]{Figures F&S modes/dd_avoided_crossing.png}
-    \caption{Anticreuament evitat entre els modes ràpid, parell, intern (n=x) i lent, senar, intern (n=y).}
+    \includegraphics[width=0.95\textwidth]{Figures F&S modes/first_anticrossing.png}
+    \caption{Anticreuament evitat entre els modes fHF i 3hES.}
     \label{fig:dd_avoided_crossing}
 \end{figure}
 
-És evident que els modes no es creuen i que hi ha un intercanvi de tendència d'aquests. Explicar algo més, sinó queda molt curt rei.
+És evident que els modes no es creuen i que hi ha un intercanvi de tendència d'aquests.
+El diagrama de dispersió s'ha calculat amb valors concrets de $k_z$.
+En aquest cas s'ha fet una interpolació lineal i s'han unit els punts per apreciar amb major detall l'anticreuament evitat.
 
-En Alfvén no hi havia diagrama de dispersió perque no hi ha kz en l'equació.
-%---------------------------------------------------------------------------------------------------------------------------------------------------
-% Alomillor és bo fer 2 subfigures: una amb es puntets blaus i vermells i una altra amb línies (i indicar-ho) per mostrar explícitament que són modes normals diferents
-% Caption: Anticreuament evitat entre els modes ràpid, parell, intern (n=x) i lent, senar, intern (n=y) en la figura a). Anticreuament evitat
-% des del punt de vista de la relació de dispersió dels modes normals (línies contínues interpolades).
-%---------------------------------------------------------------------------------------------------------------------------------------------------
+Explicar algo més, sinó queda molt curt rei.
 
+En Alfvén no hi havia diagrama de dispersió perque no hi ha kz en l'equació. Està bé recordar-ho?
 
 
-Una vegada es tenen clars els diagrames de dispersió es poden representar les autofuncions dels autovalors. Abans de fer-ho es mostra l'error relatiu per aquest cas.
+Una vegada es tenen clars els diagrames de dispersió es poden representar les autofuncions dels autovalors.
+Abans de fer-ho es mostra l'error relatiu per aquest cas.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{Figures F&S modes/eigenvalue_error.png}
     \caption{Error relatiu dels autovalors analítics i els calculats amb Dedalus en el cas dels modes ràpids i lents.}
     \label{fig:error_relatiu_r_i_l}
 \end{figure}
-S'aprecia que la forma de l'error és la mateixa: molt petit pels primers 100 autovalors, al 150 s'estabilitza i aprop dels 225 es dispara, per qüestions de càlcul computacional.
+S'aprecia que la forma de l'error és la mateixa que en el cas d'Alfvén, veure Fig. \ref{fig:error_vA}.
+Aquest és petit i anàrquic en els primers 100 autovalors, al 150 s'estabilitza i aprop dels 225 es dispara per qüestions del càlcul computacional.
 
-Finalment es presenten les autofuncions per aquest cas. Es considera una constant d'acoblament petita ($k_z = 0.01$) per poder apreciar la diferència amb els modes d'Alfvén de l'apartat anterior (\ref{subsec:modes_Alfvén}). De nou, la notació de la llegenda és la seguida en l'article \textcite{oscillation_modes_II}.
+Finalment es presenten les autofuncions per aquest cas.
+Es considera una constant d'acoblament petita ($k_z = 0.01$) per poder apreciar la diferència amb els modes d'Alfvén de l'apartat anterior (\hyperref[subsec:resultats_modes_Alfvén]{Subsec.~5.1}).
+De nou, la notació de la llegenda és la seguida en l'article \textcite{oscillation_modes_II}.
+%---------------------------------------------------------------------------------------------------------------------------------------------------
+% Els colors de les autofuncions corresponen als modes ràpids i lents del diagrama de dispersió Fig. \ref{fig:dd}
+%---------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{Figures F&S modes/Autofuncions_reals_individuals.png}
     \caption{Forma de les autofuncions associades als primers 4 modes. El tipus de mode està indicat en la pròpia figura.}
     \label{fig:autofuncions_reals_individuals}
 \end{figure}
-En els tres primers modes predomina el terme de $\tilde{v}_{x}$ i forma la mateixa estructura que els primers tres modes d'Alfvén, comparant amb la Fig.~\ref{fig:modes_vA}. En el quart mode es giren les tornes i el mode predominant és el de ${v}_{z}$.
-Això indica que les tres primeres solucions corresponen a modes lents mentre que la quarta a un ràpid, tot això pel cas de $k_z = 1$.
+En els tres primers modes predomina el terme de $\tilde{v}_{x}$ i forma la mateixa estructura que els primers tres modes d'Alfvén,
+comparant amb la Fig.~\ref{fig:modes_vA}. En el quart mode es giren les tornes i el mode predominant és el de ${v}_{z}$.
+Això indica que les tres primeres solucions corresponen a modes lents mentre que la quarta a un ràpid, tot això pel cas de $k_z = 0.01$.
 
 Afegir que com s'ha demostrat abans si kz fos més gran hauria canviat es comportament!
 
-%---------------------------------------------------------------------------------------------------------------------------------------------------
-% Fer com l'article de Joarder: dins la pròpia figura afegir: fIS^k, 1hEF^s, etc. A mi me mola, mem que diu en moncho. Sí! però no k ni s, sinó parell i senar - NO
-%---------------------------------------------------------------------------------------------------------------------------------------------------
 \clearpage
 
 
@@ -622,17 +644,27 @@ Autofuncions representades
 
 \subsubsection{Autofuncions segons kz}
 
-Finalment es comparen les autofuncions aprop de anticreuament evitat representat en la Fig.~\ref{fig:dd_avoided_crossing}. En aquest cas s'espera apreciar el canvi de dominància d'un mode enfront a l'altre.
+Finalment es comparen les autofuncions aprop de anticreuament evitat representat en la Fig.~\ref{fig:dd_avoided_crossing}.
+En aquest cas s'espera apreciar el canvi de dominància d'un mode enfront a l'altre.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Figures F&S modes/Autofuncions_anticreuament.png}
+    \caption{Evolució de les autofuncions del primer mode ràpid aprop de l'anticreuament evitat.}
+    \label{fig:autofuncions_anticreuament}
+\end{figure}
 
 Fer la figura bé i afegir-la!
 
+També es pot estudiar per separat l'evolució de les autofuncions d'un mode en concret. En aquest cas s'ha decidit considerar els dos modes híbrids (fonamentals):
+el primer mode lent i el primer mode ràpid.
+
+FICAR LES DUES COM 2 SUBFIGURES (4 TOTAL) AQUI I EXPLICAR UN POQUET
+
+
+SI TENIM TEEEEEMPS!!!!!!
 \clearpage
 
-%---------------------------------------------------------------------------------------------------------------------------------------------------
-% Alerta que no hi hagui hagut una confusió amb en MONCHO:
-% Jo li he demanat si no són físics quan acoblen. Però no em referesc al canvi de comportament, em referesc a que a vegades es superposen.
-% Quan es superposen segueixen sent físics? Això és la pregunta
-%---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 \section{Conclusions}
