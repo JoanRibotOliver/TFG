@@ -1,14 +1,14 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'Cos.blg'
-[134] biber:340> INFO - === Thu May 29, 2025, 09:52:48
-[202] Biber.pm:420> INFO - Reading 'Cos.bcf'
-[456] Biber.pm:994> INFO - Found 5 citekeys in bib section 0
-[485] Biber.pm:4463> INFO - Processing section 0
-[504] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[508] bibtex.pm:1713> INFO - LaTeX decoding ...
-[528] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[645] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[645] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
-[646] Biber.pm:4283> INFO - Sorting list 'ynt/global//global/global/global' of type 'entry' with template 'ynt' and locale 'ca-AD'
-[665] bbl.pm:676> INFO - Writing 'Cos.bbl' with encoding 'UTF-8'
-[673] bbl.pm:779> INFO - Output to Cos.bbl
+[115] biber:340> INFO - === Thu Jun  5, 2025, 13:52:58
+[143] Biber.pm:420> INFO - Reading 'Cos.bcf'
+[290] Biber.pm:994> INFO - Found 5 citekeys in bib section 0
+[313] Biber.pm:4463> INFO - Processing section 0
+[328] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[330] bibtex.pm:1713> INFO - LaTeX decoding ...
+[340] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[433] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
+[433] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[433] Biber.pm:4283> INFO - Sorting list 'ynt/global//global/global/global' of type 'entry' with template 'ynt' and locale 'ca-AD'
+[451] bbl.pm:676> INFO - Writing 'Cos.bbl' with encoding 'UTF-8'
+[456] bbl.pm:779> INFO - Output to Cos.bbl

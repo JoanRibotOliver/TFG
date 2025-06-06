@@ -93,7 +93,7 @@ ACOTAT USANT DEDALUS}}\\
 \vspace{17mm}
 \hspace{1cm}\small{Paraules claus del treball:}\\
 \vspace{3mm}
-\hspace{1cm}\small{paraula 1, paraula 2, paraula 3, ...}\\
+\hspace{1cm}\small{autofuncions, mode/s, Alfvén, ràpids, lents, dispersió}\\
 \vspace{25mm}
 \hspace{1cm}\large{\textit{Nom Tutor/Tutora del Treball: Ramon Oliver Herrero}}\\
 \vspace{1cm}
@@ -112,13 +112,32 @@ ACOTAT USANT DEDALUS}}\\
 \newpage
 %====================================
 {\fontfamily{cmr}\selectfont
-     \noindent\Large{\sffamily\textbf{Abstract}}\\
+     \noindent\Large{\sffamily\textbf{Resum}}\\
      
     \normalsize{
-    Prova 1 abstracte
-    \lipsum[1-1]}\\
+    Les protuberàncies o prominències solars són un dels fenòmens més rellevants i freqüents en l'atmosfera solar.
+    Aquestes es troben envoltades per la corona solar, la capa més calenta, externa i lleugera del sol.
+    Les protuberàncies són més denses i fredes que aquesta i poden romandre en equilibri quiescent durant períodes de díes a setmanes.
+    Sobre l'estat estacionari hi apareixen petites oscil·lacions que recorden els modes normals d'una corda amb els extrems fixats.
+    S'aproxima el sistema com una làmina infinita amb un camp magnètic horitzontal,
+    de manera que s'estudien les variacions de la prominència en aquesta situació.
+    Les equacions de la magnetohidrodinàmica (MHD) són resoltes, es proposen solucions com a ones planes i el problema es desacobla en dos subconjunts d'equacions:
+    les dels modes d'Alfvén i les dels modes ràpids i lents.
+    S'analitzen i es classifiquen els modes resultants segons la seva estructura, localització i relació de dispersió.
+    Els resultats mostren encreuaments evitats i acoblaments entre modes, de manera que s'obté una descripció qualitativa de les oscil·lacions estacionàries en plasmes solars.
+    Tot això es realitza mitjançant un codi numèric en llenguatge Python i amb l'ajuda de la llibreria Dedalus, especialitzada en resoldre equacions diferencials parcials (PDE).
+
+    % En toodels ho fa molt bé es cabró!
+    %Les protuberàncies solars són estructures denses i fredes que es mantenen en equilibri dins la corona solar, una regió calenta i difusa de l'atmosfera del Sol.
+    %En aquest treball s’estudia la propagació d’ones magnetohidrodinàmiques (MHD) en una protuberància quiescent mitjançant el codi numèric Dedalus,
+    %resolent les equacions MHD sota condicions físiques simplificades.
+    %El sistema s’aproxima com una làmina plana amb condicions de contorn als extrems i un camp magnètic horitzontal constant.
+    %S’analitzen els modes normals que s’hi poden excitar —modes d’Alfvén, ràpids i lents— i es classifiquen segons la seva estructura (fonamental o harmònica),
+    %localització (interna, externa o híbrida) i resposta en funció del vector d’ona.
+    %Els resultats mostren acoblaments entre modes i encreuaments evitats, aportant una visió quantitativa de les oscil·lacions estacionàries en plasmes solars.
+    } \\
     
-    \noindent\Large{\sffamily\textbf{Abstract}}\\
+    \noindent\Large{\sffamily\textbf{Resumen}}\\
 
     
     \normalsize{
@@ -128,6 +147,13 @@ ACOTAT USANT DEDALUS}}\\
 
     
     \normalsize{
+      Magnetohydrodinamical waves with boundary conditions using Dedalus
+
+This repo is about my final graduate project at Universitat de les Illes Balears (UIB). It contains some python notebooks including the ones to test and learn how to use the Dedalus library.
+
+The main goal of this project is to learn and take advantage of this useful tool to solve the PDE obtained with the linearization of the equations of ideal MHD, among some other assumptions described in the memory of the project.
+
+This equations represent the dynamics of the normal modes of a wave propagating in a solar prominence at the solar corona, which conforms a 3D bounded system. However, there are two sets of equations which are uncoupled and can be separated by three modes: the Alfvén modes, which propagate just as a guitar string with non continous density (1D), and the Fast & Slow modes, which couple the movement in the two remaining dimensions.
     \lipsum[1-1]}\\
 
 \thispagestyle{empty}
@@ -147,16 +173,24 @@ EL QUE HE PUC FER PERQUÈ L'ÍNDEX QUEDI BÉ ÉS AFEGIR TOTES LES CAPÇALERES (S
 DESPRÉS EL QUE HE DE FER ÉS "ENSEMBLE" AMB EL COS.TEX I AIXÍ JA HO TENDRÉ TOT.
 
 \chapter{Equacions MHD}
-\section{Linealització (ideals)}
 
 \chapter{Ones MHD}
+\section{Linealització}
 \section{Solucions: modes normals}
 \subsection{Modes d'Alfvén}
-\subsection{Modes Ràpids i Lents}
+\subsection{Modes ràpids i Lents}
+\subsection{Relació de dispersió}
 
-
+\chapter{Mètode}
+\section{Modes d'Alfvén}
+\section{Modes ràpids i lents}
 
 \chapter{Resultats}
+
+\section{Modes d'Alfvén}
+\section{Modes ràpids i lents}
+\subsection{Autofuncions amb constant d'acoblament, $k_z$, fixa}
+\subsection{Evolució de les autofuncions segons $k_z$}
 
 \chapter{Conclusions}
 
