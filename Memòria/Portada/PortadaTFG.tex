@@ -1,4 +1,4 @@
-\documentclass[onside]{book}
+%\documentclass[onside]{book}
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage{mathtools}
@@ -38,7 +38,7 @@
 
 \fancyhead{}
 \renewcommand{\contentsname}{\Large{\sffamily\textbf{Índice}}}
-\begin{document}
+%\begin{document}
 \renewcommand{\headrulewidth}{0pt} %No Horizontal Line at top
 %\newcommand*\NewPage{\clearpage\thispagestyle{empty}\null} 
 
@@ -114,47 +114,32 @@ ACOTAT USANT DEDALUS}}\\
 {\fontfamily{cmr}\selectfont
      \noindent\Large{\sffamily\textbf{Resum}}\\
      
-    \normalsize{
-    Les protuberàncies o prominències solars són un dels fenòmens més rellevants i freqüents en l'atmosfera solar.
-    Aquestes es troben envoltades per la corona solar, la capa més calenta, externa i lleugera del sol.
-    Les protuberàncies són més denses i fredes que aquesta i poden romandre en equilibri quiescent durant períodes de díes a setmanes.
-    Sobre l'estat estacionari hi apareixen petites oscil·lacions que recorden els modes normals d'una corda amb els extrems fixats.
-    S'aproxima el sistema com una làmina infinita amb un camp magnètic horitzontal,
-    de manera que s'estudien les variacions de la prominència en aquesta situació.
-    Les equacions de la magnetohidrodinàmica (MHD) són resoltes, es proposen solucions com a ones planes i el problema es desacobla en dos subconjunts d'equacions:
-    les dels modes d'Alfvén i les dels modes ràpids i lents.
-    S'analitzen i es classifiquen els modes resultants segons la seva estructura, localització i relació de dispersió.
-    Els resultats mostren encreuaments evitats i acoblaments entre modes, de manera que s'obté una descripció qualitativa de les oscil·lacions estacionàries en plasmes solars.
-    Tot això es realitza mitjançant un codi numèric en llenguatge Python i amb l'ajuda de la llibreria Dedalus, especialitzada en resoldre equacions diferencials parcials (PDE).
-
-    % En toodels ho fa molt bé es cabró!
-    %Les protuberàncies solars són estructures denses i fredes que es mantenen en equilibri dins la corona solar, una regió calenta i difusa de l'atmosfera del Sol.
-    %En aquest treball s’estudia la propagació d’ones magnetohidrodinàmiques (MHD) en una protuberància quiescent mitjançant el codi numèric Dedalus,
-    %resolent les equacions MHD sota condicions físiques simplificades.
-    %El sistema s’aproxima com una làmina plana amb condicions de contorn als extrems i un camp magnètic horitzontal constant.
-    %S’analitzen els modes normals que s’hi poden excitar —modes d’Alfvén, ràpids i lents— i es classifiquen segons la seva estructura (fonamental o harmònica),
-    %localització (interna, externa o híbrida) i resposta en funció del vector d’ona.
-    %Els resultats mostren acoblaments entre modes i encreuaments evitats, aportant una visió quantitativa de les oscil·lacions estacionàries en plasmes solars.
-    } \\
+    \normalsize{Les protuberàncies són fenòmens que tenen lloc en la corona solar i romanen en equilibri quiescent per dies o setmanes.
+    Sobre aquest estat apareixen petites oscil·lacions amb una certa analogia amb els modes normals d'una corda fixada pels extrems.
+    El sistema s'aproxima com una làmina infinita dins la corona solar i amb un camp magnètic horitzontal.
+    Es resolen les equacions de la magnetohidrodinàmica (MHD) amb solucions d'ones planes, desacoblant el problema en modes d'Alfvén i modes ràpids i lents.
+    S'obtenen els autovalors i es classifiquen els modes segons la seva estructura, localització i relació de dispersió.
+    Els resultats mostren encreuaments evitats i acoblaments entre modes, analitzats amb Python i la llibreria Dedalus.} \\
     
     \noindent\Large{\sffamily\textbf{Resumen}}\\
 
     
-    \normalsize{
-    \lipsum[1-1]} \\
+    \normalsize{Las protuberancias son fenómenos que tienen lugar en la corona solar y permanecen en equilibrio quiescente durante días o semanas.
+    Sobre este estado aparecen pequeñas oscilaciones con una cierta analogía a los modos normales de una cuerda fija por los extremos.
+    El sistema se aproxima como una lámina infinita inmersa en la corona solar y con un campo magnético horizontal.
+    Se resuelven las ecuaciones de la magnetohidrodinámica (MHD) con soluciones de ondas planas, desacoplando el problema en modos de Alfvén y modos rápidos y lentos.
+    Se obtienen los autovalores y se clasifican los modos según su estructura, localización y relación de dispersión.
+    Los resultados muestran cruces evitados y acoplamientos entre modos, analizados mediante Python y la librería Dedalus.} \\
     
     \noindent\Large{\sffamily\textbf{Abstract}}\\
 
     
-    \normalsize{
-      Magnetohydrodinamical waves with boundary conditions using Dedalus
-
-This repo is about my final graduate project at Universitat de les Illes Balears (UIB). It contains some python notebooks including the ones to test and learn how to use the Dedalus library.
-
-The main goal of this project is to learn and take advantage of this useful tool to solve the PDE obtained with the linearization of the equations of ideal MHD, among some other assumptions described in the memory of the project.
-
-This equations represent the dynamics of the normal modes of a wave propagating in a solar prominence at the solar corona, which conforms a 3D bounded system. However, there are two sets of equations which are uncoupled and can be separated by three modes: the Alfvén modes, which propagate just as a guitar string with non continous density (1D), and the Fast & Slow modes, which couple the movement in the two remaining dimensions.
-    \lipsum[1-1]}\\
+    \normalsize{Prominences are phenomena that occur in the solar corona and remain in a quiescent equilibrium for days or weeks.
+    In this state, small oscillations appear, analogous to the normal modes of a string fixed at both ends.
+    The system is approximated as an infinite slab embedded in the solar corona with a horizontal magnetic field.
+    The magnetohydrodynamic (MHD) equations are solved using plane wave solutions, decoupling the problem into Alfvén modes and fast and slow modes.
+    Eigenvalues are obtained and the modes are classified according to their structure, spatial localization, and dispersion relation.
+    The results reveal avoided crossings and mode couplings, analyzed using Python and the Dedalus library.}\\
 
 \thispagestyle{empty}
 \let\cleardoublepage\clearpage
@@ -178,7 +163,7 @@ DESPRÉS EL QUE HE DE FER ÉS "ENSEMBLE" AMB EL COS.TEX I AIXÍ JA HO TENDRÉ TO
 \section{Linealització}
 \section{Solucions: modes normals}
 \subsection{Modes d'Alfvén}
-\subsection{Modes ràpids i Lents}
+\subsection{Modes ràpids i lents}
 \subsection{Relació de dispersió}
 
 \chapter{Mètode}
@@ -202,4 +187,4 @@ DESPRÉS EL QUE HE DE FER ÉS "ENSEMBLE" AMB EL COS.TEX I AIXÍ JA HO TENDRÉ TO
 % CREC QUE HAURÉ DE FER UN "ENSEMBLE" DE PORTADA + MEMÒRIA
 
 
-\end{document}
+%\end{document}
