@@ -1,0 +1,102 @@
+% \numberwithin{equation}{section}
+
+\chapter{Equacions MHD} \label{sec:equacionsMHD}
+Les ones magnetohidrodinàmiques (MHD) són les que descriuen els esdeveniments en el plasma ionitzat de la corona solar.
+Llavors s'han de tenir en compte principalment dos blocs d'equacions: les magnètiques i les de plasma.
+En aquesta secció es donen les directrius principals de la deducció de les equacions MHD.
+La deducció completa es troba en el Cap.~2 del llibre de \textcite{Priest_2014}, esmentat en la Introducció.
+
+El bloc de les equacions magnètiques es conforma principalment per les equacions de~Maxwell:
+\begin{gather}
+	\bm{\nabla} \bm{\times} \bm{B} = \frac{1}{c^2} \frac{\partial \bm{E}}{\partial t} + \mu \bm{j}, \tag{2.1} \label{eq.2.1} \\
+	\bm{\nabla} \bm{\cdot} \bm{B} = 0, \tag{2.2} \label{eq.2.2} \\
+	\bm{\nabla} \bm{\times} \bm{E} = - \frac{\partial \bm{B}}{\partial t}, \tag{2.3} \label{eq.2.3} \\
+	\bm{\nabla} \bm{\cdot} \bm{E} = \frac{\rho^*}{\varepsilon_0}, \tag{2.4} \label{eq.2.4}
+\end{gather}
+on $\bm{E}$ i $\bm{B}$ són els camps elèctric i magnètic respectivament, $\rho^*$ és la densitat de càrrega per unitat de volum,
+$\bm{j}$ és la densitat de corrent, $c$ la velocitat de la llum i $\varepsilon$ i $\mu$ les permeabilitats elèctrica i magnètica del medi, respectivament.
+En el cas de la corona solar el valors de les permeabilitats són propers als del buit.
+
+Realment $\bm{B}$ és la intensitat de camp magnètic però amb el fi d'evitar una lectura feixuga es diu camp magnètic.
+De totes maneres s'ha fet servir la relació constitutiva ($\bm{B} = \mu \bm{H}$), on $\bm{H}$ és directament el camp magnètic.
+També es fa servir l'altra relació constitutiva ($\bm{D} = \varepsilon \bm{E}$), on $\bm{E}$ és el camp elèctric i $\bm{D}$ el vector desplaçament.
+
+Per seguir amb les equacions magnètiques es té en compte que la pertorbació d'una protuberància quiescient suposa un problema no relativista.
+Llavors la llei d'Ohm dicta que el corrent és proporcional al camp elèctric total:
+\begin{equation}
+	\bm{j} =  \sigma (\bm{E} + \bm{v} \bm{\times} \bm{B}), \tag{2.5} \label{eq.2.5}
+\end{equation}
+i si s'aïlla el camp elèctric estàtic:
+\begin{equation}
+	\bm{E} = - \bm{v} \bm{\times} \bm{B} + \bm{j}/\sigma. \tag{2.6} \label{eq.2.6}
+\end{equation}
+
+Finalment s'obté l'equació d'inducció al substituir el camp elèctric estàtic %de l'Eq.~(\ref{eq.2.6})
+dins l'Eq.~(\ref{eq.2.3}):
+\begin{equation}
+	\frac{\partial \bm{B}}{\partial t} = \bm{\nabla} \bm{\times} (\bm{v} \bm{\times} \bm{B}). \tag{2.7} \label{eq.2.7}
+\end{equation}
+És important tenir en compte que es fa la suposició de MHD ideal, llavors es considera una resistivitat del medi, $\sigma$,
+infinita, i el terme $\bm{j}/\sigma$ desapareix de l'Eq.~(\ref{eq.2.6}).
+En aquest cas és possible fer l'assumpció ja que les escales de longitud del problema són grans.
+Tot i així, en algunes regions d'alta concentració de corrent o a escales espacials petites no sempre es pot fer aquesta aproximació.
+
+Les variables més importants en un plasma són el camp magnètic, $\bm{B}$, i la velocitat del propi plasma, $\bm{v}$, per tant, és convenient escriure totes les expressions en funció d'aquestes.
+En canvi, les variables de corrent, $\bm{j}$, i de camp elèctric, $\bm{E}$, són secundàries, de manera que poden ser substituides per les principals.
+Amb aquesta consideració es simplifiquen les equacions ja que apareixen manco variables, fet que s'agraeix a l'hora d'implementar i resoldre les equacions amb l'ajuda de Dedalus, com es veurà més envant.
+
+
+
+El segon bloc d'equacions a tractar és el de les equacions del plasma. Les tres equacions principals són les que segueixen, començant per la de continuïtat de massa:
+\begin{equation}
+	\frac{d\rho}{dt} + \rho \bm{\nabla} \cdot \bm{v} = 0 \quad (\text{a}) \quad , \quad \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \bm{v}) = 0 \quad (\text{b}), \tag{2.8} \label{eq.2.8}
+\end{equation}
+on s'ha definit la derivada material o convectiva com
+\begin{equation}
+	\frac{d}{dt} = \frac{\partial}{\partial t} + \bm{v} \cdot \bm{\nabla}. \tag{2.9} \label{eq.2.9}
+\end{equation}
+
+La segona equació rellevant realment és el subconjunt de les equacions del moviment del plasma sota neutralitat elèctrica:
+\begin{equation}
+	\rho \frac{d \bm{v}}{dt} = - \bm{\nabla} p + \bm{j} \bm{\times} \bm{B} + \bm{F}, \tag{2.10} \label{eq.2.10}
+\end{equation}
+on no es tenen en compte els efectes incercials i les forces ($\bm{F}$) poden ser viscoses ($\bm{F}_{v}$) o gravitatòries ($\bm{F}_g$).
+D'aquesta manera, al resoldre aquestes equacions s'obtenen ones magneto-viscoses o magneto-gravitacionals respectivament.
+No obstant això, en el cas d'aquest estudi es suposen forces externes nul·les ($\bm{F} = \bm{0}$) per les qüestions que s'han aclarit en la introducció (\hyperref[sec:intro]{Sec. 1}). %(\hyperref[sec:intro]{\nameref{sec:intro}}). %
+Per consegüent les ones resultants són magneto-acústiques (també anomenades magnetohidrodinàmiques, MHD), que corresponen a l'Eq.~(\ref{eq.2.10}) si només es té en compte la força de Lorentz ($\bm{j} \bm{\times} \bm{B}$) i el gradient de pressió ($- \bm{\nabla} p$).
+
+Finalment la tercera equació de plasma rellevant és la de gas ideal, que pot ser escrita de diverses maneres:
+\begin{equation}
+	p = \frac{\tilde{R}}{\tilde{\mu}} \rho T = \frac{k_B}{m} \rho T = n k_B T, \tag{2.11} \label{eq.2.11}
+\end{equation}
+on $k_B$ és la constant de Boltzmann, $m_p$ és la massa del protó, $\tilde{R} = k_B/m_p$ la constant dels gasos ideals, $\tilde{\mu} = m/m_p$ el pes atòmic
+mitjà, $\rho = \tilde{\mu} m_p n = m n$ la densitat, $m$ la massa de partícula mitja i $n$ el nombre total de partícules.
+
+
+Una hipòtesi important amb profundes implicacions que es fa en aquest estudi és la d'adiabaticitat. La conservació d'energia del sistema modifica l'equació de calor
+\begin{equation}
+	\rho T \frac{ds}{dr} = - \mathcal{L}, \tag{2.12} \label{eq.2.12}
+\end{equation}
+ò alternativament
+\begin{equation}
+	\frac{\rho^\gamma}{\gamma - 1} \frac{d}{dt} \left( \frac{p}{\rho^\gamma} \right) = - \mathcal{L}, \tag{2.13} \label{eq.2.13}
+\end{equation}
+de manera que
+\begin{equation}
+	\frac{d}{dt} \left( \frac{p}{\rho^\gamma} \right) = 0, \tag{2.14} \label{eq.2.14}
+\end{equation}
+on $s$ és l'entropia, $\gamma = c_p/c_v = 5/3$ la proporció de calors específics i $\mathcal{L}=0$ és la funció pèrdua d'energia, nul·la en el cas adiabàtic.
+Així doncs, de l'equació de calor s'obté una condició que més envant es farà servir al resoldre les equacions.
+
+
+Per acabar aquesta secció es reescriuen totes les assumpcions fetes en la deducció de les equacions.
+Aquestes són extretes del Cap.~2 del llibre de \textcite{Priest_2014}.
+\begin{enumerate}[label=\Roman*.]
+	\item \label{punt:I} Plasma continu i en equilibri estàtic.
+	\item \label{punt:II} Plasma en equilibri termodinàmic (TD).
+	\item \label{punt:III} Coeficient $\sigma \rightarrow \infty \implies \eta \rightarrow 0$ i $\mu$ constant, propietats del plasma isotròpiques.
+	\item \label{punt:IV} Equacions en sistema de referència del plasma, no del Sol.
+	\item \label{punt:V} Efectes relativistes ignorats, velocitats molt menors a la del llum.
+	\item \label{punt:VI} Plasma fluid únic, tot i que existeixen models de 2 i 3.
+	\item \label{punt:VII} Llei d'Ohm simplificada.
+\end{enumerate}

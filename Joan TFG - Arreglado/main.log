@@ -1,0 +1,2048 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  10 JUN 2025 08:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@chapter=\count197
+\c@section=\count198
+\c@subsection=\count199
+\c@subsubsection=\count266
+\c@paragraph=\count267
+\c@subparagraph=\count268
+\c@figure=\count269
+\c@table=\count270
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/babel/babel.
+sty
+Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count271
+\U@D=\dimen142
+\l@unhyphenated=\language90
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/babel/txtbab
+el.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count272
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/babel-catala
+n/catalan.ldf
+Language: catalan 2005/03/29 v2.2p Catalan support from the babel system
+Package babel Info: Making " an active character on input line 91.
+Warning: You are using encoding OT1 instead of T1.
+Some word breaks will not be found.
+\leftllkern=\dimen143
+\rightllkern=\dimen144
+\raiselldim=\dimen145
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/babel/locale
+/ca/babel-catalan.tex
+Package babel Info: Importing font and identification data for catalan
+(babel)             from babel-ca.ini. Reported on input line 11.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/csquotes/csquo
+tes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/etoolbox/etool
+box.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count273
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/keyva
+l.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+\csq@reset=\count274
+\csq@gtype=\count275
+\csq@glevel=\count276
+\csq@qlevel=\count277
+\csq@maxlvl=\count278
+\csq@tshold=\count279
+\csq@ltx@everypar=\toks18
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/csquotes/csquo
+tes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/csquotes/csquo
+tes.cfg
+File: csquotes.cfg 
+))
+Package csquotes Info: Disabling multilingual quotes.
+Package csquotes Info: Redefining alias 'default' -> 'catalan'.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/fontenc.s
+ty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+6.
+ (/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/mathtools/math
+tools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count280
+\calc@Bcount=\count281
+\calc@Adimen=\dimen146
+\calc@Bdimen=\dimen147
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count282
+\calc@Cskip=\skip53
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/mathtools/mhse
+tup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsmat
+h.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip54
+
+For additional information on amsmath, use the `?' option.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amstex
+t.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsgen
+.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen148
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsbsy
+.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen149
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsopn
+.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count283
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count284
+\leftroot@=\count285
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count286
+\DOTSCASE@=\count287
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count288
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count289
+\dotsspace@=\muskip17
+\c@parentequation=\count290
+\dspbrk@lvl=\count291
+\tag@help=\toks20
+\row@=\count292
+\column@=\count293
+\maxfields@=\count294
+\andhelp@=\toks21
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks22
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\g_MT_multlinerow_int=\count295
+\l_MT_multwidth_dim=\dimen157
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen158
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen159
+\l_MT_above_intertext_sep=\dimen160
+\l_MT_below_intertext_sep=\dimen161
+\l_MT_above_shortintertext_sep=\dimen162
+\l_MT_below_shortintertext_sep=\dimen163
+\xmathstrut@box=\box54
+\xmathstrut@dim=\dimen164
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/setspace/setsp
+ace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/hyper
+ref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/iftex.
+sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/kvsetkeys/kvse
+tkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/kvdefinekeys
+/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pdfescape/pd
+fescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/ltxcmds/ltxc
+mds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/pdftexcmds/p
+dftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/infwarerr/in
+fwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hycolor/hycolo
+r.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/namer
+ef.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/refcount/refco
+unt.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/gettitlestri
+ng/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/kvoptions/kvop
+tions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count296
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/stringenc/st
+ringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen165
+\Hy@linkcounter=\count297
+\Hy@pagecounter=\count298
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/pd1en
+c.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/intcalc/intc
+alc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count299
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/puenc
+.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count300
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen166
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/bitset/bitse
+t.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/bigintcalc/b
+igintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count301
+\Field@Width=\dimen167
+\Fld@charsize=\dimen168
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/atbegshi-
+ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count302
+\c@Item=\count303
+\c@Hfootnote=\count304
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/hyperref/hpdft
+ex.def
+File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/atveryend
+-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/rerunfilecheck
+/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/uniquecounte
+r/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip58
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/mleftright/m
+leftright.sty
+Package: mleftright 2019/12/03 v1.2 Math left/right delim. as open/close (HO)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/appendix/appen
+dix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count307
+\c@@ppsavesec=\count308
+\c@@ppsaveapp=\count309
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3packages/xpa
+rse/xparse.sty
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3kernel/expl3
+.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3backend/l3ba
+ckend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count310
+\l__pdf_internal_box=\box55
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lipsum/lipsum.
+sty
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3packages/l3k
+eys2e/l3keys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count311
+\l__lipsum_a_int=\count312
+\l__lipsum_b_int=\count313
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lipsum/lipsum.
+ltd.tex))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fncychap/fncyc
+hap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip59
+\mylen=\skip60
+\myhi=\skip61
+\px=\skip62
+\py=\skip63
+\pyy=\skip64
+\pxx=\skip65
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/multirow/multi
+row.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip66
+\multirow@cntb=\count314
+\multirow@dima=\skip67
+\bigstrutjot=\dimen169
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/graph
+icx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/graph
+ics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/trig.
+sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics-cfg/g
+raphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics-def/p
+dftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/wrapfig/wrapfi
+g.sty
+\wrapoverhang=\dimen172
+\WF@size=\dimen173
+\c@WF@wrappedlines=\count315
+\WF@box=\box56
+\WF@everypar=\toks24
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/xcolor/xcolor.
+sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics-cfg/c
+olor.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/mathc
+olor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fancyhdr/fancy
+hdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip68
+\f@nch@offset@elh=\skip69
+\f@nch@offset@erh=\skip70
+\f@nch@offset@olh=\skip71
+\f@nch@offset@orh=\skip72
+\f@nch@offset@elf=\skip73
+\f@nch@offset@erf=\skip74
+\f@nch@offset@olf=\skip75
+\f@nch@offset@orf=\skip76
+\f@nch@height=\skip77
+\f@nch@footalignment=\skip78
+\f@nch@widthL=\skip79
+\f@nch@widthC=\skip80
+\f@nch@widthR=\skip81
+\@temptokenb=\toks25
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/inputenc.
+sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/geometry/geome
+try.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/ifvtex
+.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count316
+\Gm@cntv=\count317
+\c@Gm@tempcnt=\count318
+\Gm@bindingoffset=\dimen174
+\Gm@wd@mp=\dimen175
+\Gm@odd@mp=\dimen176
+\Gm@even@mp=\dimen177
+\Gm@layoutwidth=\dimen178
+\Gm@layoutheight=\dimen179
+\Gm@layouthoffset=\dimen180
+\Gm@layoutvoffset=\dimen181
+\Gm@dimlist=\toks28
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/enumitem/enumi
+tem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip82
+\enit@outerparindent=\dimen182
+\enit@toks=\toks29
+\enit@inbox=\box57
+\enit@count@id=\count319
+\enitdp@description=\count320
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/amsfo
+nts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/caption/captio
+n.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/caption/captio
+n3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen183
+\captionmargin=\dimen184
+\caption@leftmargin=\dimen185
+\caption@rightmargin=\dimen186
+\caption@width=\dimen187
+\caption@indent=\dimen188
+\caption@parindent=\dimen189
+\caption@hangindent=\dimen190
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count321
+\c@continuedfloat=\count322
+Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/caption/subcap
+tion.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count323
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count324
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/float/float.st
+y
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count325
+\float@exts=\toks30
+\float@box=\box58
+\@float@everytoks=\toks31
+\@floatcapt=\box59
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/amssy
+mb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/lmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/mdwtools/footn
+ote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box60
+\fn@width=\dimen191
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/physics/physic
+s.sty
+Package: physics 
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/tabularx
+.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/array.st
+y
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen192
+\ar@mcellbox=\box61
+\extrarowheight=\dimen193
+\NC@list=\toks32
+\extratabsurround=\skip83
+\backup@length=\skip84
+\ar@cellbox=\box62
+)
+\TX@col@width=\dimen194
+\TX@old@table=\dimen195
+\TX@old@col=\dimen196
+\TX@target=\dimen197
+\TX@delta=\dimen198
+\TX@cols=\count326
+\TX@ftn=\toks33
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/titlesec/title
+sec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box63
+\beforetitleunit=\skip85
+\aftertitleunit=\skip86
+\ttl@plus=\dimen199
+\ttl@minus=\dimen256
+\ttl@toksa=\toks34
+\titlewidth=\dimen257
+\titlewidthlast=\dimen258
+\titlewidthfirst=\dimen259
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/imakeidx/imake
+idx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/xkeyval/xkeyva
+l.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/xkeyval/xkey
+val.tex
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/xkeyval/xkvu
+tils.tex
+\XKV@toks=\toks35
+\XKV@tempa@toks=\toks36
+)
+\XKV@depth=\count327
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/ifxete
+x.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/ifluat
+ex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/multicol
+.sty
+Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
+\c@tracingmulticols=\count328
+\mult@box=\box64
+\multicol@leftmargin=\dimen260
+\c@unbalance=\count329
+\c@collectmore=\count330
+\doublecol@number=\count331
+\multicoltolerance=\count332
+\multicolpretolerance=\count333
+\full@width=\dimen261
+\page@free=\dimen262
+\premulticols=\dimen263
+\postmulticols=\dimen264
+\multicolsep=\skip87
+\multicolbaselineskip=\skip88
+\partial@page=\box65
+\last@line=\box66
+\mc@boxedresult=\box67
+\maxbalancingoverflow=\dimen265
+\mult@rightbox=\box68
+\mult@grightbox=\box69
+\mult@firstbox=\box70
+\mult@gfirstbox=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\c@minrows=\count334
+\c@columnbadness=\count335
+\c@finalcolumnbadness=\count336
+\last@try=\dimen266
+\multicolovershoot=\dimen267
+\multicolundershoot=\dimen268
+\mult@nat@firstbox=\box108
+\colbreak@box=\box109
+\mc@col@check@num=\count337
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/makecell/makec
+ell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen269
+\c@nlinenum=\count338
+\TeXr@lab=\toks37
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/doublestroke/d
+sfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/ragged2e/ragge
+d2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip89
+\RaggedLeftLeftskip=\skip90
+\RaggedRightLeftskip=\skip91
+\CenteringRightskip=\skip92
+\RaggedLeftRightskip=\skip93
+\RaggedRightRightskip=\skip94
+\CenteringParfillskip=\skip95
+\RaggedLeftParfillskip=\skip96
+\RaggedRightParfillskip=\skip97
+\JustifyingParfillskip=\skip98
+\CenteringParindent=\skip99
+\RaggedLeftParindent=\skip100
+\RaggedRightParindent=\skip101
+\JustifyingParindent=\skip102
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/listings/listi
+ngs.sty
+\lst@mode=\count339
+\lst@gtempboxa=\box110
+\lst@token=\toks38
+\lst@length=\count340
+\lst@currlwidth=\dimen270
+\lst@column=\count341
+\lst@pos=\count342
+\lst@lostspace=\dimen271
+\lst@width=\dimen272
+\lst@newlines=\count343
+\lst@lineno=\count344
+\lst@maxwidth=\dimen273
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/listings/lstpa
+tch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/listings/lstmi
+sc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count345
+\lst@skipnumbers=\count346
+\lst@framebox=\box111
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/listings/listi
+ngs.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/verbatim
+.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read3
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/footmisc/footm
+isc.sty
+Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
+\FN@temptoken=\toks41
+\footnotemargin=\dimen274
+\@outputbox@depth=\dimen275
+Package footmisc Info: Declaring symbol style bringhurst on input line 699.
+Package footmisc Info: Declaring symbol style chicago on input line 707.
+Package footmisc Info: Declaring symbol style wiley on input line 716.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 727.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 747.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 768
+.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/footnotebackre
+f/footnotebackref.sty
+Package: footnotebackref 2012/07/01 v1.0 Backreferences for footnotes (Holger L
+ange)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/letltxmacro/le
+tltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+\c@BackrefHyperFootnoteCounter=\count347
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/parskip/parski
+p.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/braket/braket.
+sty)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/bibla
+tex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/logreq/logreq.
+sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count348
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/logreq/logreq.
+def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/ifthen.st
+y
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count349
+\c@listtotal=\count350
+\c@listcount=\count351
+\c@liststart=\count352
+\c@liststop=\count353
+\c@citecount=\count354
+\c@citetotal=\count355
+\c@multicitecount=\count356
+\c@multicitetotal=\count357
+\c@instcount=\count358
+\c@maxnames=\count359
+\c@minnames=\count360
+\c@maxitems=\count361
+\c@minitems=\count362
+\c@citecounter=\count363
+\c@maxcitecounter=\count364
+\c@savedcitecounter=\count365
+\c@uniquelist=\count366
+\c@uniquename=\count367
+\c@refsection=\count368
+\c@refsegment=\count369
+\c@maxextratitle=\count370
+\c@maxextratitleyear=\count371
+\c@maxextraname=\count372
+\c@maxextradate=\count373
+\c@maxextraalpha=\count374
+\c@abbrvpenalty=\count375
+\c@highnamepenalty=\count376
+\c@lownamepenalty=\count377
+\c@maxparens=\count378
+\c@parenlevel=\count379
+\blx@tempcnta=\count380
+\blx@tempcntb=\count381
+\blx@tempcntc=\count382
+\c@blx@maxsection=\count383
+\blx@maxsegment@0=\count384
+\blx@notetype=\count385
+\blx@parenlevel@text=\count386
+\blx@parenlevel@foot=\count387
+\blx@sectionciteorder@0=\count388
+\blx@sectionciteorderinternal@0=\count389
+\blx@entrysetcounter=\count390
+\blx@biblioinstance=\count391
+\labelnumberwidth=\skip103
+\labelalphawidth=\skip104
+\biblabelsep=\skip105
+\bibitemsep=\skip106
+\bibnamesep=\skip107
+\bibinitsep=\skip108
+\bibparsep=\skip109
+\bibhang=\skip110
+\blx@bcfin=\read4
+\blx@bcfout=\write3
+\blx@langwohyphens=\language91
+\c@mincomprange=\count392
+\c@maxcomprange=\count393
+\c@mincompwidth=\count394
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/blx-d
+m.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count395
+\c@savedafterword=\count396
+\c@annotator=\count397
+\c@savedannotator=\count398
+\c@author=\count399
+\c@savedauthor=\count400
+\c@bookauthor=\count401
+\c@savedbookauthor=\count402
+\c@commentator=\count403
+\c@savedcommentator=\count404
+\c@editor=\count405
+\c@savededitor=\count406
+\c@editora=\count407
+\c@savededitora=\count408
+\c@editorb=\count409
+\c@savededitorb=\count410
+\c@editorc=\count411
+\c@savededitorc=\count412
+\c@foreword=\count413
+\c@savedforeword=\count414
+\c@holder=\count415
+\c@savedholder=\count416
+\c@introduction=\count417
+\c@savedintroduction=\count418
+\c@namea=\count419
+\c@savednamea=\count420
+\c@nameb=\count421
+\c@savednameb=\count422
+\c@namec=\count423
+\c@savednamec=\count424
+\c@translator=\count425
+\c@savedtranslator=\count426
+\c@shortauthor=\count427
+\c@savedshortauthor=\count428
+\c@shorteditor=\count429
+\c@savedshorteditor=\count430
+\c@labelname=\count431
+\c@savedlabelname=\count432
+\c@institution=\count433
+\c@savedinstitution=\count434
+\c@lista=\count435
+\c@savedlista=\count436
+\c@listb=\count437
+\c@savedlistb=\count438
+\c@listc=\count439
+\c@savedlistc=\count440
+\c@listd=\count441
+\c@savedlistd=\count442
+\c@liste=\count443
+\c@savedliste=\count444
+\c@listf=\count445
+\c@savedlistf=\count446
+\c@location=\count447
+\c@savedlocation=\count448
+\c@organization=\count449
+\c@savedorganization=\count450
+\c@origlocation=\count451
+\c@savedoriglocation=\count452
+\c@origpublisher=\count453
+\c@savedorigpublisher=\count454
+\c@publisher=\count455
+\c@savedpublisher=\count456
+\c@language=\count457
+\c@savedlanguage=\count458
+\c@origlanguage=\count459
+\c@savedoriglanguage=\count460
+\c@pageref=\count461
+\c@savedpageref=\count462
+\shorthandwidth=\skip111
+\shortjournalwidth=\skip112
+\shortserieswidth=\skip113
+\shorttitlewidth=\skip114
+\shortauthorwidth=\skip115
+\shorteditorwidth=\skip116
+\locallabelnumberwidth=\skip117
+\locallabelalphawidth=\skip118
+\localshorthandwidth=\skip119
+\localshortjournalwidth=\skip120
+\localshortserieswidth=\skip121
+\localshorttitlewidth=\skip122
+\localshortauthorwidth=\skip123
+\localshorteditorwidth=\skip124
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/blx-c
+ompat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/bibla
+tex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count463
+\c@textcitetotal=\count464
+\c@textcitemaxnames=\count465
+\c@biburlbigbreakpenalty=\count466
+\c@biburlbreakpenalty=\count467
+\c@biburlnumpenalty=\count468
+\c@biburlucpenalty=\count469
+\c@biburllcpenalty=\count470
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count471
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/blx-n
+atbib.def
+File: blx-natbib.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/bbx/a
+uthoryear.bbx
+File: authoryear.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/bbx/s
+tandard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count472
+\c@bbx:relatedtotal=\count473
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/cbx/a
+uthoryear.cbx
+File: authoryear.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/bibla
+tex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2025-01-18 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/blx-c
+ase-expl3.sty
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
+
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 72.
+
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Info: Redefining \l on input line 72.
+LaTeX Info: Redefining \L on input line 72.
+Package hyperref Info: Link coloring OFF on input line 72.
+ (./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/context/base/mkii/su
+pp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count474
+\scratchdimen=\dimen276
+\scratchbox=\box112
+\nofMPsegments=\count475
+\nofMParguments=\count476
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count477
+\MPscratchDim=\dimen277
+\MPnumerator=\count478
+\makeMPintoPDFobject=\count479
+\everyMPtoPDFconversion=\toks43
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/epstopdf-pkg/e
+pstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/latexconfig/ep
+stopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=682.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-33.0119pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=53.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count480
+Package biblatex Info: Trying to load language 'catalan'...
+Package biblatex Info: ... file 'catalan.lbx' found.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/biblatex/lbx/c
+atalan.lbx
+File: catalan.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 72.
+Package biblatex Info: Reference segment=0 on input line 72.
+<logo.pdf, id=73, 185.97679pt x 59.7482pt>
+File: logo.pdf Graphic file (type pdf)
+<use logo.pdf>
+Package pdftex.def Info: logo.pdf  used on input line 84.
+(pdftex.def)             Requested size: 184.9429pt x 59.418pt.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 86
+.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tex-gyre/t1qhv
+.fd
+File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
+)
+
+[1
+
+{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/map/pdftex/updmap/
+pdftex.map}{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvi
+ps/tex-gyre/q-ec.enc} <./logo.pdf>]
+
+[2]
+
+<tik_cross_yes.png, id=89, 491.58656pt x 250.68657pt>
+File: tik_cross_yes.png Graphic file (type png)
+<use tik_cross_yes.png>
+Package pdftex.def Info: tik_cross_yes.png  used on input line 145.
+(pdftex.def)             Requested size: 98.31557pt x 50.13641pt.
+
+Overfull \hbox (44.41461pt too wide) has occurred while \output is active
+[][]|  
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (27.46295pt): 
+(fancyhdr)                Make it at least 54.21645pt, for example:
+(fancyhdr)                \setlength{\footskip}{54.21645pt}.
+
+[3 <./tik_cross_yes.png>]
+
+[4]
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
+51.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--179
+
+ []
+
+
+
+[5{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-
+ec.enc}{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/c
+m-super/cm-super-t1.enc}{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./main.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
+.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
+.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+6.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+6.
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsa.
+fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsb.
+fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ (./Chapters/Introduction.tex
+
+[6
+
+]
+Cap\'{\i }tol 1.
+
+LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <50> not available
+(Font)              size <35.83> substituted on input line 3.
+
+
+
+[7
+
+{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ma
+thsy.enc}{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips
+/lm/lm-rm.enc}{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/
+dvips/lm/lm-mathit.enc}]
+<Representacions/prot_real.png, id=158, 567.3195pt x 341.1144pt>
+File: Representacions/prot_real.png Graphic file (type png)
+<use Representacions/prot_real.png>
+Package pdftex.def Info: Representacions/prot_real.png  used on input line 60.
+(pdftex.def)             Requested size: 218.51521pt x 131.38408pt.
+<Representacions/protuberancia_solar_2d.png, id=160, 571.6557pt x 368.8179pt>
+File: Representacions/protuberancia_solar_2d.png Graphic file (type png)
+<use Representacions/protuberancia_solar_2d.png>
+Package pdftex.def Info: Representacions/protuberancia_solar_2d.png  used on in
+put line 66.
+(pdftex.def)             Requested size: 218.51521pt x 140.97952pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
+3.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (./Chapters/Equacions_MHD.tex
+
+[8{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-
+ts1.enc} <./Representacions/prot_real.png> <./Representacions/protuberancia_sol
+ar_2d.png>]
+Cap\'{\i }tol 2.
+
+
+[9
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 \begin{equation}
+                     
+
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.69 \end{equation}
+                   ]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.0.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \begin{equation}
+                     ) (./Chapters/Ones_MHD.tex
+
+[11{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm
+-mathex.enc}]
+Cap\'{\i }tol 3.
+
+
+[12
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 \begin{equation}
+                     
+
+[13]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 \begin{equation}
+                     
+
+[14
+
+]
+
+[15]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.180 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.180 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.180 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.180 \begin{equation}
+                      ) (./Chapters/Method.tex
+
+[16
+pdfTeX warning (ext4): destination with the same identifier (name{equation.3.2.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.3 \chapter
+            {Mètode} \label{sec:mètode}]
+Cap\'{\i }tol 4.
+
+
+[17
+
+]
+
+[18]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
+1.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (./Chapters/Resultats.tex
+
+[19
+
+]
+Cap\'{\i }tol 5.
+
+
+[20
+
+]
+<Figures_Alfven_modes/eigenvalue_error_vA.png, id=368, 758.835pt x 469.5141pt>
+File: Figures_Alfven_modes/eigenvalue_error_vA.png Graphic file (type png)
+<use Figures_Alfven_modes/eigenvalue_error_vA.png>
+Package pdftex.def Info: Figures_Alfven_modes/eigenvalue_error_vA.png  used on 
+input line 80.
+(pdftex.def)             Requested size: 432.48051pt x 267.59pt.
+
+
+[21]
+<Figures_Alfven_modes/modes_Alfven.png, id=375, 713.5458pt x 483.9681pt>
+File: Figures_Alfven_modes/modes_Alfven.png Graphic file (type png)
+<use Figures_Alfven_modes/modes_Alfven.png>
+Package pdftex.def Info: Figures_Alfven_modes/modes_Alfven.png  used on input l
+ine 94.
+(pdftex.def)             Requested size: 432.48051pt x 293.33699pt.
+
+
+[22 <./Figures_Alfven_modes/eigenvalue_error_vA.png>]
+<Figures_F&S_modes/dd_modes_normals.png, id=384, 739.8039pt x 490.9542pt>
+File: Figures_F&S_modes/dd_modes_normals.png Graphic file (type png)
+<use Figures_F&S_modes/dd_modes_normals.png>
+Package pdftex.def Info: Figures_F&S_modes/dd_modes_normals.png  used on input 
+line 118.
+(pdftex.def)             Requested size: 432.48051pt x 287.00851pt.
+
+
+[23 <./Figures_Alfven_modes/modes_Alfven.png>]
+<Figures_F&S_modes/dd_mode_5.png, id=394, 627.7854pt x 423.7431pt>
+File: Figures_F&S_modes/dd_mode_5.png Graphic file (type png)
+<use Figures_F&S_modes/dd_mode_5.png>
+Package pdftex.def Info: Figures_F&S_modes/dd_mode_5.png  used on input line 14
+8.
+(pdftex.def)             Requested size: 432.48051pt x 291.91104pt.
+
+
+[24 <./Figures_F&S_modes/dd_modes_normals.png>]
+<Figures_F&S_modes/first_anticrossing.png, id=404, 670.4247pt x 309.5565pt>
+File: Figures_F&S_modes/first_anticrossing.png Graphic file (type png)
+<use Figures_F&S_modes/first_anticrossing.png>
+Package pdftex.def Info: Figures_F&S_modes/first_anticrossing.png  used on inpu
+t line 167.
+(pdftex.def)             Requested size: 432.48051pt x 199.69312pt.
+
+
+[25 <./Figures_F&S_modes/dd_mode_5.png>]
+<Figures_F&S_modes/eigenvalue_error.png, id=413, 831.105pt x 469.5141pt>
+File: Figures_F&S_modes/eigenvalue_error.png Graphic file (type png)
+<use Figures_F&S_modes/eigenvalue_error.png>
+Package pdftex.def Info: Figures_F&S_modes/eigenvalue_error.png  used on input 
+line 193.
+(pdftex.def)             Requested size: 432.48051pt x 244.32068pt.
+
+
+[26 <./Figures_F&S_modes/first_anticrossing.png>]
+<Figures_F&S_modes/Autofuncions_reals_individuals.png, id=421, 764.8575pt x 480
+.1137pt>
+File: Figures_F&S_modes/Autofuncions_reals_individuals.png Graphic file (type p
+ng)
+<use Figures_F&S_modes/Autofuncions_reals_individuals.png>
+Package pdftex.def Info: Figures_F&S_modes/Autofuncions_reals_individuals.png  
+used on input line 204.
+(pdftex.def)             Requested size: 432.48051pt x 271.47719pt.
+
+
+[27 <./Figures_F&S_modes/eigenvalue_error.png> <./Figures_F&S_modes/Autofuncion
+s_reals_individuals.png>]
+<Figures_F&S_modes/Evolució_autofuncions_n_4_subplots.png, id=434, 777.1434pt 
+x 480.1137pt>
+File: Figures_F&S_modes/Evolució_autofuncions_n_4_subplots.png Graphic file (t
+ype png)
+<use Figures_F&S_modes/Evolució_autofuncions_n_4_subplots.png>
+Package pdftex.def Info: Figures_F&S_modes/Evolució_autofuncions_n_4_subplots.
+png  used on input line 234.
+(pdftex.def)             Requested size: 432.48051pt x 267.18419pt.
+
+
+[28 <./Figures_F&S_modes/Evolució_autofuncions_n_4_subplots.png>]
+<Figures_F&S_modes/Evolució_autofuncions_fHL_subplots.png, id=443, 752.3307pt 
+x 480.1137pt>
+File: Figures_F&S_modes/Evolució_autofuncions_fHL_subplots.png Graphic file (t
+ype png)
+<use Figures_F&S_modes/Evolució_autofuncions_fHL_subplots.png>
+Package pdftex.def Info: Figures_F&S_modes/Evolució_autofuncions_fHL_subplots.
+png  used on input line 257.
+(pdftex.def)             Requested size: 432.48051pt x 275.9973pt.
+
+
+[29 <./Figures_F&S_modes/Evolució_autofuncions_fHL_subplots.png>]
+<Figures_F&S_modes/Evolució_autofuncions_fHR_subplots.png, id=456, 786.2976pt 
+x 480.1137pt>
+File: Figures_F&S_modes/Evolució_autofuncions_fHR_subplots.png Graphic file (t
+ype png)
+<use Figures_F&S_modes/Evolució_autofuncions_fHR_subplots.png>
+Package pdftex.def Info: Figures_F&S_modes/Evolució_autofuncions_fHR_subplots.
+png  used on input line 285.
+(pdftex.def)             Requested size: 432.48051pt x 264.07066pt.
+
+
+[30 <./Figures_F&S_modes/Evolució_autofuncions_fHR_subplots.png>])
+(./Chapters/Conclusion.tex
+
+[31]
+Cap\'{\i }tol 6.
+
+
+[32
+
+]) (./Chapters/Bibliography.tex
+
+[33]) (./Chapters/Appendix.tex
+
+[34
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{chapter.1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.7 \chapter{Codis}
+                   \label{ap.A}
+Ap\`endix A.
+
+
+[35
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{chapter.2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 \chapter{Imatges}
+                       \label{ap.B}
+Ap\`endix B.
+)
+
+! LaTeX Error: \begin{table} on input line 7 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 \end{document}
+                    
+? return
+OK, entering \nonstopmode...
+
+
+[36
+
+] (./main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 14.17pt have occurred.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 3C4F55252D5FFC464424AC99F66B946C;2195
+(rerunfilecheck)             After:  3C257050A9294010599EA22AE4E54E33;2193.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 7 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 27820 strings out of 473190
+ 487791 string characters out of 5705898
+ 1421429 words of memory out of 5000000
+ 50493 multiletter control sequences out of 15000+600000
+ 663380 words of font info for 96 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,16n,79p,1193b,2011s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/ty
+pe1/public/lm/lmbsy10.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dis
+t/fonts/type1/public/lm/lmbx10.pfb></usr/local/Cellar/texlive/20250308_1/share/
+texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/Cellar/texlive/20250308
+_1/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/Cellar/texliv
+e/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/Cell
+ar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/l
+ocal/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
+></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/l
+mmi8.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/pub
+lic/lm/lmmib10.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts
+/type1/public/lm/lmr10.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-di
+st/fonts/type1/public/lm/lmr17.pfb></usr/local/Cellar/texlive/20250308_1/share/
+texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/Cellar/texlive/20250308_1
+/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/Cellar/texlive/202
+50308_1/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/Cellar/te
+xlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/loca
+l/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><
+/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lms
+y8.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/publi
+c/lm/lmtt10.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msam10.pfb></usr/local/Cellar/texlive/20250308_1/sh
+are/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/Cellar/texlive/
+20250308_1/share/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/Ce
+llar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb>
+</usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-su
+per/sfbx3583.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/t
+ype1/public/cm-super/sfrb1095.pfb></usr/local/Cellar/texlive/20250308_1/share/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (36 pages, 2809198 bytes).
+PDF statistics:
+ 655 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+
