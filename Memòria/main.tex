@@ -54,7 +54,10 @@
 \usepackage{ragged2e}
 \usepackage{listings}
 \usepackage{verbatim}
-\usepackage[hang, flushmargin]{footmisc}
+\usepackage[hang, flushmargin, bottom]{footmisc}
+%\usepackage[bottom]{footmisc}
+
+%\usepackage[hang]{footmisc}
 \usepackage{footnotebackref}
 \renewcommand{\lstlistingname}{Script}
 \onehalfspacing
@@ -66,11 +69,12 @@
   {\thechapter.}{1em}{}
 \titlespacing*{\chapter}{0pt}{-20pt}{20pt}
 
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \renewcommand{\appendixtocname}{Appendix} % Para la tabla de contenidos
 \renewcommand{\appendixpagename}{Appendix} % Para la página del apéndice
 
-\usepackage[backend=biber, natbib=true, style=numeric, style=authoryear, sorting=none]{biblatex}
+\usepackage[backend=biber, natbib=true, style=numeric, style=authoryear, sorting=ynt]{biblatex}
 \addbibresource{references.bib}
 
 \fancyhead{}
@@ -186,12 +190,20 @@
 \thispagestyle{empty}
 %\newpage
 %\let\cleardoublepage\clearpage
-\renewcommand{\contentsname}{\vspace{-2cm}\Large{\sffamily\textbf{Index}}}
-\tableofcontents
-\addtocontents{toc}{\vspace{-2.5cm}}
-\thispagestyle{empty}
-\let\cleardoublepage\clearpage
-\fontfamily{cmr}\selectfont 
+%\renewcommand{\contentsname}{\vspace{-2cm}\Large{\sffamily\textbf{Index}}}
+\renewcommand{\contentsname}{\sffamily\textbf{Índex}}
+
+\begin{titlepage}
+    %\vspace*{2cm} % Adjust vertical space below title
+    %\begin{center}
+    %    {\sffamily\Huge \textbf{Índex}} % Manual title
+    %\end{center}
+    \vspace{1cm} % This creates space between "Índex" and the contents
+    \tableofcontents
+    \thispagestyle{empty}
+\end{titlepage}
+
+\fontfamily{cmr}\selectfont
 %\thispagestyle{empty}
 \input{Chapters/Introduction}
 %---------------------------------------------------------------------------
@@ -200,7 +212,7 @@
 \input{Chapters/Ones_MHD}
 %---------------------------------------------------------------------------
 \input{Chapters/Method}
-%----------------------------------------------Equacions_MHD----------------
+%---------------------------------------------------------------------------
 \input{Chapters/Resultats}
 %---------------------------------------------------------------------------
 \input{Chapters/Conclusion}
@@ -211,7 +223,7 @@
 
 
 
-
+% En acabar i fer es pdf final afegir els comentaris per damunt de lo que no he entès den Monxo
 
 
 \end{document}

@@ -1,14 +1,14 @@
-[0] Config.pm:308> INFO - This is Biber 2.20
-[0] Config.pm:311> INFO - Logfile is 'main.blg'
-[127] biber:340> INFO - === Tue Jun 10, 2025, 08:59:10
-[156] Biber.pm:420> INFO - Reading 'main.bcf'
-[299] Biber.pm:994> INFO - Found 5 citekeys in bib section 0
-[324] Biber.pm:4463> INFO - Processing section 0
-[339] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[342] bibtex.pm:1713> INFO - LaTeX decoding ...
-[354] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[466] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
-[466] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[467] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'ca-AD'
-[588] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[595] bbl.pm:779> INFO - Output to main.bbl
+[1] Config.pm:308> INFO - This is Biber 2.20
+[1] Config.pm:311> INFO - Logfile is 'main.blg'
+[290] biber:340> INFO - === Wed Jun 11, 2025, 00:15:14
+[349] Biber.pm:420> INFO - Reading 'main.bcf'
+[692] Biber.pm:994> INFO - Found 6 citekeys in bib section 0
+[744] Biber.pm:4463> INFO - Processing section 0
+[783] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[789] bibtex.pm:1713> INFO - LaTeX decoding ...
+[822] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[1114] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1114] UCollate.pm:68> INFO - Overriding locale 'ca-AD' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1115] Biber.pm:4283> INFO - Sorting list 'ynt/global//global/global/global' of type 'entry' with template 'ynt' and locale 'ca-AD'
+[1166] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1178] bbl.pm:779> INFO - Output to main.bbl

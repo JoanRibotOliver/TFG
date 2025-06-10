@@ -1,22 +1,22 @@
 \babel@toc {catalan}{}\relax 
-\vspace {-2.5cm}
-\contentsline {chapter}{\numberline {1}Introducció}{7}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Equacions MHD}{9}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Ones MHD}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Linealització}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Solucions: modes normals}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Modes d'Alfvén}{16}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Modes ràpids i lents}{16}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Relació de dispersió}{16}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Mètode}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Modes d'Alfvén}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Modes ràpids i lents}{18}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Resultats}{20}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Modes d'Alfvén}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Modes ràpids i lents}{23}{section.5.2}%
-\contentsline {subsubsection}{Autofuncions amb constant d'acoblament, $k_z$, fixa}{26}{figure.caption.87}%
-\contentsline {subsubsection}{Evolució de les autofuncions segons $k_z$}{28}{figure.caption.89}%
-\contentsline {chapter}{\numberline {6}Conclusions}{32}{chapter.6}%
-\contentsline {chapter}{Referències}{34}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Codis}{35}{chapter.1}%
-\contentsline {chapter}{\numberline {B}Imatges}{36}{chapter.2}%
+\contentsline {chapter}{\numberline {1}Introducció}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Equacions MHD}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Ones MHD}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Linealització}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Solucions: modes normals}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Modes d'Alfvén}{9}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Modes ràpids i lents}{9}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Relació de dispersió}{10}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Mètode}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modes d'Alfvén}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Modes ràpids i lents}{12}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Resultats}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Modes d'Alfvén}{14}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Modes ràpids i lents}{16}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Autofuncions amb constant d'acoblament fixa, $k_z = 0.01$}{19}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Evolució de les autofuncions en funció de l'acoblament, $k_z$}{20}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Conclusions}{24}{chapter.6}%
+\contentsline {chapter}{Referències}{26}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Codis}{27}{chapter.1}%
+\contentsline {chapter}{\numberline {B}Valors realistes}{28}{chapter.2}%
+\contentsline {chapter}{\numberline {C}Imatges}{29}{chapter.3}%
