@@ -1,0 +1,32 @@
+\newpage
+\renewcommand{\theequation}{\Alph{section}\arabic{equation}}
+\setcounter{equation}{0}
+\appendix
+% \addappheadtotoc
+
+\chapter{Valors realistes} \label{ap.B}
+En aquest apèndix es mostren els resultats obtinguts emprant Dedalus per valors realistes de les velocitats del so i d'Alfvén de les Eqs.~(\ref{eq.3.34})~i~(\ref{eq.3.35}).
+Llavors aquests substitueixen els de la Taula~\ref{tab:valors} pels de la Taula~\ref{tab:valors_apendix}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		$c_{s c}^2$ & $c_{s p}^2$ & $v_{A c}^2$ & $v_{A p}^2$ & $k_z$ \\
+		\hline
+		$12$ & $166$ & $60$ & $1400$ & $0.01$ \\
+		\hline
+	\end{tabular}
+	\caption{Valors numèrics de velocitats adimensionals realistes i constant d'acoblament del sistema.}
+	\label{tab:valors_apendix}
+\end{table}
+\vspace{-10pt}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Figures_F&S_modes/eigenvalue_error_apendix.png}
+	\caption{Error relatiu dels autovalors en el cas dels modes ràpids i lents.
+	Els autovalors calculats amb Dedalus, $\omega_D$, estan calculats pel cas $k_z = 0.01$,
+    llavors això afecta negativament al càlcul de l'error.}
+	\label{fig:error_relatiu_apendix}
+\end{figure}

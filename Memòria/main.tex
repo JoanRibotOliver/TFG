@@ -55,21 +55,17 @@
 \usepackage{listings}
 \usepackage{verbatim}
 \usepackage[hang, flushmargin, bottom]{footmisc}
-%\usepackage[bottom]{footmisc}
-
-%\usepackage[hang]{footmisc}
 \usepackage{footnotebackref}
 \renewcommand{\lstlistingname}{Script}
 \onehalfspacing
 \usepackage{parskip}
 \usepackage{braket}
+%\usepackage{etoolbox}
 
 \titleformat{\chapter}[hang]
   {\normalfont\huge\bfseries}
   {\thechapter.}{1em}{}
 \titlespacing*{\chapter}{0pt}{-20pt}{20pt}
-
-%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \renewcommand{\appendixtocname}{Appendix} % Para la tabla de contenidos
 \renewcommand{\appendixpagename}{Appendix} % Para la página del apéndice
@@ -87,6 +83,14 @@
 \newcommand\aap{Astronomy \& Astrophysics}
 \newcommand\apj{The Astrophysical Journal}
 
+
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% Apèndix
+%\appendix
+%\renewcommand{\thechapter}{\Alph{chapter}} % fa que sigui A, B, C...
+
+
 % Divergència
 \newcommand{\divBp}{\bm{\nabla} \cdot \bm{B}_1}
 
@@ -96,7 +100,7 @@
 \fontfamily{qhv}\selectfont
 \vspace{13mm}
 \begin{flushleft}
-\hspace{10mm}\LARGE{\textbf{TREBALL DE FI DE GRAU}}\\
+\hspace{10mm}\LARGE{\textbf{Treball de Fi de Grau}}\\
 \end{flushleft}
 \vspace{19mm}
 \begin{flushright}
@@ -124,9 +128,10 @@
 \thispagestyle{empty}
 \end{figure}
 \begin{flushleft}
+\hspace{1cm}
 \LARGE{\textbf{ONES MAGNETOHIDRODINÀMIQUES EN UN MEDI\\
-		\hspace{1cm}
-		ACOTAT USANT DEDALUS}}\\
+\hspace{1cm}
+ACOTAT USANT DEDALUS}}\\
 \vspace{29mm}
 \hspace{10mm}\LARGE{\textbf{Joan Ribot Oliver}}\\
 \vspace{7mm}
@@ -148,8 +153,10 @@
 \end{flushleft}
 \fancypagestyle{footer}{\fancyfootoffset[L]{-0.9cm}\fancyfootoffset[R]{-0.9cm}\fancyhf{}\lfoot{
   \makebox[\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax]{%
-  \parbox[b]{3.8in}{\fontfamily{qhv}\selectfont The University is hereby authorized to include this project in its institutional repository for its open consultation and online dissemination, for academic and research purposes only.}\hspace{1.9cm}
-  \includegraphics[scale=0.2]{tik_cross_yes.png}}}}
+  \parbox[b]{3.8in}{\fontfamily{qhv}\selectfont Autoritz la Universitat a incloure aquest treball en el repositori institucional per consultar-lo en accés obert i difondre'l en línia, amb finalitats exclusivament acadèmiques i d'investigació.}\hspace{1.9cm}
+  \includegraphics[scale=0.2]{tik_cross_yes.png}
+  
+}}}
 
 \thispagestyle{footer}
 \newpage
@@ -190,18 +197,47 @@
 \thispagestyle{empty}
 %\newpage
 %\let\cleardoublepage\clearpage
-%\renewcommand{\contentsname}{\vspace{-2cm}\Large{\sffamily\textbf{Index}}}
-\renewcommand{\contentsname}{\sffamily\textbf{Índex}}
 
-\begin{titlepage}
-    %\vspace*{2cm} % Adjust vertical space below title
-    %\begin{center}
-    %    {\sffamily\Huge \textbf{Índex}} % Manual title
-    %\end{center}
-    \vspace{1cm} % This creates space between "Índex" and the contents
-    \tableofcontents
-    \thispagestyle{empty}
-\end{titlepage}
+% ÍNDEX
+
+%\renewcommand{\contentsname}{\vspace{-2cm}\Large{\sffamily\textbf{Index}}}
+%\renewcommand{\contentsname}{\sffamily\textbf{Índex}}
+
+%\begin{titlepage}
+%    %\vspace*{2cm} % Adjust vertical space below title
+%    %\begin{center}
+%    %    {\sffamily\Huge \textbf{Índex}} % Manual title
+%    %\end{center}
+%    \vspace{0.5cm} % This creates space between "Índex" and the contents
+%    \tableofcontents
+%    \thispagestyle{empty}
+%\end{titlepage}
+
+
+\thispagestyle{empty}
+\let\cleardoublepage\clearpage
+\tableofcontents
+\addtocontents{toc}{\vspace{-2cm}}
+\thispagestyle{empty}
+\let\cleardoublepage\clearpage
+{\fontfamily{cmr}\selectfont}
+
+
+%\makeatletter
+%\pretocmd{\chapter}{%
+%  \titleformat{\chapter}[hang]
+%    {\normalfont\huge\bfseries}
+%    {\if@mainmatter
+%      \ifnum\value{chapter}>0
+%        \thechapter.
+%      \else
+%        \thechapter
+%      \fi
+%    \else
+%      \thechapter
+%    \fi}{1em}{}%
+%}{}{}
+%\makeatother
 
 \fontfamily{cmr}\selectfont
 %\thispagestyle{empty}
@@ -219,11 +255,15 @@
 %---------------------------------------------------------------------------
 \input{Chapters/Bibliography}
 %---------------------------------------------------------------------------
-\input{Chapters/Appendix}
 
+\clearpage
+\appendix
+%\renewcommand{\thechapter}{\Alph{chapter}}
+%\chapter*{Apèndix}
+%\chapter{Imatges}\label{ap.A}
+%\addcontentsline{toc}{chapter}{Apèndix}
 
-
-% En acabar i fer es pdf final afegir els comentaris per damunt de lo que no he entès den Monxo
+\input{Chapters/AppendixA}
 
 
 \end{document}

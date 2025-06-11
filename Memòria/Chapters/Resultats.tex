@@ -1,7 +1,7 @@
 % \numberwithin{equation}{section}
 
 \chapter{Resultats} \label{sec:resultats}
-En aquesta secció es presenten els càlculs més importants i representatius del problema realitzats en els codis de l'apèndix~\ref{ap.A}.
+En aquesta secció es presenten els càlculs més importants i representatius del problema realitzats en els codis de l'Apèndix~\ref{ap.B}.
 En l'anàlisi es segueix el mateix ordre que en les seccions anteriors: primerament es tracta el problema d'Alfvén i posteriorment el dels modes ràpids i lents.
 Els valors numèrics emprats són els de la Taula~\ref{tab:valors}.
 \begin{table}[H]
@@ -13,18 +13,20 @@ Els valors numèrics emprats són els de la Taula~\ref{tab:valors}.
 		$1$ & $6$ & $20$ & $250$ & $0.01$ \\
 		\hline
 	\end{tabular}
-	\caption{Valors numèrics de velocitats adimensionals i constant d'acoblament del sistema.}
+	\caption{Valors numèrics de velocitats adimensionals del sistema.
+	El valor de la constant d'acoblament només s'empra en la Subsec.\ref{subsubsec:kz_constant}.}
 	\label{tab:valors}
 \end{table}
 \vspace{-10pt}
-Aquestes valors numèrics són simulats a causa de certes limitacions computacionals:
-per valors més realistes de les velocitats del so i d'Alfvén a la protuberància i la corona, Dedalus dóna autofuncions i autovalors erronis.
-Per contrastar els resultats amb valors realistes d'aquests paràmetres, es poden consultar els articles de \textcite{oscillation_modes_II} i d'\textcite{oscillations_quiescent_solar_prominence}.
+Els valors numèrics són simulats a causa de certes limitacions computacionals:
+per valors més realistes de les velocitats del so i d'Alfvén,% a la protuberància i la corona,
+Dedalus dóna autofuncions i autovalors erronis.
+Per contrastar els resultats amb valors realistes d'aquests paràmetres, es poden consultar els articles de \textcite{oscillation_modes_II} i~d'\textcite{oscillations_quiescent_solar_prominence}.
 
 Un dels punts d'aquest treball és comparar els autovalors obtinguts per Dedalus amb aquells calculats analíticament a partir de combinacions sinusoïdals. % trigonomètriques
 Per això es realitza en ambdós subproblemes el càlcul de l'error relatiu, $\eta$, de manera que
 \begin{equation}
-	\eta = \frac{\omega_D - \omega}{\omega}, \tag{5.1} \label{eq.5.1}
+	\eta = \abs{\frac{\omega_D - \omega}{\omega}}, \tag{5.1} \label{eq.5.1}
 \end{equation}
 on $\omega$ és l'autovalor analític i $\omega_D$ l'obtingut per Dedalus.
 Les expressions de les solucions matemàtiques es troben en major detall en l'article de \textcite{oscillation_modes_II}
@@ -35,7 +37,7 @@ No obstant, en aquest treball s'ignora que els modes siguin ``kink'' (parells) o
 A més, cada mode inverteix la seva paritat respecte el mode anterior i les autofuncions de $\tilde{v}_{x}$ i $v_z$ presenten sempre paritat oposada.
 
 També s'afegeix la possibilitat que els modes siguin híbrids, no només interns o externs.
-Aquest darrer fet es va ignorar en l'article de \textcite{oscillation_modes_II} on s'empra la paraula ``string'', però més envant es va definir el concepte en l'article d'\textcite{oscillations_quiescent_solar_prominence}.
+En l'article de \textcite{oscillation_modes_II} s'empra la paraula ``string'', tot i que més envant es redefineix el concepte de``mode híbrid'' en l'article d'\textcite{oscillations_quiescent_solar_prominence}.
 
 En el cas dels modes d'Alfvén la única autofunció present és la que regeix el comportament del mode, $v_y$.
 En canvi, en el cas considerat d'un acoblment feble, $k_z = 0.01$, en el problema dels modes ràpids i lents,
@@ -44,12 +46,12 @@ mentre que en el ràpids governa l'amplitud en la direcció normal, $v_z$.
 
 En resum, es consideren dues etiquetes pels modes d'Alfvén i tres pels modes ràpids i lents,
 que determinen les diferents característiques de cada mode.
-Es classifiquen de la següent manera.
+Es classifiquen d'acord amb les propietats de cada mode per $k_z$ = 0:
 \begin{itemize}
 	\item Segons l'estructura de l'autofunció dominant.
 	\begin{itemize}
 		\item \textbf{Fonamental (f)}: és el primer mode sempre, amb una única cresta i sense cap node.
-		\item \textbf{Enèssims harmònics (nh)}: es creuen $n$ vegades amb l'eix d'abscisses i que en total presenten $n + 1$ punts d'amplitud màxima i mínima, o crestes i valls, respectivament.
+		\item \textbf{Enèssims harmònics (nh)}: s'autofunció dominant es creua $n$ vegades amb l'eix d'abscisses i en total presenta $n + 1$ punts d'amplitud màxima i mínima, o crestes i valls, respectivament.
 	\end{itemize}
 	
 	\item Segons les regions del sistema.
@@ -95,7 +97,7 @@ Aquest comportament es pot apreciar en la Fig.~\ref{fig:error_vA}.%figura que se
 
 
 Les autofuncions dels modes d'Alfvén són idèntiques a les d'una corda amb estructura longitudinal.
-Per consegüent, l'estructura que segueixen ve determinada pel seu índex de~mode.
+Per consegüent, l'estructura ve determinada pel seu índex de mode, veure Fig.~\ref{fig:modes_vA}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.915\textwidth]{Figures_Alfven_modes/modes_Alfven.png}
@@ -113,11 +115,11 @@ Aquests canvis de tendència precipitats són deguts precisament a l'entrada de 
 Les autofuncions estan fortament condicionades per les diferències en la velocitat d'Alfvén a la protuberància i a la corona, especificades en l'Eq.~(\ref{eq.3.34}).
 A més, la consideració dels extrems fixes imposa solucions harmòniques, com s'ha comentat anteriorment.
 Aquesta velocitat és molt major en l'interior, la protuberància, que en l'exterior, la corona,
-de manera que la variació en velocitat dels modes en la protuberància és major, com s'aprecia en la Fig.\ref{fig:modes_vA}.
+de manera que la variació en velocitat dels modes en la protuberància és major, com s'aprecia en la Fig.~\ref{fig:modes_vA}.
 
 Les parts imaginàries de les autofuncions són nul·les i no es presenten gràficament.
 La informació rellevant és continguda en la part real.
-En el càlcul numèric no són estrictament zero degut a la limitació de 16 decimals de Python,
+En el càlcul numèric, aquestes parts imaginàries no són estrictament zero degut a la limitació de 16 xifres significatives de les variables float64 de Python,
 tot i que són de l'ordre de $10^{-13}$ respecte a la part real normalitzada.
 
 %Com ja s'ha esmentat, per advertir el comportament extern, intern o híbrid dels modes s'ha fet servir el quadern de Mathematica, que es pot trober en apèndix~[\ref{ap.A}].
@@ -126,9 +128,9 @@ tot i que són de l'ordre de $10^{-13}$ respecte a la part real normalitzada.
 
 
 \section{Modes ràpids i lents} \label{subsec:resultats_modes_r_i_l}
-En aquest cas és convenient començar per la representació de la relació de dispersió de l'Eq.~(\ref{eq.3.33}).
+En aquest cas és convenient començar per la representació de la relació de dispersió.
 És a dir, l'evolució dels autovalors, $\omega$, segons la constant d'acoblament, que no és més que el nombre d'ona en la direcció $\hat{z}$, $k_z$.
-Llavors en acord amb les Eqs.~(\ref{eq.3.31})~i~(\ref{eq.3.32}) l'única direcció del vector d'ona que acobla els modes és la paral·lela a la protuberància, $k_z$.
+Llavors, d'acord amb les Eqs.~(\ref{eq.3.31})~i~(\ref{eq.3.32}) l'única direcció del vector d'ona que acobla els modes és la paral·lela a la protuberància, $k_z$.
 
 \begin{figure}[H]
 	\centering
@@ -158,7 +160,7 @@ s'estabilitza un poc més alluny, als 150, i als 200 es dispara.%, de nou per q�
 \vspace{-10pt}
 
 Els modes ràpids i lents de la Fig.~\ref{fig:dd} resulten dels acoblaments dels diferents modes normals resultants de les Eqs.~(\ref{eq.3.31})~i~(\ref{eq.3.32}).
-Aquests s'indexen a partir de $n=1$. Els primers modes normals tenen una correspondència exacta amb els primers modes lents de la Fig.~\ref{fig:dd}.
+Per cada valor de kz, aquests s'indexen a partir de $n=1$. Els primers modes normals tenen una correspondència exacta amb els primers modes lents de la Fig.~\ref{fig:dd}.
 Ara bé, el primer mode ràpid romp aquesta correspondència ja que presenta un canvi de comportament aprop de $k_z \sim 1$.
 Aquesta situació d'intercanvi de comportament dels modes normals es defineix en l'article d'\textcite{oscillations_quiescent_solar_prominence}
 com un ``encreuament evitat''.
@@ -173,7 +175,7 @@ Envoltant de $k_z \sim 1.8$ es desfà el canvi i es recupera el mode lent (4hEL)
 ara bé, és un mode lent harmònic d'un ordre superior a l'inicial.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.925\textwidth]{Figures_F&S_modes/dd_mode_5.png}
+	\includegraphics[width=0.85\textwidth]{Figures_F&S_modes/dd_mode_5.png}
 	\caption{Evolució del mode normal amb $n = 5$.}
 	\label{fig:dd_mode_5}
 \end{figure}
@@ -184,13 +186,13 @@ ara bé, és un mode lent harmònic d'un ordre superior a l'inicial.
 
 L'evolució del mode normal $n = 5$ depèn del mode normal anterior, $n = 4$, de la Fig.~\ref{fig:dd}.
 Aquest és inicialment un mode ràpid, amb un creixement parabòl·lic, fins a $k_z \sim 1$.
-És en aquest punt on es realitza un encreuament evitat amb el mode superior degut a que aquests no poden solapar-se.
+És en aquest punt on es realitza un encreuament evitat amb el mode superior degut a que aquests no poden solapar-se en el diagrama de dispersió.
 
 Amb el fi d'observar el canvi de conducta dels modes,
 en la Fig.~\ref{fig:dd_avoided_crossing} s'amplia el diagrama de dispersió de la Fig.~\ref{fig:dd} aprop del canvi, en $k_z \sim 1$.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.925\textwidth]{Figures_F&S_modes/first_anticrossing.png}
+	\includegraphics[width=0.85\textwidth]{Figures_F&S_modes/first_anticrossing.png}
 	\caption{Encreuament evitat entre els modes fHR i 3hEL.}
 	\label{fig:dd_avoided_crossing}
 \end{figure}
@@ -240,7 +242,6 @@ En el límit $k_z \rightarrow 0$, aquesta autofunció no dominant és igual a ze
 
 En la següent subsecció es tracta amb detall l'evolució dels modes segons segons la importància de l'acoblament.
 Per aquest motiu no es representen les autofuncions d'altres valors de la constant $k_z$.
-Per qüestions d'espai no es representa aquesta situació, tot i que en la següent subsecció es tracta amb detall l'evolució dels modes en funció de la constant d'acoblament, $k_z$.
 
 
 
@@ -271,7 +272,7 @@ En canvi, així com augmenta la constant d'acoblament aquesta, $v_z$, minva i la
 segons amb la normalització explicada amb anterioritat.
 
 Finalment, en $k_z = 1.10$ el mode representat en rosa evidencia que la velocitat $\tilde{v}_{x}$ és major que $v_z$.
-Per tant, s'ha duit a terme un intercanvi de comportament dominant en el mode normal,
+Per tant, s'ha duit a terme un intercanvi de comportament dominant en el mode normal, de ràpid a lent,
 així com s'havia predit just abans de començar la~Subsec.~\ref{subsubsec:autofuncions_kz}.
 %\hyperref[subsubsec:autofuncions_kz]{Subsec.~5.2.1}.
 %així com s'havia predit en el final de la \hyperref[subsec:resultats_modes_r_i_l]{Subsec.~5.2}.
@@ -302,7 +303,7 @@ La màxima amplitud de l'autofunció no dominant, $v_z$,
 és de l'ordre de $\sim 0.005$ respecte al major màxim d'amplitud de l'autofunció dominant, $\tilde{v}_{x}$.
 
 Això mateix passa amb l'autofunció vermella en la pròpia Fig.~\ref{fig:fHL}b,
-el mode minoritari és tan inferior al majoritari en valors de $k_z$ baixos, que el cas de $k_z = 0.01$ l'autofunció sembla constant,
+el mode no dominant és tan inferior al dominant en valors de $k_z$ baixos, que el cas de $k_z = 0.01$ l'autofunció sembla constant,
 tot i que té la mateixa estructura que la resta de casos representats, del tipus $-\sin (\pi x)$.
 D'aquesta manera es reflecteix la gran importància de la constant d'acoblament.
 Quan és nul·la els modes estan desacoblats i es recupera el cas d'Alfvén, com prediuen les Eqs.~(\ref{eq.3.31}) i (\ref{eq.3.32}).
@@ -322,7 +323,7 @@ Llavors s'espera que les autofuncions es veguin modificades i reflecteixin l'evo
 \vspace{-10pt}
 Efectivament en aquest cas les autofuncions sí pateixen un canvi estructural degut al canvi de $k_z$.
 El que més destaca és l'evolució de les autofuncions no dominants, $\tilde{v}_{x}$.
-Per començar, les amplitudes màximes dels modes creixen a major acoblament, com en el cas anterior.
+Per començar, les amplituds màximes dels modes creixen a major acoblament, com en el cas anterior.
 Cada vegada que es duu a terme un encreuament evitat, els modes de les autofuncions no dominants retenen la longitud d'ona del mode lent amb el que han evitat creuar-se.
 És per aquest motiu que l'estructura, $\tilde{v}_{x}$, varia considerablement a cada autofunció representada, ja que aquesta s'ha calculat després d'un nou encreuament evitat.
 D'aquesta manera, a mesura que l'acoblament augmenta, $\tilde{v}_{x}$ conté longituds d'ona cada vegada més petites.
@@ -330,18 +331,18 @@ D'aquesta manera, a mesura que l'acoblament augmenta, $\tilde{v}_{x}$ conté lon
 En aquest cas es pot apreciar també com amb poc acoblament, $k_z = 0.01$,
 corba vermella, la dominància de l'autofunció $v_z$ és encara major precisament perque els modes es troben poc lligats.
 A més, s'intueix que es tracta del mateix mode que els altres però amb un acomblament major,
-ja que creua l'eix de les abscisses tres vegades, com la resta de corbes.
+ja que $\tilde{v}_{x}$ creua l'eix de les abscisses tres vegades, com la resta de corbes.
 A causa de l'escala que pràcticament sembla una recta, tot i que amb una fina mirada s'aprecia que no ho és en cap cas.
 
 El major màxim de les autofuncions no dominants és $\sim 0.075$,
-unes 15 vegades major que el major màxim de les autofuncions no dominants del primer mode híbrid lent, fHL, de la Fig.\ref{fig:fHL}b.
+unes 15 vegades major que el major màxim de les autofuncions no dominants del primer mode híbrid lent, fHL, de la Fig.~\ref{fig:fHL}b.
 A més, els dos màxims de les no dominants tenen lloc en el cas de major acoblament, amb $k_z = 2.5$.
 Llavors es dedueix que la lligadura té un efecte major en els modes ràpids que en els lents.
-En els cas de $k_z = 0.75$ la diferència és encara major ja que el màxim del minoritari del mode fHL, $v_z$, és de $\sim 0.0025$,
-mentre que el del minoritari del mode fHR, $\tilde{v}_{x}$, és de $\sim 0.06$, unes 24 vegades major.
+En els cas de $k_z = 0.75$ la diferència és encara major ja que el màxim del no dominant del mode fHL, $v_z$, és de $\sim 0.0025$,
+mentre que el del no dominant del mode fHR, $\tilde{v}_{x}$, és de $\sim 0.06$, unes 24 vegades major.
 Definitivament l'acoblament té una major influència en l'estructura dels modes ràpids que en els lents, tot i que no és constant.
 
-Com que es tracta d'un mode ràpid les autofuncions dominants són les de $v_z$. Aquestes conserven l'estructura bàsica de mode fonamental, f,
+Com que es tracta d'un mode ràpid, les autofuncions dominants són les de $v_z$. Aquestes conserven l'estructura bàsica de mode fonamental, f,
 i presenten lleugeres modificacions així com augmenta $k_z$ a causa d'un major acoblament amb les autofuncions no dominants, $\tilde{v}_{x}$.
 El seu comportament es veu alterat com a un estrenyiment de la campana que conforma l'autofunció dominant a mesura que l'acoblament creix.
 

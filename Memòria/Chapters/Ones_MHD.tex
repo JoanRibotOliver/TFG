@@ -115,7 +115,7 @@ Aquestes suposen més condicions que s'han d'acomplir juntament amb les tres ant
 
 S'han fet servir exponents complexos (ones planes) per treballar les equacions,
 però s'ha de tenir en compte que les variables són reals i no imaginàries.
-D'aquesta manera s'ha de prendre la part real de les ones planes: $\Re(f_1) = f (x) \cos(wt - k_z z)$.
+D'aquesta manera s'ha de prendre la part real de les ones planes: $\Re(f_1) = f (x) \cos(\omega t - k_z z)$.
 Aquelles funcions representades amb tilde presenten un desfasament de $\pi /2$ respecte a les altres
 \begin{align*}
 	f = - i \tilde{f} \implies f_1 = - i \tilde{f_1} e^{i(\omega t - k_z z)} = \tilde{f_1} e^{i(\omega t - k_z z - \pi /2)}, \\
@@ -150,7 +150,7 @@ En aquest cas s'ha d'eliminar el camp magnètic de les Eqs.~(\ref{eq.3.24})~i~(\
 	\omega^2  v_{y} + v_A^2 \frac{d^2v_{y}}{dx^2} = 0, \tag{3.30} \label{eq.3.30}
 \end{equation}
 on $v_A^2 \equiv \frac{B_0^2}{\mu \rho_0}$ és la definició de la velocitat d'Alfvén al quadrat.
-Tant l'equilibri, com les equacions de contorn, Eq.~(\ref{eq.3.29}) com l'Eq.~(\ref{eq.3.30}) són simètrics respecte de $x=0$,
+Tant l'equilibri, com les equacions de contorn, Eq.~(\ref{eq.3.29}), com l'Eq.~(\ref{eq.3.30}) són simètrics respecte de $x=0$,
 motiu pel qual les autofuncions dels modes d'Alfvén, $v_y(x)$, són simètriques o antisimètriques respecte de $x=0$.
 Tot i que el problema d'Alfvén d'aquest cas té sol·lució analítica,
 es resol amb Dedalus per conèixer el funcionament d'aquesta llibreria.
@@ -166,7 +166,8 @@ Eqs.~(\ref{eq.3.21}), (\ref{eq.3.23}), (\ref{eq.3.25}), (\ref{eq.3.26}) i (\ref{
 	v_A^2 \frac{d^2 v_{z}}{dx^2} + k_z c_s^2 \frac{d \tilde{v}_{x}}{dx} + \left(-c_s^2 k_z^2 - v_A^2 k_z^2 + \omega^2 \right) v_{z} = 0. \tag{3.32} \label{eq.3.32}
 \end{gather}
 on $k_z$ és la constant d'acoblament. En el cas de que sigui nul·la, $k_z = 0$, es recupera el problema d'Alfvén per partida doble, per $\tilde{v}_{x}$ i per $v_z$.
-És precisament en aquesta situació que es calcula el comportament de cada mode ràpid i lent amb l'ajuda de Mathematica. Veure apèndix~\ref{ap.A}.
+En aquest cas, l'Eq.~(\ref{eq.3.31}) descriu els modes lents, amb velocitat pertorbada purament longitudinal, i l'Eq.~(\ref{eq.3.32}) descriu els modes ràpids, amb velocitat pertorbada purament vertical.
+És precisament en aquesta situació que es calcula el comportament de cada mode ràpid i lent amb l'ajuda de Mathematica. Veure Apèndix~\ref{ap.B}.
 
 Tal i com succeeix amb els modes d'Alfvén,
 els modes ràpids i lents també tenen autofuncions $v_x(x)$ i $v_z(x)$ que són simètriques o antisimètriques respecte de $x=0$.

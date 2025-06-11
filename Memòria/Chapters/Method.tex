@@ -28,13 +28,14 @@ Per qüestions visuals s'omet la barra i les equacions normalitzades que s'imple
 Es fa evident la subdivisió del problema degut al desacoblament de les equacions i, per tant, dels modes normals.
 Aquests es descomposen en modes d'Alfvén i en ràpids i lents.
 
-Per solventar els subproblemes s'han creat diferents notebooks de Python (.ipynb) per separat en els que s'implementen les equacions corresponents,
-apart del quadern de Mathematica. Tots els codis es poden trobar en l'apèndix~\ref{ap.A}. %, veure \parencite{github}.
+Per resoldre aquests dos subproblemes s'han creat diferents notebooks de Python (.ipynb) per separat en els que s'implementen les equacions corresponents,
+apart del quadern de Mathematica. Tots els codis es poden trobar en l'Apèndix~\ref{ap.B}. %, veure \parencite{github}.
 
 Per realitzar els càlculs es divideix l'espai del problema en $N = 256$ funcions base mitjançant polinomis de Legendre.
 S'ha escollit aquest nombre per qüestions de memòria i temps de càlcul.
-El funcionament de Dedalus consisteix principalment en transformar la informació de l'espai real a l'espai de Fourier,
-realitzar els càlculs necessaris i retornar a l'espai real.
+
+En el cas dels modes ràpids i lents, Dedalus resol les Eqs.~(\ref{eq.3.31}) i (\ref{eq.3.32}) per un valor de $k_z$ fixat.
+Tant per aquests modes com pels d'Alfvén, Dedalus retorna els autovalors i les seves autofuncions.
 
 Per això s'han de definir els límits, les constants i els camps del sistema.
 Es defineixen les equacions dels problemes i les condicions de contorn i, finalment, es construeix un ``solver''.
@@ -56,7 +57,7 @@ que més envant es presenten en la~\hyperref[subsec:resultats_modes_Alfvén]{Su
 Una vegada resolt el primer problema es procedeix al càlcul de les autofuncions dels modes ràpids i lents, juntament amb la seva relació de dispersió.
 En el cas d'acoblament nul amb velocitats purament longitudinal i vertical ($k_z = 0$) es recupera l'estructura del problema d'Alfvén,
 com s'ha comentat en la~\hyperref[subsubsec:ones_modes_r_i_l]{Subsec.~3.2.2}.
-És a dir, en aquest cas els modes ràpids i lents són idèntics als modes d'una corda en la que les ones es propaguen amb velocitat $v_A(x)$ i $c_s(x)$ de l'Eq.~(\ref{eq.3.34}), respectivament.
+És a dir, en aquest cas els modes ràpids i lents són idèntics als modes d'una corda en la que les ones es propaguen amb velocitat $v_A(x)$ i $c_s(x)$ de les Eqs.~(\ref{eq.3.34})~i~(\ref{eq.3.35}), respectivament.
 
 %---------------------------------------------------------------------------------------------------------------------------------------------------
 %\texttt{Prova codi}

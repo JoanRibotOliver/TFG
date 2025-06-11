@@ -1,0 +1,39 @@
+\newpage
+\renewcommand{\theequation}{\Alph{section}\arabic{equation}}
+\setcounter{equation}{0}
+%\appendix
+% \addappheadtotoc
+
+\chapter{Imatges}\label{ap.A}
+En aquest apèndix s'introdueixen les imatges que no s'han presentat en el cos de la memòria per qüestions d'espai.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Representacions/Solar_prominence_wiki.png}
+	\caption{Protuberància solar. Imatge obtinguda de la Wikipèdia.
+    \url{https://en.wikipedia.org/wiki/File:Solar_prominence_2011-04-14T202956.120.png}}
+	\label{fig:real_prominence}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Representacions/faq1.jpg}
+	\caption{Tamany aproximat de la Terra comparat amb el d'una protuberància en erupció.
+    Darrera aquesta protuberància i a altures més baixes es poden apreciar una protuberància molt allargada (entre les 10 i les 11, agafant com referència el centre del disc solar) i una altra més petita (just damunt les 9).
+    Imatge obtinguda de la NASA.
+    \url{https://www.nasa.gov/image-article/what-solar-prominence/}}
+	\label{fig:real_prominence_earth}
+\end{figure}
+
+\chapter{Codis}\label{ap.B}
+Per comprovar els autovalors s'ha fet servir una rutina de Mathematica que els calcula amb precisió i determina el seu comportament.
+
+Totes les solucions a les equacions, càlculs i gràfiques presentats en aquest treball s'han realitzat en notebooks
+de Python (format .ipynb), amb l'ajuda de la llibreria Dedalus.
+Per millorar l'eficiència i la qualitat del codi, 
+s'ha fet servir l'assistent d'intel·ligència artificial de Copilot durant el desenvolupament del projecte.
+Aquest està implementat en VS Code, l'eina amb la que s'han realitzat els notebooks i amb la que s'ha redactat la present memòria.
+
+Tant el quadern de Mathematica com els codis de Python es troben en el repositori de GitHub \parencite{github}.
+
+
