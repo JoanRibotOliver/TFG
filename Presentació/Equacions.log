@@ -1,0 +1,366 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  14 JUN 2025 20:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Equacions.tex
+(./Equacions.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/standalone/sta
+ndalone.cls
+Document Class: standalone 2025/02/22 v1.5a Class to compile TeX sub-files stan
+dalone
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/shellesc
+.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/ifluat
+ex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/iftex/iftex.
+sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/xkeyval/xkeyva
+l.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/xkeyval/xkey
+val.tex
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/xkeyval/xkvu
+tils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/xkeyval/keyv
+al.tex))
+\XKV@depth=\count196
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count197
+\c@sapage=\count198
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/standalone/sta
+ndalone.cfg
+File: standalone.cfg 2025/02/22 v1.5a Default configuration file for 'standalon
+e' class
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/article.c
+ls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/base/size10.cl
+o
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count199
+\c@section=\count266
+\c@subsection=\count267
+\c@subsubsection=\count268
+\c@paragraph=\count269
+\c@subparagraph=\count270
+\c@figure=\count271
+\c@table=\count272
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/varwidth/varwi
+dth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box52
+\sift@deathcycles=\count273
+\@vwid@loff=\dimen142
+\@vwid@roff=\dimen143
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/preview/previe
+w.sty
+Package: preview 2024/06/30 14.0.6 (AUCTeX/preview-latex)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/generic/luatex85/lua
+tex85.sty
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/preview/prtigh
+tpage.def
+\PreviewBorder=\dimen144
+)
+\pr@snippet=\count274
+\pr@box=\box53
+\pr@output=\toks19
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsmat
+h.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amstex
+t.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsgen
+.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen145
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsbsy
+.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen146
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsmath/amsopn
+.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count275
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count276
+\leftroot@=\count277
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count278
+\DOTSCASE@=\count279
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count280
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count281
+\dotsspace@=\muskip17
+\c@parentequation=\count282
+\dspbrk@lvl=\count283
+\tag@help=\toks21
+\row@=\count284
+\column@=\count285
+\maxfields@=\count286
+\andhelp@=\toks22
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks23
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/amssy
+mb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/amsfo
+nts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/mathtools/math
+tools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count287
+\calc@Bcount=\count288
+\calc@Adimen=\dimen154
+\calc@Bdimen=\dimen155
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count289
+\calc@Cskip=\skip56
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/mathtools/mhse
+tup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count290
+\l_MT_multwidth_dim=\dimen156
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen157
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen158
+\l_MT_above_intertext_sep=\dimen159
+\l_MT_below_intertext_sep=\dimen160
+\l_MT_above_shortintertext_sep=\dimen161
+\l_MT_below_shortintertext_sep=\dimen162
+\xmathstrut@box=\box56
+\xmathstrut@dim=\dimen163
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/physics/physic
+s.sty
+Package: physics 
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3packages/xpa
+rse/xparse.sty
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3kernel/expl3
+.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3backend/l3ba
+ckend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count291
+\l__pdf_internal_box=\box57
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/array.st
+y
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen164
+\ar@mcellbox=\box58
+\extrarowheight=\dimen165
+\NC@list=\toks25
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box59
+) (./Equacions.aux)
+\openout1 = `Equacions.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/graph
+icx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/graph
+ics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/trig.
+sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics-cfg/g
+raphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics-def/p
+dftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/context/base/mkii/su
+pp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count292
+\scratchdimen=\dimen166
+\scratchbox=\box60
+\nofMPsegments=\count293
+\nofMParguments=\count294
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count295
+\MPscratchDim=\dimen167
+\MPnumerator=\count296
+\makeMPintoPDFobject=\count297
+\everyMPtoPDFconversion=\toks27
+)))
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/epstopdf-pkg/e
+pstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/latexconfig/ep
+stopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\Gin@req@height=\dimen168
+\Gin@req@width=\dimen169
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 156
+.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsa.
+fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 156
+.
+
+(/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsb.
+fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Preview: Tightpage -1864679 -1864679 1864679 1864679
+[1{/usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/map/pdftex/updma
+p/pdftex.map}] (./Equacions.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 4715 strings out of 473190
+ 74366 string characters out of 5705898
+ 462831 words of memory out of 5000000
+ 27903 multiletter control sequences out of 15000+600000
+ 570691 words of font info for 80 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 79i,13n,93p,333b,267s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb></usr/local/Cellar/texlive/20250308_1/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr17.pfb></usr/local/Cellar/texlive/20250308_1/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Equacions.pdf (1 page, 32360 bytes).
+PDF statistics:
+ 23 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

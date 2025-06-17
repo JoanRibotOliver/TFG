@@ -1,0 +1,143 @@
+Data	Durada (hores)	Títol	Origen
+2025-03-17 12:15:00	5.5	TFG	classe_TFG.ics
+2025-03-18 12:15:00	5.5	TFG	classe_TFG.ics
+2025-03-19 12:15:00	5.5	TFG	classe_TFG.ics
+2025-04-15 12:15:00	5.5	TFG - reunió M Antònia	classe_TFG.ics
+2025-03-06 12:15:00	5.5	TFG	classe_TFG.ics
+2025-06-17 08:30:00	5.5	Biblioteca TFG - guió presentació	estudi_TFG.ics
+2025-06-17 16:00:00	5.0	TFG - presentació	estudi_TFG.ics
+2025-06-10 15:45:00	4.75	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-06-07 09:30:00	4.5	Biblioteca TFG	estudi_TFG.ics
+2025-06-13 16:30:00	4.25	Biblioteca TFG - presentació	estudi_TFG.ics
+2025-05-23 09:45:00	4.0	Biblioteca TFG - codi	estudi_TFG.ics
+2025-05-10 09:30:00	3.75	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-05-23 17:00:00	3.75	Biblioteca TFG	estudi_TFG.ics
+2025-04-18 11:15:00	3.25	TFG	estudi_TFG.ics
+2025-05-18 10:00:00	3.0	TFG - memòria	estudi_TFG.ics
+2025-05-01 10:45:00	3.0	TFG	estudi_TFG.ics
+2025-03-17 16:15:00	2.75	Biblioteca TFG	estudi_TFG.ics
+2025-04-23 08:30:00	2.5	TFG	classe_TFG.ics
+2025-04-21 11:30:00	2.5	TFG	estudi_TFG.ics
+2025-06-12 18:30:00	2.5	Biblioteca TFG - codi appendix - presentació	estudi_TFG.ics
+2025-04-21 08:30:00	2.5	TFG	classe_TFG.ics
+2025-04-16 17:30:00	2.5	Biblioteca TFG	estudi_TFG.ics
+2025-04-22 11:30:00	2.5	TFG	estudi_TFG.ics
+2025-06-06 08:30:00	2.5	Biblioteca TFG	estudi_TFG.ics
+2025-06-10 08:30:00	2.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-06-10 11:30:00	2.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-05-24 10:00:00	2.5	Biblioteca TFG - codi	estudi_TFG.ics
+2025-05-09 11:00:00	2.5	TFG - NB no és lo mateix que ALFVÉN!!!!!!!	estudi_TFG.ics
+2025-06-10 22:45:00	2.5	TFG - memòria	estudi_TFG.ics
+2025-05-27 08:30:00	2.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-06-05 08:30:00	2.5	Biblioteca TFG	estudi_TFG.ics
+2025-04-22 08:30:00	2.5	TFG	classe_TFG.ics
+2025-06-04 11:30:00	2.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-05-28 08:30:00	2.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-06-02 08:30:00	2.5	Biblioteca TFG - codi	estudi_TFG.ics
+2025-06-03 11:30:00	2.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-05-02 16:15:00	2.25	Biblioteca TFG	estudi_TFG.ics
+2025-06-09 16:00:00	2.25	Biblioteca TFG	estudi_TFG.ics
+2025-06-02 11:30:00	2.25	Biblioteca TFG - codi	estudi_TFG.ics
+2025-06-06 11:30:00	2.25	Biblioteca TFG	estudi_TFG.ics
+2025-04-25 11:30:00	2.25	TFG	estudi_TFG.ics
+2025-06-18 15:00:00	2.25	Biblioteca TFG - presentació	estudi_TFG.ics
+2025-06-18 09:45:00	2.25	Assaig presentació TFG	estudi_TFG.ics
+2025-05-13 16:30:00	2.25	TFG - nous autovalors	estudi_TFG.ics
+2025-06-05 11:45:00	2.25	Biblioteca TFG	estudi_TFG.ics
+2025-05-28 11:45:00	2.25	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-04-25 09:00:00	2.0	TFG	classe_TFG.ics
+2025-05-27 17:15:00	2.0	Biblioteca TFG	estudi_TFG.ics
+2025-05-26 16:00:00	2.0	Biblioteca TFG	estudi_TFG.ics
+2025-05-17 15:00:00	2.0	TFG - codi	estudi_TFG.ics
+2025-05-19 15:45:00	2.0	TFG	estudi_TFG.ics
+2025-06-14 16:30:00	2.0	Biblioteca TFG - presentació	estudi_TFG.ics
+2025-06-03 08:45:00	2.0	Biblioteca TFG - codi	estudi_TFG.ics
+2025-05-07 19:15:00	2.0	TFG - memòria	estudi_TFG.ics
+2025-04-24 09:00:00	2.0	TFG	classe_TFG.ics
+2025-06-04 08:30:00	2.0	Biblioteca TFG - codi	estudi_TFG.ics
+2025-05-20 16:30:00	2.0	TFG	estudi_TFG.ics
+2025-05-26 08:45:00	2.0	Biblioteca TFG - codi	estudi_TFG.ics
+2025-05-05 16:30:00	1.75	TFG - referències	estudi_TFG.ics
+2025-04-27 12:45:00	1.75	TFG	estudi_TFG.ics
+2025-05-30 10:00:00	1.75	TFG - tutoria	estudi_TFG.ics
+2025-05-12 16:30:00	1.75	TFG - memòria	estudi_TFG.ics
+2025-03-20 17:00:00	1.75	Biblioteca TFG	estudi_TFG.ics
+2025-05-16 16:45:00	1.75	TFG - codi	estudi_TFG.ics
+2025-06-18 19:30:00	1.5	TFG - practicar presentació	estudi_TFG.ics
+2025-05-26 12:30:00	1.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-05-29 09:30:00	1.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-05-16 22:15:00	1.5	TFG - codi	estudi_TFG.ics
+2025-05-06 17:30:00	1.5	TFG - codi	estudi_TFG.ics
+2025-05-12 22:00:00	1.5	TFG - nous autovalors	estudi_TFG.ics
+2025-06-14 19:15:00	1.5	Biblioteca TFG - presentació	estudi_TFG.ics
+2025-05-13 19:30:00	1.5	TFG - memòria	estudi_TFG.ics
+2025-05-16 09:00:00	1.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-05-27 11:30:00	1.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-04-24 11:30:00	1.5	TFG	estudi_TFG.ics
+2025-04-27 16:45:00	1.5	TFG - codi	estudi_TFG.ics
+2025-05-14 21:45:00	1.25	TFG - memòria	estudi_TFG.ics
+2025-05-26 11:15:00	1.25	Biblioteca TFG - codi	estudi_TFG.ics
+2025-04-16 12:15:00	1.25	Reunió TFG	classe_TFG.ics
+2025-05-22 13:45:00	1.25	Reunió - TFG	estudi_TFG.ics
+2025-05-29 16:00:00	1.25	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-03-24 12:15:00	1.25	TFG - Despatx Monxo	classe_TFG.ics
+2025-06-13 09:30:00	1.25	Reunió defensa TFG	estudi_TFG.ics
+2025-04-15 17:45:00	1.25	TFG	estudi_TFG.ics
+2025-06-15 22:45:00	1.17	TFG presentació iguanatex	estudi_TFG.ics
+2025-02-20 12:15:00	1.0	TFG	classe_TFG.ics
+2025-02-19 12:15:00	1.0	TFG	classe_TFG.ics
+2025-02-27 12:15:00	1.0	TFG	classe_TFG.ics
+2025-04-29 12:15:00	1.0	TFG	classe_TFG.ics
+2025-04-28 12:15:00	1.0	Reunió - TFG	classe_TFG.ics
+2025-02-17 12:15:00	1.0	TFG	classe_TFG.ics
+2025-04-28 12:15:00	1.0	TFG	classe_TFG.ics
+2025-03-03 12:15:00	1.0	TFG	classe_TFG.ics
+2025-05-05 12:15:00	1.0	TFG	classe_TFG.ics
+2025-03-05 12:15:00	1.0	Reunió TFG	classe_TFG.ics
+2025-02-24 12:15:00	1.0	TFG	classe_TFG.ics
+2025-02-26 12:15:00	1.0	TFG	classe_TFG.ics
+2025-04-30 12:15:00	1.0	TFG	classe_TFG.ics
+2025-05-08 12:15:00	1.0	TFG	classe_TFG.ics
+2025-03-02 22:00:00	1.0	TFG	estudi_TFG.ics
+2025-05-22 17:30:00	1.0	TFG - codi	estudi_TFG.ics
+2025-05-16 19:00:00	1.0	TFG - codi	estudi_TFG.ics
+2025-05-14 19:45:00	1.0	TFG - correu	estudi_TFG.ics
+2025-05-29 11:30:00	1.0	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-06-09 22:00:00	1.0	TFG - memòria	estudi_TFG.ics
+2025-05-07 16:15:00	1.0	TFG - codi	estudi_TFG.ics
+2025-06-09 12:00:00	1.0	Reunió TFG	estudi_TFG.ics
+2025-05-15 16:15:00	1.0	TFG - memòria	estudi_TFG.ics
+2025-05-07 13:30:00	1.0	TFG - codi	estudi_TFG.ics
+2025-05-14 16:15:00	1.0	TFG - codi	estudi_TFG.ics
+2025-06-06 16:30:00	1.0	Correus TFG	estudi_TFG.ics
+2025-05-09 17:15:00	1.0	TFG - memòria	estudi_TFG.ics
+2025-06-09 20:15:00	0.75	TFG - memòria	estudi_TFG.ics
+2025-05-06 13:15:00	0.75	TFG - codi	estudi_TFG.ics
+2025-05-13 21:45:00	0.75	TFG - memòria	estudi_TFG.ics
+2025-03-03 16:30:00	0.75	TFG	estudi_TFG.ics
+2025-03-25 12:15:00	0.75	TFG	classe_TFG.ics
+2025-04-01 12:15:00	0.75	TFG	classe_TFG.ics
+2025-05-22 12:15:00	0.75	TFG	classe_TFG.ics
+2025-04-30 12:30:00	0.75	TFG	classe_TFG.ics
+2025-03-02 12:30:00	0.75	TFG	estudi_TFG.ics
+2025-04-14 15:45:00	0.75	TFG - Correu Monxo	estudi_TFG.ics
+2025-02-25 12:15:00	0.75	TFG	classe_TFG.ics
+2025-05-30 13:15:00	0.75	TFG	estudi_TFG.ics
+2025-03-31 12:30:00	0.75	TFG	classe_TFG.ics
+2024-05-29 12:15:00	0.75	TFG - Despatx Monxo	estudi_TFG.ics
+2025-05-13 12:15:00	0.75	TFG	classe_TFG.ics
+2025-04-27 16:00:00	0.75	TFG - repàs apunts	estudi_TFG.ics
+2025-05-12 12:15:00	0.67	Reunió TFG	classe_TFG.ics
+2025-05-15 09:00:00	0.5	TFG - memòria	estudi_TFG.ics
+2024-05-21 13:30:00	0.5	OF - entrega / TFG - correu Monxo	estudi_TFG.ics
+2024-05-20 21:45:00	0.5	TFG - Correu Monxo ones magnetohidrodinàmiques	estudi_TFG.ics
+2025-05-30 16:30:00	0.5	TFG	estudi_TFG.ics
+2025-05-19 09:00:00	0.5	TFG - correu	estudi_TFG.ics
+2025-05-11 15:00:00	0.5	TFG - memòria	estudi_TFG.ics
+2025-06-04 10:30:00	0.5	Biblioteca TFG - memòria	estudi_TFG.ics
+2025-05-22 09:00:00	0.5	TFG	estudi_TFG.ics
+2025-05-11 22:00:00	0.5	TFG - memòria	estudi_TFG.ics
+2025-05-12 20:30:00	0.5	TFG - codi	estudi_TFG.ics
+2025-05-21 09:00:00	0.5	TFG - memòria	estudi_TFG.ics
+2024-09-10 18:30:00	0.42	Correu TFG	estudi_TFG.ics
+2024-09-12 16:30:00	0.25	Correu TFG	estudi_TFG.ics
