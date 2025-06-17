@@ -1,4 +1,4 @@
-\documentclass[preview, varwidth=22.5cm, border=1cm]{standalone}
+\documentclass[preview, varwidth=27.5cm, border=1cm]{standalone}
 \usepackage{amsmath, amssymb, mathtools, bm}
 \usepackage{physics}
 \usepackage{array}
@@ -15,11 +15,11 @@
 % EQUACIONS MHD
 %=====================================================================================================================================================================
 %\begin{tabular}{>{\raggedleft}p{10cm} >{$}c<{$}}
-%    \text{Llei de Gauss (magn.):} & \bm{\nabla} \cdot \bm{B} = 0 \\[0.8em]
+%    \text{Llei de Gauss magnètica:} & \bm{\nabla} \cdot \bm{B} = 0 \\[0.8em]
 %    \text{Equacions d'inducció:} & \frac{\partial \bm{B}}{\partial t} = \bm{\nabla} \times (\bm{v} \times \bm{B}) \\[0.8em]
 %    \text{Equació de continuïtat:} & \frac{d\rho}{dt} + \rho\, \bm{\nabla} \cdot \bm{v} = 0 \\[0.8em]
 %    \text{Equacions de moviment:} & \rho\, \frac{d \bm{v}}{dt} = - \bm{\nabla} p + \bm{j} \times \bm{B} + \bm{F} \\[0.8em]
-%    \text{Equació adiabàtica:} & \frac{d}{dt} \left( \frac{p}{\rho^\gamma} \right) = 0
+%    \shortstack[c]{Equació d'energia per\\canvis d'estat adiabàtics:} & \frac{d}{dt} \left( \frac{p}{\rho^\gamma} \right) = 0
 %\end{tabular}
 
 
@@ -53,14 +53,14 @@
 %=====================================================================================================================================================================
 % EQUACIONS MHD LINEALITZADES
 %=====================================================================================================================================================================
-%\begin{tabular}{>{\raggedleft}p{8cm} >{$}c<{$}}
-%    \text{Equació de continuïtat:} & \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 + \rho_0 (\bm{\nabla} \cdot \bm{v}_1) = 0 \\[0.8em]
-%    \text{Equacions de moviment:} & \rho_0 \frac{\partial \bm{v}_1}{\partial t} = - \bm{\nabla} p_1 + (\bm{\nabla} \bm{\times} \bm{B}_1) \bm{\times} \bm{B}_0 / \mu \\[0.8em]
-%    \text{Equació adiabàtica:} & \frac{\partial p_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) p_0 - c_s^2 \left( \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 \right) = 0 \\[0.8em]
-%    \text{Equacions d'inducció:} & \frac{\partial \bm{B}_1}{\partial t} = \bm{\nabla} \bm{\times} (\bm{v}_1 \bm{\times} \bm{B}_0) \\[0.8em]
-%    \text{Llei de Gauss (magn.):} & \bm{\nabla} \cdot \bm{B}_1 = 0 \\[0.8em]
-%    \text{Velocitat del so:} & c_s^2 = \frac{\gamma p_0}{\rho_0} = \frac{\gamma k_B T_0}{m}
-%\end{tabular}
+\begin{tabular}{>{\raggedleft}p{10cm} >{$}c<{$}}
+    \text{Equació de continuïtat:} & \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 + \rho_0 (\bm{\nabla} \cdot \bm{v}_1) = 0 \\[0.8em]
+    \text{Equacions de moviment:} & \rho_0 \frac{\partial \bm{v}_1}{\partial t} = - \bm{\nabla} p_1 + (\bm{\nabla} \bm{\times} \bm{B}_1) \bm{\times} \bm{B}_0 / \mu \\[0.8em]
+    \shortstack[c]{Equació d'energia per\\canvis d'estat adiabàtics:} & \frac{\partial p_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) p_0 - c_s^2 \left( \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 \right) = 0 \\[0.8em]
+    \text{Equacions d'inducció:} & \frac{\partial \bm{B}_1}{\partial t} = \bm{\nabla} \bm{\times} (\bm{v}_1 \bm{\times} \bm{B}_0) \\[0.8em]
+    \text{Llei de Gauss magnètica:} & \bm{\nabla} \cdot \bm{B}_1 = 0 \\[0.8em]
+    \text{Velocitat del so:} & c_s^2 = \frac{p_1}{\rho_1} = \frac{\gamma p_0}{\rho_0} = \frac{\gamma k_B T_0}{m}
+\end{tabular}
 
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Ones planes
@@ -96,7 +96,7 @@
 % Continuïtat
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %\begin{tabular}{c}
-%    \text{Equació continuïtat:} \\[0.8em]
+%    \text{Equació de continuïtat:} \\[0.8em]
 %    $ \omega \rho - \rho_0 \left( \frac{\partial \tilde{v}_{x}}{\partial x} + k_z v_{z} \right) = 0 $
 %\end{tabular}
 
@@ -104,7 +104,7 @@
 % Divergència camp B nul·la
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %\begin{tabular}{c}
-%    \text{Llei Gauss (magn.):} \\[0.8em]
+%    \text{Llei de Gauss magnètica:} \\[0.8em]
 %    $ \frac{\partial B_{x}}{\partial x} = k_z \tilde{B}_{z} $
 %\end{tabular}
 
@@ -238,10 +238,13 @@
 
 
 %=====================================================================================================================================================================
-% TAULA VALORS ADIMENSIONALITZATS
+% TAULES
 %=====================================================================================================================================================================
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Valors emprats
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %\noindent
-%\text{Valors numèrics de velocitats adimensionals del sistema:}
+%\shortstack[c]{Valors numèrics de velocitats\\adimensionals del sistema:}
 %\vspace{0.7em}
 %\begin{table}[H]
 %	\centering
@@ -254,6 +257,25 @@
 %	\end{tabular}
 %	\label{tab:valors}
 %\end{table}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Valors realistes
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%\noindent
+%\shortstack[c]{Valors numèrics de velocitats\\adimensionals realistes:}
+%\vspace{0.7em}
+%\begin{table}[H]
+%	\centering
+%	\begin{tabular}{|c|c|c|c|c|}
+%		\hline
+%		$c_{s c}^2$ & $c_{s p}^2$ & $v_{A c}^2$ & $v_{A p}^2$ & $k_z$ \\
+%		\hline
+%		$1$ & $200$ & $29$ & $5778$ & $0.01$ \\
+%		\hline
+%	\end{tabular}
+%	\label{tab:valors}
+%\end{table}
+
 
 
 
