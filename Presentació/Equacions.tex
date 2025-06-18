@@ -1,4 +1,4 @@
-\documentclass[preview, varwidth=27.5cm, border=1cm]{standalone}
+\documentclass[preview, varwidth=22.5cm, border=1cm]{standalone}
 \usepackage{amsmath, amssymb, mathtools, bm}
 \usepackage{physics}
 \usepackage{array}
@@ -53,21 +53,21 @@
 %=====================================================================================================================================================================
 % EQUACIONS MHD LINEALITZADES
 %=====================================================================================================================================================================
-\begin{tabular}{>{\raggedleft}p{10cm} >{$}c<{$}}
-    \text{Equació de continuïtat:} & \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 + \rho_0 (\bm{\nabla} \cdot \bm{v}_1) = 0 \\[0.8em]
-    \text{Equacions de moviment:} & \rho_0 \frac{\partial \bm{v}_1}{\partial t} = - \bm{\nabla} p_1 + (\bm{\nabla} \bm{\times} \bm{B}_1) \bm{\times} \bm{B}_0 / \mu \\[0.8em]
-    \shortstack[c]{Equació d'energia per\\canvis d'estat adiabàtics:} & \frac{\partial p_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) p_0 - c_s^2 \left( \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 \right) = 0 \\[0.8em]
-    \text{Equacions d'inducció:} & \frac{\partial \bm{B}_1}{\partial t} = \bm{\nabla} \bm{\times} (\bm{v}_1 \bm{\times} \bm{B}_0) \\[0.8em]
-    \text{Llei de Gauss magnètica:} & \bm{\nabla} \cdot \bm{B}_1 = 0 \\[0.8em]
-    \text{Velocitat del so:} & c_s^2 = \frac{p_1}{\rho_1} = \frac{\gamma p_0}{\rho_0} = \frac{\gamma k_B T_0}{m}
-\end{tabular}
+%\begin{tabular}{>{\raggedleft}p{10cm} >{$}c<{$}}
+%    \text{Equació de continuïtat:} & \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 + \rho_0 (\bm{\nabla} \cdot \bm{v}_1) = 0 \\[0.8em]
+%    \text{Equacions de moviment:} & \rho_0 \frac{\partial \bm{v}_1}{\partial t} = - \bm{\nabla} p_1 + (\bm{\nabla} \bm{\times} \bm{B}_1) \bm{\times} \bm{B}_0 / \mu \\[0.8em]
+%    \shortstack[c]{Equació d'energia per\\canvis d'estat adiabàtics:} & \frac{\partial p_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) p_0 - c_s^2 \left( \frac{\partial \rho_1}{\partial t} + (\bm{v}_1 \cdot \bm{\nabla}) \rho_0 \right) = 0 \\[0.8em]
+%    \text{Equacions d'inducció:} & \frac{\partial \bm{B}_1}{\partial t} = \bm{\nabla} \bm{\times} (\bm{v}_1 \bm{\times} \bm{B}_0) \\[0.8em]
+%    \text{Llei de Gauss magnètica:} & \bm{\nabla} \cdot \bm{B}_1 = 0 \\[0.8em]
+%    \text{Velocitat del so:} & c_s^2 = \frac{p_1}{\rho_1} = \frac{\gamma p_0}{\rho_0} = \frac{\gamma k_B T_0}{m}
+%\end{tabular}
 
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Ones planes
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 %\begin{tabular}{c}
 %    \text{Ones planes:} \\
-%    $ \bm{f}_1(\bm{r},t) = \bm{f} e^{i(\bm{k} \cdot \bm{r} - \omega t)} $
+%    $ \bm{f}_1(\bm{r},t) = \bm{f}(x) e^{i( \omega t - k_z z)} $
 %\end{tabular}
 
 %------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -250,7 +250,7 @@
 %	\centering
 %	\begin{tabular}{|c|c|c|c|c|}
 %		\hline
-%		$c_{s c}^2$ & $c_{s p}^2$ & $v_{A c}^2$ & $v_{A p}^2$ & $k_z$ \\
+%		$c_{s p}^2$ & $c_{s c}^2$ & $v_{A p}^2$ & $v_{A c}^2$ & $k_z$ \\
 %		\hline
 %		$1$ & $6$ & $20$ & $250$ & $0.01$ \\
 %		\hline
@@ -268,7 +268,7 @@
 %	\centering
 %	\begin{tabular}{|c|c|c|c|c|}
 %		\hline
-%		$c_{s c}^2$ & $c_{s p}^2$ & $v_{A c}^2$ & $v_{A p}^2$ & $k_z$ \\
+%       $c_{s p}^2$ & $c_{s c}^2$ & $v_{A p}^2$ & $v_{A c}^2$ & $k_z$ \\
 %		\hline
 %		$1$ & $200$ & $29$ & $5778$ & $0.01$ \\
 %		\hline
@@ -287,6 +287,21 @@
 %\begin{tabular}{>{\raggedleft}p{7cm} >{$}c<{$}}
 %	\text{Error relatiu:} & \eta = \abs{\frac{\omega_D - \omega}{\omega}}
 %\end{tabular}
+
+
+
+
+
+%=====================================================================================================================================================================
+% Relació dispersió
+%=====================================================================================================================================================================
+%\begin{tabular}{>{\raggedright}p{7cm} >{$}c<{$}}
+%    \text{Relació de dispersió} & \\[0.8em]
+%    \text{dels modes lents:} & \omega^2 = k_x^2 c_s^2 \\[0.8em]
+%    \text{dels modes ràpids:} & \omega^2 = (k_x^2 + k_z^2)v_A^2
+%\end{tabular}
+
+
 
 
 
